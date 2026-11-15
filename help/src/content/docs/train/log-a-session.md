@@ -37,6 +37,16 @@ Leaving a session never loses a set. Backing out just pauses it, and every set y
 
 <!-- since 1.5 -->
 
+On iPhone, leave the session with the **Back** arrow (a chevron) at the top left of the exercise list. Swiping from the edge of the screen no longer leaves it. On recent versions of iOS that swipe could start anywhere, so a sideways brush of the thumb in the middle of a set could slide the whole session away. Inside an exercise, **Exercises** at the top left takes you up to the list.
+
+:::note[Android]
+Android's back gesture starts at the screen edge, so a brush across the card never leaves the session. The back arrow at the top left of the exercise list and the system back gesture both pause the session, as before.
+:::
+
+<!-- /since -->
+
+<!-- since 1.5 -->
+
 To end a paused session without going back in, press and hold its row. **Finish It** closes the session at the last set you logged, so it shows in your Log Book as the short session it was, and a program day counts as done. **Discard** deletes the workout after asking. If a program day has nothing logged yet, only **Discard** is offered, which puts the day back on your schedule instead of marking a session you never did as complete.
 
 :::note[Android]
@@ -59,6 +69,16 @@ To log a set:
 4. If you miss, you can tag what went wrong. The app then suggests causes, drills and cues for that fault.<!-- since 1.5 --> Tagged misses also count in [Technique Doctor](/help/train/technique-doctor/).<!-- /since -->
 
 Some sets ask how hard it felt. Pick the answer that fits, from easy to all out.<!-- since 1.5 --> Rating a working set as all out holds the next sets at that weight instead of climbing.<!-- /since -->
+
+<!-- since 1.5 -->
+
+You can answer before or after you tap **Made**. If you tap Made first, the card moves on to the next set, but the effort question stays and now reads **How hard was that set?**, because your answer goes to the set you just finished. The row scrolls into view and flashes amber for a moment so you notice it. With Reduce Motion on, it is outlined without the animation. If you rate that set all out after tapping Made, the next sets are held at that weight just as they would have been had you rated it first. The question goes away once you log the next set, move to another exercise or step back.
+
+:::note[Android]
+The same question appears after Made, and the effort row is scrolled into view and highlighted in amber for a moment, with no fade when animations are reduced. On the exercise list, the dots for a long warm-up ramp are easier to see and wrap onto a second line instead of running off the card.
+:::
+
+<!-- /since -->
 
 If you change a weight and make the lift, the remaining sets of that exercise move by the same amount, so you do not have to retype it each time.
 
@@ -102,7 +122,7 @@ Switching the view on and off mid-session never changes your logged sets.
 
 ## Finish
 
-When every set is done, tap **Finish Session**. You can end early with **Cut It Short**, which saves what you have logged.<!-- since 1.5 --> If you have not logged a single set, there is nothing to save, so the same button reads **Discard** and removes the workout instead of counting it as done. A program day you discard goes back on your schedule.<!-- /since --> A celebration screen shows any new records. From there, tap **Done** to leave, **Log how it went** to add a note, or **Share Workout**. The note is optional and stays available from the Log Book.
+When every set is done, tap **Finish Session**. You can end early with **Cut It Short**, which saves what you have logged.<!-- since 1.5 --> In a workout you built yourself, on iPhone, these buttons stay pinned to the bottom of the screen, including while you are inside an exercise. In a program day they sit at the end of the exercise list.<!-- /since --><!-- since 1.5 --> If you have not logged a single set, there is nothing to save, so the same button reads **Discard** and removes the workout instead of counting it as done. A program day you discard goes back on your schedule.<!-- /since --> A celebration screen shows any new records. From there, tap **Done** to leave, **Log how it went** to add a note, or **Share Workout**. The note is optional and stays available from the Log Book.
 
 Changed your mind about a workout? The finish menu also offers **Discard Workout**, which asks before deleting.
 

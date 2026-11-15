@@ -5,9 +5,13 @@ covers:
   - Docs/IMPORT_AND_VOLUME.md
   - LiftingLab/Features/Me/Progress/PlayerProgressView.swift
   - LiftingLab/Features/Me/Progress/TrainingVolumeCard.swift
+  - LiftingLab/Features/Me/Progress/VolumeSplitView.swift
+  - LiftingLab/Features/Train/Dashboard/GainsVolumeTile.swift
   - LiftingLab/Domain/TrainingVolume.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/PlayerProgressScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/TrainingVolumeCard.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/VolumeSplitView.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/GainsVolumeTile.kt
 verified_for: "1.5"
 since: "1.5"
 ---
@@ -18,9 +22,21 @@ Training Volume reads your logged sets and answers three questions a coach asks:
 
 Go to **Locker**, tap the level strip to open **Gains**, and scroll to **Training Volume**. Pick **4 weeks**, **12 weeks** or **All history** at the top of the card.
 
+<!-- since 1.5 -->
+
+You can also see the last four weeks without leaving the Train tab. The **Gains · last 4 weeks** tile on the Train dashboard shows your total lifts, your average intensity and a thin bar of how the work splits, with the share for each group under it. Tap the tile to open Gains. With no lifts logged in the last four weeks, the tile says so.
+
+<!-- /since -->
+
 ## What is counted
 
 Made sets only. Warm-up and bar-work sets are left out, and so are timed, distance and bodyweight movements. A complex counts as the reps of its parts.
+
+<!-- since 1.5 -->
+
+Under the numbers the card keeps to one line, "Made sets only. Warm-ups excluded." Tap **About these numbers** to open the rest: what intensity means, where the 70% line comes from, and how many lifts used your current record or were left out of the intensity figures.
+
+<!-- /since -->
 
 ## The three readings
 
@@ -31,5 +47,5 @@ Made sets only. Warm-up and bar-work sets are left out, and so are timed, distan
 Complexes and dumbbell sets are in the split but not in the intensity figures, and the card says how many lifts that is. The stacked bar is read out as one description, and the rows under it show the same numbers as text.
 
 :::note[Android]
-The same card sits on the Gains screen with the same numbers. TalkBack reads the split as one chart description, followed by the rows.
+The same card sits on the Gains screen with the same numbers, including the one-line note and the **About these numbers** section. The Train dashboard has the same Gains tile, and tapping it opens Gains. TalkBack reads the split as one chart description, followed by the rows.
 :::

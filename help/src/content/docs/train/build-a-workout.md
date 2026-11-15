@@ -142,7 +142,7 @@ The Android builder gives the same loads, caps and slider range as the iPhone ap
 Not keen on the draft? Tap **Reshuffle** for a different set of movements.<!-- since 1.5 --> Anything you have swapped, added or deleted stays as you left it. Only the parts you have not touched change, and sets and reps you typed in are kept.<!-- /since -->
 
 :::tip
-Press Save as routine to keep a draft you like. It appears under Routines in My Programs. Percentages are worked out when you start it, so a routine follows your latest records rather than the weights you had when you saved it.
+Press Save as routine to keep a draft you like. It appears under Routines in My Programs. Percentages are worked out when you start it, so a routine follows your latest records rather than the weights you had when you saved it. To send a routine to a friend, see [Share a workout](/help/train/program-builder/#share-a-workout).
 
 <!-- since 1.5 -->
 

@@ -13,6 +13,10 @@ covers:
   - LiftingLab/Features/BarPath/CaptureResultView.swift
   - LiftingLab/Features/BarPath/BarPathPlayerView.swift
   - LiftingLab/Features/BarPath/JudgingLightsCard.swift
+  - LiftingLab/Domain/BarPath/LiftJudging.swift
+  - LiftingLab/Domain/BarPath/JerkSegment.swift
+  - LiftingLab/Domain/BarPath/BarPathScore.swift
+  - LiftingLab/Domain/BarPath/GradingStandard.swift
   - LiftingLab/Features/BarPath/ScoreRingCard.swift
   - LiftingLab/Features/BarPath/TechniqueFindingsCard.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/ui/BarTraceHomeScreen.kt
@@ -24,6 +28,9 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/ui/DelayedReplayScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/player/BarPathPlayerScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/player/JudgingLightsCard.kt
+  - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/barpath/LiftJudging.kt
+  - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/barpath/JerkSegment.kt
+  - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/barpath/BarPathScore.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/player/TechniqueFindingsCard.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/share/ShareClipScreen.kt
   - LiftingLab/Features/BarPath/BarPathCompareView.swift
@@ -105,7 +112,7 @@ If the trace fails, the app takes you back to the circle. Most failures are a ci
 The bar path is traced on your phone<!-- since 1.5 -->, the same way on iPhone and Android<!-- /since -->. From the top of the result screen down you get:
 
 1. Your video with the traced path.
-2. Whether the lift would count, shown as three referee-style lights (for the snatch, clean, and their variations).
+2. Whether the lift would count, shown as three referee-style lights (for the snatch, the clean and jerk, and their variations). See [How the lights judge a clean and jerk](#how-the-lights-judge-a-clean-and-jerk).
 3. A technique grade, with a bar for each part of the lift.
 4. What to fix first, with drills that address it.<!-- since 1.5 --> To see which faults keep coming back across your lifts, open [Technique Doctor](/help/train/technique-doctor/).<!-- /since -->
 5. Speed, phase and position details. Tap a row or drag the graph to jump to that moment in the video.
@@ -125,6 +132,34 @@ When the tracker lost the bar for much of a clip, its speeds and distances are n
 ## Replay it a few seconds late
 
 Delayed Replay shows the camera feed 3, 5, 8 or 10 seconds behind. Prop the phone up, lift, and turn around to watch the rep without touching anything. Nothing is recorded or saved, and it does not use up an analysis.
+
+<!-- /since -->
+
+## How the lights judge a clean and jerk
+
+<!-- since 1.5 -->
+
+For a clean and jerk the lights follow the whole lift, not just the clean. After the clean, the app looks for the bar resting on your shoulders and measures the jerk from there: the dip, the drive and the catch overhead. It checks that the dip and drive are one movement, so a bar that stops or comes back up partway through the dip, or sinks during the drive, is flagged, and that you do not press the bar out once it is overhead. The final hold at the top is then judged for stillness and a locked-out finish. A red light names the specific fault, for example that the bar stopped in the dip.
+
+If the app cannot find the jerk, the jerk light says why and stays off. The most common reason is a clip that ends at the rack with the message "The clip ends before the jerk."
+
+:::tip
+Keep filming through the jerk and include the overhead hold, until the bar is still above your head. A clip that stops at the shoulders cannot be judged past the clean.
+:::
+
+<!-- /since -->
+
+## Pick a grading level
+
+<!-- since 1.5 -->
+
+The technique grade is marked at a grading level: **Learning**, **Standard** (the default) or **Advanced**. Change it from the chip on the grade card, or on iPhone in **Settings** under Film Room.
+
+- **Learning** is the most forgiving. Every part of the grade allows a wider margin, and catch depth is coached but not graded, so a power catch while you are learning does not cost points.
+- **Standard** grades catch depth against the lift you tagged.
+- **Advanced** allows the narrowest margins.
+
+The same clip never scores lower at a gentler level, so moving from Advanced to Learning can only keep or raise the grade. The referee lights are not affected: they follow the competition rules at every level.
 
 <!-- /since -->
 
