@@ -50,7 +50,7 @@ The prescription is a percentage of the limiter (75% to start) unless you pick a
 
 In the workout builder, Program Builder, or a session's swap and add lists, complexes sit beside single movements under a **Complexes** heading, with **Build a new complex** below them. Without Pro they show a lock.
 
-For Pro members, the daily workout builder may put one complex in the classic lift block on its own. **How this session was built** says why.
+For Pro members, the daily workout builder may put one complex in the classic lift block on its own, at any energy level from 1 to 5 unless your exercise variety is set to Focused. On most days it does, about 7 in 10 for an eligible athlete, and never more than one in a session. If your weak points point to a single lift, the single lift is the more likely choice, and if they point only to a complex, the complex is chosen. Beginners and Free plans do not get one. **How this session was built** says why.
 
 :::note[Android]
 In Program Builder on Android, an exercise row also offers **Make it a complex**, which opens the builder with that lift already in it, and a day offers **Add complex**.

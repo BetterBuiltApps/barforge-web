@@ -7,9 +7,13 @@ covers:
   - LiftingLab/Features/Coach/ProgramEditorView.swift
   - LiftingLab/Features/Coach/DayEditorView.swift
   - LiftingLab/Features/Train/Programs/MyProgramsView.swift
+  - LiftingLab/Features/Train/Sharing/WorkoutSharing.swift
+  - LiftingLab/Domain/Sharing/WorkoutShareCodec.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/coach/CoachProgramsScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/coach/ProgramEditorScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/programs/MyProgramsScreen.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/interop/ImportCoordinator.kt
+  - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/sharing/WorkoutShareCodec.kt
 verified_for: "1.5"
 ---
 
@@ -73,3 +77,19 @@ If you delete a program that is running, the running copy ends with it. Sessions
 :::note[Android]
 On Android the **Export** menu offers the same three choices, and the Programs screen has the same **Add a Program You Were Sent** button.
 :::
+
+## Share a workout
+
+<!-- since 1.5 -->
+
+Long-press a routine on the Programs screen and choose **Share (.liftinglabworkout)**. Lifting Lab makes a small file you can send by AirDrop, Messages, email or Files. Your friend taps it to open it in Lifting Lab, and it appears under their Routines. If they already have a routine with the same name, theirs is kept and the new one becomes "Name (2)".
+
+The file holds the exercises, sets, reps and percentages or effort levels, so loads are worked out from your friend's own maxes. It does not include your records or your weight history. The one exception is a row you set to a fixed weight: that row keeps the weight you typed.
+
+A file from a newer version of Lifting Lab, or one that uses an exercise your friend's version does not have, is not imported, and the app asks them to update. A routine that cannot be read has no Share option.
+
+:::note[Android]
+Long-press the routine card in the same way. The menu item has the same name, and the file goes out through Android's share sheet, so the apps offered are the ones on your phone (AirDrop is iPhone only). Tapping a received file in Files, a chat or an email opens it in Lifting Lab. Workout files work between iPhone and Android in both directions.
+:::
+
+<!-- /since -->
