@@ -81,7 +81,7 @@ Some sets ask how hard it felt. Pick the answer that fits, from easy to all out.
 You can answer before or after you tap **Made**. If you tap Made first, the card moves on to the next set, but the effort question stays and now reads **How hard was that set?**, because your answer goes to the set you just finished. The row scrolls into view and flashes amber for a moment so you notice it. With Reduce Motion on, it is outlined without the animation. If you rate that set all out after tapping Made, the next sets are held at that weight just as they would have been had you rated it first. The question goes away once you log the next set, move to another exercise or step back.
 
 :::note[Android]
-The same question appears after Made, and the effort row is scrolled into view and highlighted in amber for a moment, with no fade when animations are reduced. On the exercise list, the dots for a long warm-up ramp are easier to see and wrap onto a second line instead of running off the card.
+The same question appears after Made, and the effort row is scrolled into view and highlighted in amber for a moment, with no fade when animations are reduced. On the exercise list, the dots for a long warm-up ramp are easier to see and wrap onto a second line instead of running off the card. A warm-up set you have not done yet is a dashed circle and a working set you have not done yet is a solid circle, with a thin line between the two groups.
 :::
 
 <!-- /since -->
