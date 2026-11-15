@@ -33,6 +33,12 @@ Open the **Train** tab. Whatever is waiting for you sits near the top.
 
 ![The Train tab with a paused session: a Back Under the Bar row showing the workout and how many sets are logged.](../../../assets/screens/resume-session.png)
 
+<!-- since 1.5 -->
+
+On the Train tab, under the start of your workout, the **Strength** tile shows whether you are getting stronger, from your best sets of 1 to 5 reps. Tap it to open the PR Tracker. See [Are you getting stronger?](/help/train/prs-and-log-book/#are-you-getting-stronger).
+
+<!-- /since -->
+
 Leaving a session never loses a set. Backing out just pauses it, and every set you logged is already saved.
 
 <!-- since 1.5 -->
@@ -125,6 +131,12 @@ Switching the view on and off mid-session never changes your logged sets.
 When every set is done, tap **Finish Session**. You can end early with **Cut It Short**, which saves what you have logged.<!-- since 1.5 --> In a workout you built yourself, on iPhone, these buttons stay pinned to the bottom of the screen, including while you are inside an exercise. In a program day they sit at the end of the exercise list.<!-- /since --><!-- since 1.5 --> If you have not logged a single set, there is nothing to save, so the same button reads **Discard** and removes the workout instead of counting it as done. A program day you discard goes back on your schedule.<!-- /since --> A celebration screen shows any new records. From there, tap **Done** to leave, **Log how it went** to add a note, or **Share Workout**. The note is optional and stays available from the Log Book.
 
 Changed your mind about a workout? The finish menu also offers **Discard Workout**, which asks before deleting.
+
+<!-- since 1.5 -->
+
+A set of 2 to 5 reps that is heavier than your best for those reps is saved as a rep record as soon as you make it. Most are saved quietly. If the lift has a 1RM on file, a rep record is celebrated only when the weight is close to your max. If it has no 1RM yet, the first one at each rep count is the mark to beat, and a rep record is celebrated when it beats your best from an earlier session. See [How records are saved](/help/train/prs-and-log-book/#how-records-are-saved).
+
+<!-- /since -->
 
 <!-- since 1.5 -->
 

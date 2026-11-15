@@ -1,6 +1,6 @@
 ---
 title: Track PRs and review your Log Book
-description: See how records are saved, how to review past sessions, and how to import bar-speed data.
+description: See whether you are getting stronger, how records are saved, how to review past sessions, and how to import bar-speed data.
 covers:
   - Docs/FEATURES.md#PR tracker (`Train/PRTracker/`)
   - Docs/FEATURES.md#Log Book (`Train/History/`)
@@ -15,6 +15,13 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/logbook/LogBookScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/interop/vbt/VBTImportScreen.kt
   - LiftingLab/Domain/LoadVelocityProfile.swift
+  - LiftingLab/Features/Train/Dashboard/StrengthTrendTile.swift
+  - LiftingLab/Features/Train/PRTracker/StrengthTrendChart.swift
+  - LiftingLab/Domain/Progression/StrengthTrend.swift
+  - LiftingLab/Domain/Progression/StrengthTrendDisplay.swift
+  - LiftingLab/Domain/PRRules.swift
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/prtracker/PRTrackerViewModel.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/StrengthTrendTile.kt
 verified_for: "1.5"
 ---
 
@@ -29,13 +36,29 @@ The PR Tracker holds your records. The Log Book holds everything you have traine
 
 ## The PR Tracker
 
-The tracker shows your main lifts, your Total (calculated for you), your secondary lifts, and a history for each lift with a progress line. A summary of your strength ratios links to the full ratios screen.
+The tracker shows<!-- since 1.5 --> your strength trend,<!-- /since --> your Total (calculated for you), your main lifts, your secondary lifts, and a history for each lift with a progress line. A summary of your strength ratios links to the full ratios screen.
 
 To add a record by hand, use the new PR button, enter the weight, and set the reps. One rep is a 1RM (the heaviest single you can lift).
 
+<!-- since 1.5 -->
+
+## Are you getting stronger?
+
+You do not need to test a 1RM to see progress. The **Strength** tile on the Train tab, just under the start of your workout, shows your overall trend over the last 12 weeks, such as **+6% getting stronger**, **holding steady** or **down a little**. Tap it to open the PR Tracker.
+
+The trend comes from your best sets of 1 to 5 reps in the snatch, clean and jerk, front squat, back squat and strict press. The app estimates the single each of those sets suggests and follows the best one for each lift, week by week. Warm-ups, misses, complexes and dumbbell work are left out. Each lift is compared with its own first week in that period, and the trend is the average across your lifts. A lift counts at its best from the last four weeks, so one light or deload week does not read as lost strength. A lift joins the trend once you have trained it in two different weeks, and it is left out if you have not trained it in the last four weeks. If your first week in the period was unusually light for a lift, its gain will look bigger than it is. The result is an estimate, and it is never saved as a record.
+
+It needs a few weeks of training before it shows a number. Until then, and whenever you have not trained any of those lifts in the last four weeks, the tile says **Log a few more sets to see your trend.**
+
+At the top of the PR Tracker, the **Strength** chart shows the same trend larger. Choose **12 weeks**, **6 months** or **All** under it.
+
+If a lift has no 1RM yet, its row shows your best rep record instead, such as **2RM 117.5 kg**, with **Best set of 2** and the date under the name. It is labelled with its reps so it is never mistaken for a single, and it does not count toward your Total. A lift with no records at all shows a dash and **No records yet**.
+
+<!-- /since -->
+
 ## How records are saved
 
-A record on the board is always a single. When you make a heavier set during a session, the app notices and celebrates it.
+Your 1RM is always a single. When you make a heavier set during a session, the app notices and celebrates it.
 
 <!-- since 1.5 -->
 
@@ -43,7 +66,14 @@ The **NEW PR** banner and the **Recent PRs** strip on the Train tab only show a 
 
 A record follows the set that earned it. If you step back to a set you just logged and correct the weight or the reps, or log it again as a miss, the record the session saved for it is corrected or removed to match. A record from an earlier session, or one you added by hand, is never touched. A corrected record is dated from the moment you made the correction, so it stays matched to its set.
 
-A heavier set of 2 to 5 reps is saved as a **rep record**, such as a 2RM or 3RM. Rep records appear under **Rep records** on the lift's history. They never change your 1RM, your Total, or the weights the app prescribes. The first rep record at a given rep count has to be close to your max, so an ordinary working double is not celebrated.
+A heavier set of 2 to 5 reps is saved as a **rep record**, such as a 2RM or 3RM. Rep records appear under **Rep records** on the lift's history. They never change your 1RM, your Total, or the weights the app prescribes.
+
+You do not need a 1RM on file for rep records. Any set of 2 to 5 reps that is heavier than your best for those reps is saved. Whether it is also celebrated depends on whether the lift has a 1RM:
+
+- **With a 1RM on file**, a rep record is celebrated only when it is close to your max: a weight that would leave you about one rep short of failure, which for a double is about 94% of your 1RM. An ordinary working double or triple is saved quietly, even when it beats your best from an earlier session.
+- **With no 1RM yet**, the first set at a rep count is saved quietly as your starting point. After that, beating your best from an earlier session is celebrated. Beating a set from earlier in the same workout is saved quietly, so a session of climbing doubles is not one celebration after another.
+
+Because quiet records are saved too, your lift history and the rep records export list more sets than before.
 
 <!-- /since -->
 
