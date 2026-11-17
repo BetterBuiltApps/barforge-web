@@ -131,4 +131,10 @@ A date given as a plain number is accepted only if it falls between the years 20
 
 Units printed in the column headings, such as "Mean Velocity (cm/s)" or "Weight (lb)", are always used, and speeds in m/s, cm/s and mm/s are all converted. A rep that would still read faster than 5 m/s is skipped with a note to check the speed unit, because no bar moves that fast.
 
+The import also refuses values that cannot be real, and says so in its notes instead of saving them:
+
+- **A date or time that does not exist**, such as 30 February or 24:00, is reported as a date the app could not read. The rep is saved without a time, the same as any other unreadable date.
+- **A speed of zero or below.** Some devices write the lowering of the bar as a negative speed, and a missed rep as 0. Neither is a lift speed, so that cell is treated as empty. A row left with no speed is skipped, with a note giving its row number.
+- **A weight of zero or below, or above 1,000 kg.** The weight is left off with a note, and the rep is still saved.
+
 <!-- /since -->

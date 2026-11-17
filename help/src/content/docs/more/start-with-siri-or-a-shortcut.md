@@ -3,6 +3,8 @@ title: Start a session with Siri or a shortcut
 description: Ask Siri or use the Shortcuts app to open today's session, your Log Book, or the days to your meet.
 covers:
   - LiftingLab/App/Intents/LiftingLabIntents.swift
+  - LiftingLab/Domain/Competition/SiriAnswers.swift
+  - LiftingLab/Domain/Competition/MeetCountdown.swift
   - lifting-lab-android/app/src/main/res/xml/shortcuts.xml
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/shortcuts/ShortcutRequests.kt
   - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/shortcuts/AppShortcuts.kt
@@ -16,7 +18,7 @@ Siri and the Shortcuts app can take you straight to the part of Lifting Lab you 
 
 - **Start My Session**: opens today's session so you can start it. With nothing scheduled, it says so and starts nothing. If a workout is already open and nothing is scheduled, Siri also leaves you in the workout.
 - **Open My Log Book**: opens your Log Book. If a workout is open on screen, Siri leaves you in it and tells you to finish or leave it first.
-- **Show My Next Meet Countdown**: Siri answers out loud with the days left, for example "12 days to NAME." If no meet is planned, it says there is no meet planned. The Meet Planner is **Pro**, so on the free plan Siri tells you the countdown is part of Pro.
+- **Show My Next Meet Countdown**: Siri answers out loud with the days left, for example "12 days to NAME." It names the next meet that is today or still to come, so once a meet has passed it moves on to the next one in your season under **Later meets**. If every meet has passed, it says how many days ago the last one was and that no upcoming meet is planned. With no meet at all, it says there is no meet planned. The Meet Planner is **Pro**, so on the free plan Siri tells you the countdown is part of Pro.
 
 ## Ask Siri
 
