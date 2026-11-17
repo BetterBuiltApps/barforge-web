@@ -46,7 +46,7 @@ Open Settings from the Locker. The main rows are:
 - **Apple Health** (Health Connect on Android): four switches for adapting rest, suggesting readiness, saving workouts and syncing bodyweight.
 - **Film Room**: the grading level for technique grades. It never changes the referee lights.
 - **Sounds**, and **Units** for kilograms or pounds.
-- **Data and Privacy**: clip storage<!-- since 1.5 -->, exporting your data as CSV files and importing a training history from one (see [Import your training history from a CSV](/help/start/import-from-csv/)). On Android those two rows sit under **Data** in Settings itself<!-- /since -->, with the Privacy Policy and Terms.
+- **Data & Privacy**: clip storage<!-- since 1.5 -->, exporting your data as CSV files and importing a training history from one (see [Import your training history from a CSV](/help/start/import-from-csv/)). On Android those two rows sit under **Data** in Settings itself<!-- /since -->, and the Privacy Policy and Terms are under **About**.
 
 ## Accessibility
 
@@ -70,7 +70,7 @@ The Subscription section shows your plan and lets you view Pro. **Restore Purcha
 
 ## Help and support
 
-Help now lives in Settings. **How-to Guides** opens these articles and needs an internet connection. **Contact Support** opens the support page.
+Help now lives in Settings. **Quick Start** works offline. **How-to Guides** opens these articles and needs an internet connection. **Contact Support** opens the support page.
 
 <!-- /since -->
 

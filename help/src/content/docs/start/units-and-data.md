@@ -80,7 +80,7 @@ Weights in the files appear in kilograms and in your chosen unit.
 A dumbbell set's weight is per hand, so its exercise is named with "(dumbbell, per hand)", for example Push Press (dumbbell, per hand). When you import such a file again, those rows are listed as not matched rather than read as a barbell weight.
 
 :::note[Android]
-The Android export has the same Metric and Quantity columns at the end of Training History.
+On Android, open **Locker**, then **Settings**, and tap **Export PRs, stats & history (CSV)** under **Data**. It sends all three files at once through the share sheet, with no screen in between and no way to pick a single file. The files have the same columns, including Metric and Quantity at the end of Training History.
 :::
 
 :::note

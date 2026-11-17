@@ -36,13 +36,13 @@ Program Builder is for writing your own multi-week plan, week by week and day by
 
 In a day, give it a name and a **Weekday offset**, which places it in the week from 0 to 6 days after the week starts. Tap **Add exercise** to pick a lift from the full exercise list. Each exercise has:
 
-- **Sets** and **Reps**.
+- **Sets** (1 to 10) and **Reps** (1 to 30).
 - **Load**, which is one of:
   - **% of PR**: a percentage of your record for a lift you choose under **Reference PR**. Weights are worked out when you start the day, so the program follows your records.
   - **Fixed kg**: one weight.
   - **RPE**: a target effort from 5 to 10.
   - **Bodyweight**: no load.
-- **Rest** for that exercise, in 15 second steps.
+- **Rest** for that exercise, from 30 to 600 seconds in 15 second steps.
 - **Accessory**, to mark it as supporting work, and **Notes** for yourself or the lifter.
 - **Swap**, which keeps the sets, reps, rest and note and changes the movement, and **Remove**.
 
@@ -72,7 +72,7 @@ The **Export** menu on a program offers **Print Program**, **Save as PDF** and *
 
 <!-- since 1.5 -->
 
-Each set keeps the range of its own unit when a program is imported. A counted lift is held to 50 reps, a timed hold such as a plank to 60 minutes, and a distance to 10,000 meters, so a 60 second plank or a 3000 meter run arrives as your friend wrote it. A value above its limit is brought down to the limit, and a value below 1 is raised to 1, with a warning in both cases.
+Each set keeps the range of its own unit when a program is imported. A counted lift is held to 50 reps, a timed hold such as a plank to 60 minutes (3,600 seconds), and a distance to 10,000 meters, so a 60 second plank or a 3000 meter run arrives as your friend wrote it. A value above its limit is brought down to the limit, and a value below 1 is raised to 1, with a warning in both cases.
 
 <!-- /since -->
 
@@ -81,7 +81,7 @@ If you delete a program that is running, the running copy ends with it. Sessions
 :::
 
 :::note[Android]
-On Android the **Export** menu offers the same three choices, and the Programs screen has the same **Add a Program You Were Sent** button.
+On Android the **Export** menu offers the same three choices, and the Programs screen has the same **Add a Program You Were Sent** button. Sets, Reps and Rest have the same ranges.<!-- since 1.5 --> An imported program is held to the same limits of 50 reps, 3,600 seconds and 10,000 meters.<!-- /since -->
 :::
 
 ## Share a workout

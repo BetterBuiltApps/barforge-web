@@ -42,7 +42,7 @@ The Tools tab holds quick calculators and planners. They work offline, and weigh
 
 - **Training %**: working weights at each percentage of a lift, with the plates to load.<!-- since 1.5 --> A lift you reset under Reset Your Numbers loads from that number, not its old record.<!-- /since -->
 - **Barbell Loader**: shows which plates to put on the bar for a target weight.
-- **kg and lb**: converts between the two.
+- **kg ↔ lb**: converts between the two.
 
 **Diagnose**
 
@@ -55,7 +55,11 @@ The Tools tab holds quick calculators and planners. They work offline, and weigh
 
 <!-- since 1.5 -->
 
-- **Meet Planner** (Pro): counts down to your meets and works your training blocks backward from them. Opening it does not plan a meet: nothing is saved until you change the name, date, priority or target class. In the days before a meet, workouts you build drop their volume, use lighter loads in the last two days, and give only recovery work on meet day.
+- **Meet Planner** (Pro): counts down to your meets and works your training blocks backward from them. Opening it does not plan a meet: nothing is saved until you change the name, date, priority or target class. In the days before a meet, workouts you build drop their volume, use lighter loads in the last two days, and give only recovery work on meet day. The easing starts 14 days out: about 80% of the usual volume until a week out, then about 60% with no heavier loads than you have recently planned, then the lightest volume the builder allows at light loads for the last two days. Programs already include their own taper, so it applies to workouts the app builds for you.
+
+:::note[Android]
+The Meet Planner on Android is **Pro** as well, and has the same **Taper** section, with the same 14 days and the same three steps.
+:::
 
 <!-- /since -->
 
