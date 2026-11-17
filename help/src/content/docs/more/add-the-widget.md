@@ -4,6 +4,7 @@ description: Put your next session, this week's tonnage, your latest PR and the 
 covers:
   - LiftingLabWidgets/LiftingLabSummaryWidget.swift
   - LiftingLabWidgets/WidgetSnapshotMirror.swift
+  - LiftingLab/App/WidgetSnapshotWriter.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/widget/LiftingLabSummaryWidget.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/widget/WidgetRefresher.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/widget/WidgetSnapshotLoader.kt
@@ -18,7 +19,7 @@ The Lifting Lab widget puts the numbers you check most on your home screen, so y
 - **Next session**: your next scheduled session. With nothing scheduled it reads **No session scheduled**.
 - **This week**: the tonnage you have lifted this week. A new week starts it again from zero.
 - **Latest PR**: the personal record you set most recently. With none logged it reads **No PRs yet**.
-- **Meet**: the days left to your meet. This tile only appears when a meet is planned in the Meet Planner, which is **Pro**. Without a planned meet, the widget shows the other tiles and no meet tile.
+- **Meet**: the days left to your meet. This tile only appears when a meet is planned in the Meet Planner, which is **Pro**. Without a planned meet, the widget shows the other tiles and no meet tile. When a meet's date has passed and you listed another under **Later meets**, the tile counts down to that one.
 
 It comes in two sizes, small and medium.
 

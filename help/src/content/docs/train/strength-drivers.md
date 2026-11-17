@@ -12,6 +12,8 @@ covers:
   - LiftingLab/Features/Train/Session/DriverNudgeBanner.swift
   - LiftingLab/Domain/Progression/StrengthDrivers.swift
   - LiftingLab/Domain/Progression/StrengthDriversCopy.swift
+  - LiftingLab/Domain/Progression/HealthReadCopy.swift
+  - LiftingLab/Domain/Progression/HealthReadSchedule.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/StrengthDriversHubScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/DriverDetailScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/StrengthDriversService.kt
@@ -68,6 +70,20 @@ Until there is enough data, the tile says how many more weeks it needs.
 
 :::note[Android]
 On Android the sleep, resting heart rate and HRV come from Health Connect instead of Apple Health, and the message reads "Connect Health Connect to see if sleep and recovery matter for you." Tap **Connect Health Connect** under **To learn more** on the What's moving your lifts screen. That also turns on **Suggest readiness**, which you can switch off later in Settings. Health Connect hands over only the last 30 days unless you also allow older data, so if you have not, the screen offers **Read older Health Connect data**. Until it has enough history, sleep, resting heart rate and HRV stay on "keep logging".
+:::
+
+### When Apple Health cannot be read
+
+A failed read is never shown as you having no sleep or heart data. The What's moving your lifts screen, and the sleep, HRV and resting heart rate details, say what happened instead:
+
+- **The read failed.** "Apple Health couldn't be read just now." The app waits 15 minutes before it tries again, rather than retrying on every visit, and the line gives the time it will try, for example "It will try again after 9:40 PM." If an earlier read worked, sleep and recovery use that one in the meantime. Either way it ends "Your training log isn't affected": your sessions, sets and PRs do not depend on Health.
+- **The read worked but found nothing.** "Apple Health returned no sleep, HRV or resting heart rate." iPhone does not tell the app whether that is because nothing is recorded or because reading it is not allowed, so the line says both and points you to the Health app to check access.
+- **Health is not on this device.** The line says sleep and recovery are left out.
+
+While any of these applies, sleep, HRV and resting heart rate drop out of the "keep logging" list, because logging more would not help.
+
+:::note[Android]
+On Android the same lines name Health Connect, for example "Health Connect couldn't be read just now", with the same 15 minute wait and the same "Your training log isn't affected." Health Connect does say whether reading is allowed, so Android splits the empty case in two: "None is recorded yet", or reading "isn't allowed", with a pointer to allow access in Health Connect.
 :::
 
 ## Why most things say Fine

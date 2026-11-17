@@ -12,6 +12,8 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/tools/OneRMScreen.kt
   - LiftingLab/Features/Compete/MeetDayView.swift
   - LiftingLab/Features/Compete/MeetPlannerView.swift
+  - LiftingLab/Domain/Competition/MeetCountdown.swift
+  - LiftingLab/Domain/RecentWin.swift
 verified_for: "1.5"
 ---
 
@@ -55,7 +57,7 @@ The Tools tab holds quick calculators and planners. They work offline, and weigh
 
 <!-- since 1.5 -->
 
-- **Meet Planner** (Pro): counts down to your meets and works your training blocks backward from them. Opening it does not plan a meet: nothing is saved until you change the name, date, priority or target class. In the days before a meet, workouts you build drop their volume, use lighter loads in the last two days, and give only recovery work on meet day. The easing starts 14 days out: about 80% of the usual volume until a week out, then about 60% with no heavier loads than you have recently planned, then the lightest volume the builder allows at light loads for the last two days. Programs already include their own taper, so it applies to workouts the app builds for you.
+- **Meet Planner** (Pro): counts down to your meets and works your training blocks backward from them. Opening it does not plan a meet: nothing is saved until you change the name, date, priority or target class. In the days before a meet, workouts you build drop their volume, use lighter loads in the last two days, and give only recovery work on meet day. The easing starts 14 days out: about 80% of the usual volume until a week out, then about 60% with no heavier loads than you have recently planned, then the lightest volume the builder allows at light loads for the last two days. Programs already include their own taper, so it applies to workouts the app builds for you. Once a meet's date has passed, the next meet you listed under **Later meets** takes over: workouts you build taper toward it and the widget counts down to it. The planner itself keeps the passed meet at the top until you clear it, and so does the Siri countdown.
 
 :::note[Android]
 The Meet Planner on Android is **Pro** as well, and has the same **Taper** section, with the same 14 days and the same three steps.
@@ -92,7 +94,7 @@ Opening a tool from a workout or a logged set can fill in the weight for you.
 Estimates get less reliable as reps go up, so sets of five or fewer give the best guide.
 
 :::note
-An estimated PR is only a starting point. It stays your PR, and programs keep loading from it, until you log a heavier single. A lift you make at a meet that is heavier than anything you have actually lifted is still saved as a competition PR, even when the estimate is higher. To let your real lifts take over from an estimate, delete it from the lift's history in the PR Tracker.
+An estimated PR is only a starting point. It stays your PR, and programs keep loading from it, until you log a heavier single. A lift you make at a meet that is heavier than anything you have actually lifted is still saved as a competition PR, even when the estimate is higher. To let your real lifts take over from an estimate, delete it from the lift's history in the PR Tracker.<!-- since 1.5 --> Saving an estimate is not announced as a new PR: it never shows in the **NEW PR** banner or the **Recent PRs** strip on the Train tab.<!-- /since -->
 :::
 
 ## Strength Ratios in a nutshell

@@ -6,6 +6,7 @@ covers:
   - LiftingLab/Features/Coach/CoachProgramsView.swift
   - LiftingLab/Features/Coach/ProgramEditorView.swift
   - LiftingLab/Features/Coach/DayEditorView.swift
+  - LiftingLab/Domain/Builder/BuilderQuantityEditor.swift
   - LiftingLab/Features/Train/Programs/MyProgramsView.swift
   - LiftingLab/Features/Train/Sharing/WorkoutSharing.swift
   - LiftingLab/Domain/Sharing/WorkoutShareCodec.swift
@@ -36,7 +37,7 @@ Program Builder is for writing your own multi-week plan, week by week and day by
 
 In a day, give it a name and a **Weekday offset**, which places it in the week from 0 to 6 days after the week starts. Tap **Add exercise** to pick a lift from the full exercise list. Each exercise has:
 
-- **Sets** (1 to 10) and **Reps** (1 to 30).
+- **Sets** (1 to 10) and **Reps**.<!-- since 1.5 --> A counted lift goes from 1 to 50 reps. A timed hold such as a plank shows **Time** instead, set in seconds from 5 to 600 (ten minutes) in 5 second steps, and cardio such as a row or a run shows **Minutes**, from 5 to 60 in steps of 5. A complex shows **Rounds**, from 1 to 3. A new hold starts at 40 seconds.<!-- /since -->
 - **Load**, which is one of:
   - **% of PR**: a percentage of your record for a lift you choose under **Reference PR**. Weights are worked out when you start the day, so the program follows your records.
   - **Fixed kg**: one weight.
@@ -44,7 +45,7 @@ In a day, give it a name and a **Weekday offset**, which places it in the week f
   - **Bodyweight**: no load.
 - **Rest** for that exercise, from 30 to 600 seconds in 15 second steps.
 - **Accessory**, to mark it as supporting work, and **Notes** for yourself or the lifter.
-- **Swap**, which keeps the sets, reps, rest and note and changes the movement, and **Remove**.
+- **Swap**, which keeps the sets, reps, rest and note and changes the movement, and **Remove**.<!-- since 1.5 --> If the new movement is measured differently, such as a squat swapped for a plank, the amount starts from the new movement's usual one instead of carrying 5 reps over as 5 seconds.<!-- /since -->
 
 You can drag exercises to reorder them. The app asks before it deletes anything you wrote.
 
@@ -81,7 +82,7 @@ If you delete a program that is running, the running copy ends with it. Sessions
 :::
 
 :::note[Android]
-On Android the **Export** menu offers the same three choices, and the Programs screen has the same **Add a Program You Were Sent** button. Sets, Reps and Rest have the same ranges.<!-- since 1.5 --> An imported program is held to the same limits of 50 reps, 3,600 seconds and 10,000 meters.<!-- /since -->
+On Android the **Export** menu offers the same three choices, and the Programs screen has the same **Add a Program You Were Sent** button. Sets, Reps and Rest have the same ranges.<!-- since 1.5 --> An imported program is held to the same limits of 50 reps, 3,600 seconds and 10,000 meters. A swap on Android keeps the number whatever the new movement is, and a new row starts at 3.<!-- /since -->
 :::
 
 ## Share a workout
