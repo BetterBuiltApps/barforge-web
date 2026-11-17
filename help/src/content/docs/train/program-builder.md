@@ -70,6 +70,12 @@ Your programs appear under **Custom and Imported** on the Programs screen, where
 
 The **Export** menu on a program offers **Print Program**, **Save as PDF** and **Send to Another Athlete (.liftinglab)**, a file anyone with Lifting Lab can open. To add a program someone sent you, tap **Add a Program You Were Sent** at the foot of the Programs screen and choose the file.
 
+<!-- since 1.5 -->
+
+Each set keeps the range of its own unit when a program is imported. A counted lift is held to 50 reps, a timed hold such as a plank to 60 minutes, and a distance to 10,000 meters, so a 60 second plank or a 3000 meter run arrives as your friend wrote it. A value above its limit is brought down to the limit, and a value below 1 is raised to 1, with a warning in both cases.
+
+<!-- /since -->
+
 :::caution
 If you delete a program that is running, the running copy ends with it. Sessions you already finished stay in your Log Book.
 :::
