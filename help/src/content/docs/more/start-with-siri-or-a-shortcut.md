@@ -36,7 +36,7 @@ On iPhone, a request made before first-time setup is finished waits until you fi
 4. Tap **Done**.
 
 :::note[Android]
-Android has no spoken phrases yet. Instead, touch and hold the Lifting Lab icon to see three shortcuts: **Start my session**, **Open Log Book** and **Next meet**. Drag any of them onto your home screen to keep it there.
+Android has no spoken phrases yet. Instead, touch and hold the Lifting Lab icon to see three shortcuts: **Start my session**, **Log Book** and **Next meet**. Drag any of them onto your home screen to keep it there.
 
 **Next meet** opens the Meet Planner. A shortcut tapped while a set is in progress or the camera is open does not interrupt it. A short message, **Finish or leave this workout first**, tells you it was skipped. A shortcut tapped before first-time setup is finished does nothing.
 :::

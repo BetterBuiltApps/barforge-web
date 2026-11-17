@@ -100,7 +100,7 @@ The Log Book is a newest-first timeline grouped by month. It holds your sessions
 - Tap a session to see summary numbers and every set grouped by exercise. Filmed sets link to their bar path. Warm-up sets stay in the list, labelled in words such as **Warm-up 2**, so you can read back how you worked up to the bar.
 - Switch between **List** and **Calendar** to see trained days in a month view.
 - Use the notes button to write a reflection. After 28 days the app suggests taking stock.
-- To delete a workout, press and hold its row, or use the menu on its detail screen. You are asked to confirm. A PR you set in that session, your Apple Health workout and any bar-path clip are kept.<!-- since 1.5 --> If the workout belonged to a program, that day goes back on your schedule so you can train or skip it. If it was the last day of a finished program, the program opens again to take it.<!-- /since -->
+- To delete a workout, press and hold its row, or use the menu on its detail screen. You are asked to confirm. A PR you set in that session, your Apple Health workout (Health Connect on Android) and any bar-path clip are kept.<!-- since 1.5 --> If the workout belonged to a program, that day goes back on your schedule so you can train or skip it. If it was the last day of a finished program, the program opens again to take it.<!-- /since -->
 
 :::note[Android]
 Press and hold works the same on Android: the menu on a Log Book row offers share and export, and Delete Workout.

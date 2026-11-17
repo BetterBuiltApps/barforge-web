@@ -153,7 +153,7 @@ Keep filming through the jerk and include the overhead hold, until the bar is st
 
 <!-- since 1.5 -->
 
-The technique grade is marked at a grading level: **Learning**, **Standard** (the default) or **Advanced**. Change it from the chip on the grade card, or on iPhone in **Settings** under Film Room.
+The technique grade is marked at a grading level: **Learning**, **Standard** (the default) or **Advanced**. Change it from the chip on the grade card, or in **Settings** under Film Room, on iPhone and on Android.
 
 - **Learning** is the most forgiving. Every part of the grade allows a wider margin, and catch depth is coached but not graded, so a power catch while you are learning does not cost points.
 - **Standard** grades catch depth against the lift you tagged.

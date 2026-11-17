@@ -9,6 +9,8 @@ covers:
   - LiftingLab/Features/Train/Complex/ComplexSequenceRow.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/TrainDashboardScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/session/ActiveSessionScreen.kt
+  - LiftingLab/Features/Train/Session/SetQuantityControl.swift
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/session/SetQuantityControl.kt
   - LiftingLab/App/LaunchReconciler.swift
   - LiftingLab/Features/Train/Session/ActiveSessionModel.swift
 verified_for: "1.5"
@@ -70,7 +72,7 @@ The session shows one set at a time. You see the exercise, the weight in large t
 To log a set:
 
 1. Check the weight. Tap the number to type a new one, or use the minus and plus buttons to step to the next weight your plates can build.
-2. Check **Reps done**. Left alone, it counts the full target if you make the lift and zero if you miss. Nudge it if you did more or fewer.
+2. Check **Reps done**. Left alone, it counts the full target if you make the lift and zero if you miss. Nudge it if you did more or fewer.<!-- since 1.5 --> The count stops at 50.<!-- /since -->
 3. Tap **Made** or **Miss**.
 4. If you miss, you can tag what went wrong. The app then suggests causes, drills and cues for that fault.<!-- since 1.5 --> Tagged misses also count in [Technique Doctor](/help/train/technique-doctor/).<!-- /since -->
 
@@ -85,6 +87,8 @@ The same question appears after Made, and the effort row is scrolled into view a
 :::
 
 <!-- /since -->
+
+Not every set is a weight. A bodyweight movement such as a pull-up shows the rep count as the big number, with no bar and no plates. A timed hold, such as a plank or an L-sit, shows a clock instead: tap **Start**, then **Pause** or **Resume**, and **Reset** clears it. You can also tap the time to type the seconds. A distance piece shows the distance in kilometers or miles to match your kg or lb setting, with buttons to step it or a tap to type it.<!-- since 1.5 --> Android has the same controls.<!-- /since -->
 
 If you change a weight and make the lift, the remaining sets of that exercise move by the same amount, so you do not have to retype it each time.
 
@@ -128,7 +132,7 @@ Switching the view on and off mid-session never changes your logged sets.
 
 ## Finish
 
-When every set is done, tap **Finish Session**. You can end early with **Cut It Short**, which saves what you have logged.<!-- since 1.5 --> In a workout you built yourself, on iPhone, these buttons stay pinned to the bottom of the screen, including while you are inside an exercise. In a program day they sit at the end of the exercise list.<!-- /since --><!-- since 1.5 --> If you have not logged a single set, there is nothing to save, so the same button reads **Discard** and removes the workout instead of counting it as done. A program day you discard goes back on your schedule.<!-- /since --> A celebration screen shows any new records. From there, tap **Done** to leave, **Log how it went** to add a note, or **Share Workout**. The note is optional and stays available from the Log Book.
+When every set is done, tap **Finish Session**. You can end early with **Cut It Short**, which saves what you have logged.<!-- since 1.5 --> In a workout you built yourself, on iPhone, these buttons stay pinned to the bottom of the screen, including while you are inside an exercise. In a program day they sit at the end of the exercise list.<!-- /since --><!-- since 1.5 --> If you have not logged a single set, there is nothing to save, so the same button reads **Discard** and removes the workout instead of counting it as done. A program day you discard goes back on your schedule.<!-- /since --> A celebration screen shows any new records. From there, tap **Done** to leave, **Log the Damage** to add a note (it reads **Edit your note** once you have written one), or **Share Workout**. The note is optional and stays available from the Log Book.
 
 Changed your mind about a workout? The finish menu also offers **Discard Workout**, which asks before deleting.
 

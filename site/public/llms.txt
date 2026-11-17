@@ -24,6 +24,7 @@
 ## Links
 
 - [Home](https://liftinglab.app/): the full product overview, FAQ and pricing.
+- [How-to guides](https://liftinglab.app/help/): step-by-step help for iPhone and Android.
 - [Privacy policy](https://liftinglab.app/privacy/)
 - [Terms of service](https://liftinglab.app/terms/)
 - [Lifting Lab on the App Store](https://apps.apple.com/us/app/lifting-lab-weightlifting/id6804514003)
