@@ -115,7 +115,7 @@ Distances, such as a run, are shown in kilometres or miles to match your kg or l
 
 ## Edit sets and weights
 
-Each exercise has steppers for sets and reps. Percentage work shows a percent of your record for that lift, and effort-based work shows a target effort rating (RPE, a 1-10 scale of how hard a set feels).<!-- since 1.5 --> A cardio piece, such as a row, a bike or a run, has a Minutes stepper instead, from 5 to 60 in steps of 5.<!-- /since -->
+Each exercise has steppers for sets and reps. Percentage work shows a percent of your record for that lift, and effort-based work shows a target effort rating (RPE, a 1-10 scale of how hard a set feels).<!-- since 1.5 --> A cardio piece, such as a row, a bike or a run, has a Minutes stepper instead, from 5 to 60 in steps of 5.<!-- /since --><!-- since 1.5 --> A hold, such as a plank or an L-sit, has a **Time** stepper instead of Reps, from 5 to 600 seconds in steps of 5 and shown as minutes and seconds, for example 0:40. When the exercise is a Pyramid with more than one set, the stepper is called **First hold**. The Reps stepper on a counted lift goes up to 50.<!-- /since -->
 
 Each loaded exercise also has a **Pyramid** switch. When it is on, the sets climb or descend like a ladder instead of repeating one weight. Low-rep work such as doubles and singles holds its reps and ramps the weight.
 

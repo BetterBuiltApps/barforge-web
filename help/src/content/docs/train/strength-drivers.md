@@ -12,6 +12,10 @@ covers:
   - LiftingLab/Features/Train/Session/DriverNudgeBanner.swift
   - LiftingLab/Domain/Progression/StrengthDrivers.swift
   - LiftingLab/Domain/Progression/StrengthDriversCopy.swift
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/StrengthDriversHubScreen.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/DriverDetailScreen.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/StrengthDriversService.kt
+  - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/progression/StrengthDriversCopy.kt
 verified_for: ""
 since: "1.5"
 ---
@@ -61,6 +65,10 @@ Before it can tell you anything, the app needs:
 - **Apple Health** for sleep, resting heart rate and HRV. Turn on **Suggest readiness** under Settings, then Apple Health. If it is off, the app says: "Connect Apple Health to see if sleep and recovery matter for you." The app reads up to a year of this history, and it reads it only when that switch is on.
 
 Until there is enough data, the tile says how many more weeks it needs.
+
+:::note[Android]
+On Android the sleep, resting heart rate and HRV come from Health Connect instead of Apple Health, and the message reads "Connect Health Connect to see if sleep and recovery matter for you." Tap **Connect Health Connect** under **To learn more** on the What's moving your lifts screen. That also turns on **Suggest readiness**, which you can switch off later in Settings. Health Connect hands over only the last 30 days unless you also allow older data, so if you have not, the screen offers **Read older Health Connect data**. Until it has enough history, sleep, resting heart rate and HRV stay on "keep logging".
+:::
 
 ## Why most things say Fine
 
