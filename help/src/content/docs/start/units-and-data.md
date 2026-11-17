@@ -77,10 +77,14 @@ The three files are:
 
 Weights in the files appear in kilograms and in your chosen unit.
 
+The day columns in Lift Summary (PR Date, Training Max As Of, First Trained and Last Trained) are your own calendar days, in your phone's time zone. A session you did on a Tuesday morning is dated Tuesday, even if you are east of Greenwich and it was still Monday there.
+
+If the app cannot prepare a file for the share sheet, for example when the device is out of storage, nothing is sent and a banner tells you so. Your training log is not affected: free some space and export again.
+
 A dumbbell set's weight is per hand, so its exercise is named with "(dumbbell, per hand)", for example Push Press (dumbbell, per hand). When you import such a file again, those rows are listed as not matched rather than read as a barbell weight.
 
 :::note[Android]
-On Android, open **Locker**, then **Settings**, and tap **Export PRs, stats & history (CSV)** under **Data**. It sends all three files at once through the share sheet, with no screen in between and no way to pick a single file. The files have the same columns, including Metric and Quantity at the end of Training History.
+On Android, open **Locker**, then **Settings**, and tap **Export PRs, stats & history (CSV)** under **Data**. It sends all three files at once through the share sheet, with no screen in between and no way to pick a single file. The files have the same columns, including Metric and Quantity at the end of Training History, and the same day columns in your own time zone. If the file cannot be prepared, Android shows its save-failure banner, which opens with **Couldn't save your last change** and names what it was doing, for example "While exporting your training data". Nothing is sent, and your log is not affected.
 :::
 
 :::note

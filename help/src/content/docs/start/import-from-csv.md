@@ -36,6 +36,7 @@ For a spreadsheet, **Date**, **Exercise**, **Reps** and **Weight** are needed, a
 - **Timed, distance and bodyweight movements** are skipped.
 - **Sets you already have** are skipped. A set counts as a duplicate when the day, the exercise and the set number are the same. Without a **Set** column, the set number is the row's order for that exercise in that session. A skipped row still counts, so you can fix a name in the file and import again without adding a set twice.
 - **Dates written as 3/4/2025** are read in your phone's date order. When that was a guess, the review screen warns you.
+- **A date or time that does not exist**, such as 30 February or 24:00, is never moved to a neighbouring day. The row is skipped as **Date could not be read** and appears in the review's skipped list, so you can correct the file and import again.
 - Only the first 20,000 rows of a file are read, and the review warns you if there are more.
 
 ## Review, then import

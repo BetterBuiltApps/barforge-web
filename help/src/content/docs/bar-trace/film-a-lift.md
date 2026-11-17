@@ -117,7 +117,7 @@ The bar path is traced on your phone<!-- since 1.5 -->, the same way on iPhone a
 4. What to fix first, with drills that address it.<!-- since 1.5 --> To see which faults keep coming back across your lifts, open [Technique Doctor](/help/train/technique-doctor/).<!-- /since -->
 5. Speed, phase and position details. Tap a row or drag the graph to jump to that moment in the video.
 
-Once you have two or more lifts of the same type, numbers are compared with your own average.<!-- since 1.5 --> Speed and bar height depend on the weight, so those are only compared with your clips within about 10% of this weight (90 to 110 kg around a 100 kg lift), and a new Speed PR is judged the same way: a light clip never holds the record for a heavy attempt. Peak speed counts only the upward pull, never a bar you dropped.<!-- /since --> If something could not be read, the card says why.
+Once you have two or more lifts of the same type, numbers are compared with your own average.<!-- since 1.5 --> Speed and bar height depend on the weight, so those are only compared with your clips within about 10% of this weight (90 to 110 kg around a 100 kg lift), and a new Speed PR is judged the same way: a light clip never holds the record for a heavy attempt. Peak speed counts only the upward pull, never a bar you dropped. A number is only called "vs your average" once at least two of your other clips have that number, because one other clip is not an average. A clip that is missing a number, for example a peak speed that could not be read, does not count towards it.<!-- /since --> If something could not be read, the card says why.
 
 <!-- since 1.5 -->
 
@@ -161,11 +161,13 @@ The technique grade is marked at a grading level: **Learning**, **Standard** (th
 
 The same clip never scores lower at a gentler level, so moving from Advanced to Learning can only keep or raise the grade. The referee lights are not affected: they follow the competition rules at every level.
 
+The grades on the Bar Trace tab follow the level too: change it, go back to the list, and every clip is graded at the new level, not the one it was first graded at.
+
 <!-- /since -->
 
 ## Share, compare and manage
 
-- **Share** makes a vertical clip with the trace and stats on it.<!-- since 1.5 --> On iPhone, a NEW PR badge is added only when the clip is of a made single, filmed from a logged set, that set your record. A miss, a tie of your best, or a clip imported on its own never carries it. The Android share clip has no PR badge.<!-- /since -->
+- **Share** makes a vertical clip with the trace and stats on it.<!-- since 1.5 --> On iPhone, a NEW PR badge is added only when the clip is of a made single, filmed from a logged set, that set your record. A miss, a tie of your best, or a clip imported on its own never carries it. The Android share clip has no PR badge. If the rendered clip is gone before it can be shared, nothing is sent and a banner says the file could not be prepared (on Android, the save-failure banner).<!-- /since -->
 - **Compare** overlays two analyses (Pro).<!-- since 1.5 --> The Compare button appears on the Bar Trace tab once you have two analyses. On a Free plan it is still there: tap it and Lifting Lab shows what Pro adds.<!-- /since --> Once you pick the first clip, only clips of the same exercise are listed, so you can never compare two different lifts.<!-- since 1.5 --> A change too small to measure is not called better or worse, and when the two lifts were at different weights, bar speed is shown but not judged, because the bar moves slower as the weight goes up.<!-- /since -->
 - **Re-analyze** and **Delete** are in the menu on the result screen.
 

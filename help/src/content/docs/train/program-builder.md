@@ -95,6 +95,10 @@ The file holds the exercises, sets, reps and percentages or effort levels, so lo
 
 A file from a newer version of Lifting Lab, or one that uses an exercise your friend's version does not have, is not imported, and the app asks them to update. A routine that cannot be read has no Share option.
 
+A file that was edited by hand, or damaged, is made safe on the way in. A set count, rep count, time, distance or intensity beyond what the builder allows is brought back to the nearest allowed value, and a complex that cannot be lifted as written is replaced by its main lift. Either way the import message tells your friend what was changed. This is the same on iPhone and Android.
+
+If Lifting Lab cannot prepare the file to send, for example because the device is out of storage, nothing is sent and a banner says so. On iPhone it reads **Couldn't prepare the file to share**. On Android it is the save-failure banner, **Couldn't save your last change**, with the step it was on. Your programs are not affected. The same banner appears when a program PDF, a program file (.liftinglab) or a session file cannot be prepared.
+
 :::note[Android]
 Long-press the routine card in the same way. The menu item has the same name, and the file goes out through Android's share sheet, so the apps offered are the ones on your phone (AirDrop is iPhone only). Tapping a received file in Files, a chat or an email opens it in Lifting Lab. Workout files work between iPhone and Android in both directions.
 :::
