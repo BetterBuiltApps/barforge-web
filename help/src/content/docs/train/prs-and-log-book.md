@@ -44,7 +44,7 @@ To add a record by hand, use the new PR button, enter the weight, and set the re
 
 ## Are you getting stronger?
 
-You do not need to test a 1RM to see progress. The **Strength** tile on the Train tab, just under the start of your workout, shows your overall trend over the last 12 weeks, such as **+6% getting stronger**, **holding steady** or **down a little**. Tap it to open the PR Tracker.
+You do not need to test a 1RM to see progress. The **Strength** tile on the Train tab, just under the start of your workout, shows your overall trend over the last 12 weeks, such as **+6% getting stronger**, **holding steady** or **down a little**. Tap it to open the PR Tracker. To see what is going along with the trend, tap **What's moving your lifts** on the tile. See [See what is moving your lifts](/help/train/strength-drivers/).
 
 The trend comes from your best sets of 1 to 5 reps in the snatch, clean and jerk, front squat, back squat and strict press. The app estimates the single each of those sets suggests and follows the best one for each lift, week by week. Warm-ups, misses, complexes and dumbbell work are left out. Each lift is compared with its own first week in that period, and the trend is the average across your lifts. A lift counts at its best from the last four weeks, so one light or deload week does not read as lost strength. A lift joins the trend once you have trained it in two different weeks, and it is left out if you have not trained it in the last four weeks. If your first week in the period was unusually light for a lift, its gain will look bigger than it is. The result is an estimate, and it is never saved as a record.
 
