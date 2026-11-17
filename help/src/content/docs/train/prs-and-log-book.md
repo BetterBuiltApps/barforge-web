@@ -8,6 +8,7 @@ covers:
   - LiftingLab/Features/Train/PRTracker/PRTrackerView.swift
   - LiftingLab/Features/Train/History/LogBookView.swift
   - LiftingLab/Features/Train/History/SessionDetailView.swift
+  - LiftingLab/Domain/RecentWin.swift
   - LiftingLab/Domain/Complex/ComplexHistory.swift
   - LiftingLab/App/SessionDeletion.swift
   - LiftingLab/Features/Train/History/VBTImport/VBTImporter.swift
@@ -62,7 +63,7 @@ Your 1RM is always a single. When you make a heavier set during a session, the a
 
 <!-- since 1.5 -->
 
-The **NEW PR** banner and the **Recent PRs** strip on the Train tab only show a real record: a single heavier than your best on the day it was set. If you add an older or lighter single by hand, it goes into the lift's history but is not celebrated and does not appear as a recent PR.
+The **NEW PR** banner and the **Recent PRs** strip on the Train tab only show a real record: a single heavier than your best on the day it was set. If you add an older or lighter single by hand, it goes into the lift's history but is not celebrated and does not appear as a recent PR. A 1RM you save from the **1RM Estimator** is never celebrated either, because nobody lifted it, and it does not stop a lighter single you really lift from showing as a recent PR.
 
 A record follows the set that earned it. If you step back to a set you just logged and correct the weight or the reps, or log it again as a miss, the record the session saved for it is corrected or removed to match. A record from an earlier session, or one you added by hand, is never touched. A corrected record is dated from the moment you made the correction, so it stays matched to its set.
 
