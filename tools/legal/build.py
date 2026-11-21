@@ -6,6 +6,7 @@ the published page cannot drift from the document of record. legal/*.md is the
 source of truth. Edit that, rerun this, commit both.
 
     python3 tools/legal/build.py
+    RELEASE=1 python3 tools/legal/build.py --check   # deploy gate, writes nothing
 
 Writes site/privacy/index.html and site/terms/index.html. Those are Vite
 multi-page entry points (see site/vite.config.js), so they build to
@@ -18,11 +19,22 @@ structure. The generator that produced these documents emits <strong> for every
 heading and <br> for every gap, which leaves a 15KB page with no heading
 outline at all: a screen reader user gets one undifferentiated wall and no way
 to jump between sections. Here the bold section titles become real <h2>s. No
-wording is altered, reordered, added, or removed.
+wording is altered, reordered, added, or removed. Two structural extras: each
+<h2> gets an id slugged from its text (so the contact form can link to
+/privacy/#if-you-contact-us), and <!-- HTML comments --> in the markdown (owner
+TODOs) are dropped rather than printed.
+
+**Placeholder gate.** The privacy contact email is the literal placeholder
+PLACEHOLDER (see below) until the owner supplies a real address. Every run
+looks for it in legal/*.md. With RELEASE=1 in the environment it is an error
+(exit 1); otherwise a warning. `--check` runs only that gate, without writing
+pages; deploy.yml runs it with RELEASE=1 so a placeholder can never go live.
 """
 
 import html
+import os
 import re
+import sys
 import subprocess
 from pathlib import Path
 
@@ -47,6 +59,10 @@ PAGES = [
     },
 ]
 
+# The privacy email until the owner supplies a real one. Must never deploy.
+PLACEHOLDER = "PRIVACY_EMAIL_PLACEHOLDER"
+COMMENT = re.compile(r"<!--.*?-->\n?", re.S)
+
 LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)]+)\)")
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 
@@ -67,6 +83,27 @@ def inline(text: str) -> str:
                   f'target="_blank">{m.group(1)}</a>',
         out)
     return BOLD.sub(r"<strong>\1</strong>", out)
+
+
+def slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def check_placeholders() -> int:
+    """Warn, or with RELEASE=1 fail, if a legal document still carries the
+    placeholder privacy email."""
+    release = os.environ.get("RELEASE") == "1"
+    hits = []
+    for meta in PAGES:
+        for n, line in enumerate((ROOT / meta["src"]).read_text().splitlines(), 1):
+            if PLACEHOLDER in line:
+                hits.append(f"{meta['src']}:{n}")
+    if not hits:
+        return 0
+    level = "error" if release else "warning"
+    print(f"{level}: placeholder {PLACEHOLDER} still present (replace the privacy "
+          f"email before deploy): {', '.join(hits)}", file=sys.stderr)
+    return 1 if release else 0
 
 
 def convert(md: str) -> str:
@@ -110,7 +147,7 @@ def convert(md: str) -> str:
         if whole:
             flush_para(), flush_list()
             text = whole.group(1).strip()
-            blocks.append(f"<h2>{inline(text)}</h2>")
+            blocks.append(f'<h2 id="{slug(text)}">{inline(text)}</h2>')
             continue
 
         flush_list()
@@ -125,18 +162,8 @@ def page(body: str, meta: dict, updated: str) -> str:
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<!-- Google tag (gtag.js) with Consent Mode v2 defaults (denied until the
-     visitor accepts in the /consent.js banner). Kept in sync with the same
-     snippet in index.html. -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('consent', 'default', {{analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'}});
-  try {{ if (localStorage.getItem('ll-analytics-consent') === 'granted') gtag('consent', 'update', {{analytics_storage: 'granted'}}); }} catch (e) {{}}
-  gtag('js', new Date());
-  gtag('config', 'G-KQ7CEKMPMJ');
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CEKMPMJ"></script>
+<!-- Google Analytics loads only after the visitor accepts, from /consent.js
+     (Consent Mode "basic"). No gtag snippet here. Kept in sync with index.html. -->
 <script src="/consent.js" defer></script>
 <title>{meta['title']}: Lifting Lab</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -190,9 +217,12 @@ def page(body: str, meta: dict, updated: str) -> str:
 
 
 def main() -> int:
+    status = check_placeholders()
+    if status or "--check" in sys.argv[1:]:
+        return status
     for meta in PAGES:
         src = ROOT / meta["src"]
-        md = src.read_text()
+        md = COMMENT.sub("", src.read_text())
 
         # The effective date is stated inside each document. Read it back out
         # rather than stamping today's date, so regenerating the page does not
