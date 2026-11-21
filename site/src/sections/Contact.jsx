@@ -109,6 +109,12 @@ export function Contact() {
               >
                 {note}
               </p>
+              {/* Notice at the point of collection (GDPR Art. 13). */}
+              <p className="contact-privacy">
+                Sending this form passes your name, email address and message to Web3Forms, a
+                form-relay service that emails it to the developer. It is used only to reply to
+                you. <a href={`${SITE.links.privacy || '/privacy/'}#if-you-contact-us`}>How we handle it</a>
+              </p>
             </div>
           </form>
         </Reveal>

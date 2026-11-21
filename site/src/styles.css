@@ -830,3 +830,12 @@ a:hover { color: var(--amber); }
 /* --miss on the --surface panel is 4.4:1, just under 4.5; lifted toward white
    so 15px status text clears AA. */
 .contact-status[data-state='error'] { color: color-mix(in srgb, var(--miss) 75%, white); }
+
+/* Privacy notice beside Send: always its own full-width line under the button. */
+.contact-privacy {
+  margin: 0;
+  flex: 1 1 100%;
+  font: var(--type-caption);
+  color: var(--text-secondary);
+}
+.contact-privacy a { color: var(--amber); text-decoration: underline; text-underline-offset: 3px; }
