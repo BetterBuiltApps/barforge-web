@@ -76,14 +76,20 @@ If you use Lifting Lab's coaching features, you can export a training program or
 **What we do not do**
 
 *   We do not operate a server that stores your training data.
-*   We do not use third-party analytics, advertising, or tracking SDKs of any kind.
-*   We do not use cookies (Lifting Lab is a native app, not a website).
+*   We do not use third-party analytics, advertising, or tracking SDKs of any kind in the app. Our website is different: see "Our website" below.
+*   We do not use cookies in the app (Lifting Lab is a native app). Our website, liftinglab.app, does set cookies: see "Our website" below.
 *   We do not track your precise location.
 *   We do not sell your personal information, and we do not share it with third parties for their own purposes.
 
+**Our website**
+
+The Lifting Lab website (liftinglab.app) is separate from the app. It uses Google Analytics 4, a web analytics service from Google, to count visits and to see which pages and demo videos people look at. Google Analytics sets cookies in your browser and collects information such as the pages you view, the demo videos you play, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the app, which sends us nothing.
+
+You can stop Google Analytics from collecting data about your visits with your browser's tracking protection or cookie settings, or with [Google's opt-out browser add-on](https://tools.google.com/dlpage/gaoptout). Using the app does not involve the website's analytics in any way.
+
 **If you contact us**
 
-If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, we keep your message and the contact details you provide so we can respond to you. We do not use them for marketing unless you separately agree to that, and we do not share them with anyone else.
+If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, we keep your message and the contact details you provide so we can respond to you. The form is delivered by Web3Forms, a form-relay service that passes your message to us by email. We do not use your message or details for marketing unless you separately agree to that, and we do not share them with anyone else.
 
 **Children's privacy**
 
