@@ -63,7 +63,7 @@ export function Contact() {
           <SiteHead
             title="Have a question?"
             max={420}
-            body="Got a question the FAQ didn't answer? Ask it here. Bug reports and feature requests land in the same inbox, and a real person reads every message: a software engineer and weightlifter who built Lifting Lab to run his own training."
+            body="Got a question the FAQ didn't answer? Ask it here. Bug reports, feature requests and privacy requests (start the message with “Privacy request”) land in the same inbox, and a real person reads every message: a software engineer and weightlifter who built Lifting Lab to run his own training."
           />
 
           <form className="contact-form" onSubmit={onSubmit}>
@@ -108,6 +108,12 @@ export function Contact() {
                 data-state={status}
               >
                 {note}
+              </p>
+              {/* Notice at the point of collection (GDPR Art. 13). */}
+              <p className="contact-privacy">
+                Sending this form passes your name, email address and message to Web3Forms, a
+                form-relay service that emails it to the developer. It is used only to reply to
+                you. <a href={`${SITE.links.privacy || '/privacy/'}#if-you-contact-us`}>How we handle it</a>
               </p>
             </div>
           </form>

@@ -131,6 +131,11 @@ export function SiteFooter() {
           {[['Help', SITE.links.help], ['Privacy', SITE.links.privacy], ['Terms', SITE.links.terms]]
             .filter(([, href]) => href)
             .map(([label, href]) => <a key={label} href={href} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44 }}>{label}</a>)}
+          {/* Reopens the analytics consent banner. The click is handled by
+              site/public/consent.js through a delegated listener. */}
+          <button type="button" data-cookie-settings style={{
+            display: 'inline-flex', alignItems: 'center', minHeight: 44, color: 'var(--text-secondary)', textDecoration: 'underline',
+          }}>Cookie settings</button>
         </nav>
         <p style={{ margin: 0, maxWidth: '68ch', font: 'var(--type-caption)', color: 'var(--text-tertiary)' }}>
           Built for competitive weightlifting. Sinclair coefficients are the official 2021 to 2024 IWF values.

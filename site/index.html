@@ -1,16 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js). GA4 property "Lifting Lab" under the David Hicka
-     analytics account, separate from toonandtails-web so traffic never mixes. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CEKMPMJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KQ7CEKMPMJ');
-</script>
 <meta charset="utf-8" />
+<!-- Google Analytics (GA4) is NOT loaded here. Consent Mode "basic": the
+     banner script below loads gtag.js only after the visitor accepts (or on a
+     stored Accept), so nothing from Google is requested before consent. The
+     same single tag is in tools/legal/build.py. -->
+<script src="%BASE_URL%consent.js" defer></script>
 <title>Lifting Lab: Weightlifting Training App for iPhone and Android</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="description" content="Lifting Lab is a weightlifting app for the snatch and clean & jerk. It programs your cycle, analyzes your lifts frame by frame from phone video, tells you why it missed, and runs meet day. For iPhone and Android." />

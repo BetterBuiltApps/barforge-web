@@ -6,9 +6,11 @@ This privacy policy explains how Better Built Apps LLC ("Better Built Apps," "we
 
 *   Name: Better Built Apps LLC
 *   Address: 7901 4th St N STE 300, St. Petersburg, FL 33702
-*   Contact: the form at the bottom of [liftinglab.app](https://liftinglab.app/#contact)
+*   Privacy contact: {{PRIVACY_EMAIL}}
+*   Privacy requests and other questions: the [contact form](https://liftinglab.app/#contact) at the bottom of liftinglab.app. Start your message with "Privacy request" so we can find it.
 
-For any question about this policy or your data, use that form.
+
+Better Built Apps LLC is the controller for the personal data described in this policy. For any question about this policy or your data, email us at the privacy address above or use the form.
 
 **There is no account, and no server holding your training data**
 
@@ -28,8 +30,12 @@ On Android, your data is stored on your device, in the app's local database and 
 On iPhone, with your permission, Lifting Lab reads the following from Apple Health:
 
 *   Heart rate, to power the adaptive rest timer during a workout.
-*   Heart rate variability, resting heart rate, and sleep, to suggest a readiness level before a session.
+*   Heart rate variability, resting heart rate, and sleep, to suggest a readiness level before a session, to hold a program day's suggested level down when last night's recovery is clearly low, and to show how sleep, heart rate variability, and resting heart rate relate to your lifts in Strength Drivers.
 *   Your latest bodyweight, to keep your profile current.
+
+For Strength Drivers, Lifting Lab may read up to about a year of your daily sleep, heart rate variability, and resting heart rate history from Apple Health, so it can compare weeks. These readings are processed on your device and kept only in the app's memory; they are not saved in the app's data.
+
+If you choose to use a bodyweight reading from Apple Health, that one value is saved in the app's data with your other bodyweight entries, and so it is also synced to your own private iCloud account when iCloud sync is available, like the rest of your training data.
 
 With your permission, Lifting Lab also writes your finished workouts to Apple Health, so they appear in the Fitness app and count toward your Activity rings.
 
@@ -38,8 +44,12 @@ Every one of these is optional and can be turned off individually in Settings. N
 On Android, Lifting Lab connects to Health Connect, Android's on-device health data store. With your permission, it reads:
 
 *   Heart rate, to power the adaptive rest timer during a workout.
-*   Heart rate variability, resting heart rate, and sleep, to suggest a readiness level before a session.
+*   Heart rate variability, resting heart rate, and sleep, to suggest a readiness level before a session, to hold a program day's suggested level down when last night's recovery is clearly low, and to show how sleep, heart rate variability, and resting heart rate relate to your lifts in Strength Drivers.
 *   Your weight, to keep your bodyweight current.
+
+By default, Health Connect lets an app read only about the last 30 days of data. Where your phone supports it, Lifting Lab also asks for permission to read older Health Connect data (up to about a year of daily sleep, heart rate variability, and resting heart rate), used only for the Strength Drivers trends. Without that permission, Strength Drivers works with the shorter history Health Connect allows by default. These readings are processed on your device and are not saved in the app's data.
+
+If you choose to use a weight reading from Health Connect, that one value is saved in the app's database on your device with your other bodyweight entries.
 
 With your permission, Lifting Lab also writes your finished workouts to Health Connect as exercise sessions with active calories burned, so other health apps you use can show them.
 
@@ -76,24 +86,61 @@ If you use Lifting Lab's coaching features, you can export a training program or
 **What we do not do**
 
 *   We do not operate a server that stores your training data.
-*   We do not use third-party analytics, advertising, or tracking SDKs of any kind in the app. Our website is different: see "Our website" below.
-*   We do not use cookies in the app (Lifting Lab is a native app). Our website, liftinglab.app, does set cookies: see "Our website" below.
+*   We do not use third-party analytics, advertising, or tracking SDKs of any kind in the Lifting Lab apps. The apps do not use Google Analytics. Our website is separate: see "Our website" below.
+*   We do not use cookies in the apps (Lifting Lab is a native app). Our website, liftinglab.app, does set cookies: see "Our website" below.
 *   We do not track your precise location.
 *   We do not sell your personal information, and we do not share it with third parties for their own purposes.
 
 **Our website**
 
-The Lifting Lab website (liftinglab.app) is separate from the app. It uses Google Analytics 4, a web analytics service from Google, to count visits and to see which pages and demo videos people look at. Google Analytics sets cookies in your browser and collects information such as the pages you view, the demo videos you play, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the app, which sends us nothing.
+The Lifting Lab website (liftinglab.app) is separate from the iOS and Android apps. It uses Google Analytics 4, a web analytics service from Google, to understand how much traffic the site gets, which pages people visit, and how they use the site. Google Analytics uses cookies to collect information such as the pages you visit, interactions such as playing a demo video, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the apps.
 
-You can stop Google Analytics from collecting data about your visits with your browser's tracking protection or cookie settings, or with [Google's opt-out browser add-on](https://tools.google.com/dlpage/gaoptout). Using the app does not involve the website's analytics in any way.
+The Lifting Lab apps do not use Google Analytics or any other third-party analytics, and they send nothing to the website's analytics.
+
+When you first visit the website, a banner asks whether you accept analytics. The website loads Google Analytics only after you choose Accept; from then on it sets cookies and records page views and interactions such as video plays. Until you choose, or if you choose Decline, Google Analytics is not loaded at all, so it sets no cookies and Google receives nothing from it. Your choice is saved in your browser so the banner does not ask again. You can change it at any time with the "Cookie settings" link at the bottom of the website's home, Privacy, and Terms pages. Choosing Decline after you had accepted also removes the Google Analytics cookies the website set.
+
+You can also block or delete cookies in your browser settings, or install [Google's opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
+
+Google Analytics data is not linked to your name or any account, so we cannot look it up by person. Google keeps it for the retention period set in our Google Analytics account (2 months), after which it is deleted.
 
 **If you contact us**
 
-If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, we keep your message and the contact details you provide so we can respond to you. The form is delivered by Web3Forms, a form-relay service that passes your message to us by email. We do not use your message or details for marketing unless you separately agree to that, and we do not share them with anyone else.
+If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, the form sends your name, email address, and message. It is relayed to us by email by Web3Forms, an India-based form service that acts as our processor. Web3Forms may send your IP address and email address to the spam filters CleanTalk and Akismet, and may keep a copy of your submission for up to 3 years under its own terms (see its [privacy policy](https://web3forms.com/privacy)). If you email us directly, we receive your email address and message. We use these only to reply to you and handle your request. We do not use them for marketing, and we share them only with the service providers that carry them to us (see "Who receives data" below). We keep your messages for as long as we need to handle your request, and delete our copy (in the developer's inbox) no later than 12 months after our last exchange, unless you ask us to delete it sooner.
+
+**Our website hosting**
+
+The website is hosted on GitHub Pages, a service of GitHub, Inc. When you visit any page, GitHub's servers receive your IP address and browser details (user agent), as any web server does, and may keep them in server logs for security and operation. GitHub handles those logs under its own privacy statement; we do not receive or use them.
+
+**Legal bases**
+
+Where the EU or UK GDPR applies, we rely on these legal bases:
+
+*   The apps' features, including storing and analyzing your training data on your device: providing the service you asked for (performance of a contract). This processing happens on your device at your request.
+*   Reading or writing health data: your explicit consent, which you give in your device's health permission screen and can withdraw at any time in your device's settings.
+*   Subscriptions: performance of a contract. The purchase itself is handled by the store you buy through.
+*   Website analytics: your consent, given in the website's cookie banner. You can withdraw it at any time with "Cookie settings".
+*   Messages you send us: our legitimate interest in replying to you, or steps you ask us to take before entering into a contract.
+*   Website hosting logs: our legitimate interest in running a secure website.
+
+**Who receives data**
+
+We do not sell personal data. These are the only outside companies that receive any of it, and only for the purposes described:
+
+*   Apple, which runs the App Store (purchases) and, on iPhone, iCloud (your own private sync). Apple acts under its own terms and privacy policy.
+*   Google, which runs Google Play (purchases on Android). Google acts under its own terms and privacy policy.
+*   Google, which provides Google Analytics on our website, only after you accept analytics.
+*   GitHub, which hosts our website and receives its server logs.
+*   Web3Forms, which relays contact form messages to us by email, and the spam filters CleanTalk and Akismet it uses.
+
+**International transfers**
+
+We are based in the United States, and so are most of the service providers listed above. Web3Forms is based in India and runs on infrastructure from Amazon Web Services, Cloudflare and Hetzner; its Data Processing Agreement, which is part of its terms, uses Standard Contractual Clauses for transfers from the EEA, the UK and Switzerland. If you are in the EU, the UK, or elsewhere, information you send us or our website is transferred to the United States.
+
+For Google Analytics, Google LLC participates in the EU-U.S. Data Privacy Framework (and its UK extension), which the European Commission recognizes as providing adequate protection. For our other service providers, transfers rely on the safeguards in each provider's terms, such as standard contractual clauses where the provider offers them.
 
 **Children's privacy**
 
-Lifting Lab is not intended for children under 16 years of age, or a higher age of digital consent where one applies under local law. We do not knowingly collect personal information from children through the app, and because there is no account system, we have no practical way to collect it even if a child used the app directly.
+Lifting Lab is not intended for children under 13 years of age, and we do not knowingly collect personal information from children under 13. If you are under 16 years of age, or under a higher age of digital consent where one applies under local law, please use the app only with the permission of a parent or guardian. Because there is no account system, we have no practical way to collect a child's personal information even if a child used the app directly.
 
 Lifting Lab's coaching features let an adult coach enter and manage training information about the athletes they work with, and youth athletes are common in competitive weightlifting. If you are a coach using these features for an athlete who is a minor, you are responsible for that athlete's information: it is stored on your own device, under your control, and, as explained above, Better Built Apps LLC never receives a copy of it regardless of the athlete's age.
 
@@ -108,13 +155,29 @@ Because your training data lives on your device and, on iPhone, optionally in yo
 *   On Android, if Google's device backup is on, any backup copy is managed and deleted through your Google account and device backup settings.
 *   On Android, Health Connect data is managed in Health Connect, where you can review and delete it and withdraw Lifting Lab's access.
 
-Because we hold no copy of your training data, there is nothing on our end to delete when you take any of these steps, we simply never had it. The one thing we do hold is any correspondence you've sent us directly (for example, through our contact form), which we retain only as long as needed to handle it, and which you can ask us to delete at any time through that same [contact form](https://liftinglab.app/#contact).
+Because we hold no copy of your training data, there is nothing on our end to delete when you take any of these steps, we simply never had it. The one thing we do hold is any correspondence you've sent us directly (for example, through our contact form), which we keep only as long as needed to handle it and no longer than 12 months after our last exchange, and which you can ask us to delete at any time.
+
+**How long data is kept**
+
+*   App data stays on your device, and on iPhone in your own iCloud account if sync is on, until you delete it. We never hold a copy.
+*   Website analytics data is kept by Google Analytics for 2 months, then deleted.
+*   Messages you send us are deleted from our inbox no later than 12 months after our last exchange. Web3Forms may keep its own copy for up to 3 years, then deletes it automatically.
+*   Website server logs are kept by GitHub under its own policies.
 
 **Your privacy rights**
 
-Depending on where you live, you may have rights under laws like the EU/UK GDPR or the California Consumer Privacy Act (CCPA/CPRA), including the right to know what personal data is held about you, to correct it, to delete it, to receive a copy of it, and to object to or restrict certain processing.
+Depending on where you live, you may have rights under laws like the EU/UK GDPR or the California Consumer Privacy Act (CCPA/CPRA). Under the GDPR these are the rights to:
 
-For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. For anything we do hold (your correspondence with us, described above), reach us through the [contact form](https://liftinglab.app/#contact) and we will respond within the time required by applicable law. If you believe your rights have been violated, you may also contact your local data protection authority.
+*   access the personal data held about you and get a copy of it;
+*   correct it;
+*   delete it;
+*   restrict or object to how it is processed;
+*   receive it in a portable format (data portability);
+*   withdraw your consent at any time, where we rely on consent, without affecting what was done before.
+
+For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. The app can also export your sessions and programs as files. For anything we do hold (your correspondence with us, described above), use the [contact form](https://liftinglab.app/#contact) on our website (start your message with "Privacy request") or email {{PRIVACY_EMAIL}}. We will respond within one month, as the GDPR requires (we may extend this by up to two further months for complex requests, and will tell you if we do).
+
+If you believe your rights have been violated, you have the right to complain to a data protection supervisory authority. In the EU, that is the authority in the country where you live or work, or where you think the problem happened. In the UK, it is the Information Commissioner's Office (ICO). We would appreciate the chance to sort it out with you first.
 
 **Security**
 
@@ -124,8 +187,8 @@ Your training data benefits from the security of your device and, on iPhone, you
 
 We may update this policy as the app changes. We'll post the updated version here with a new effective date. If a change is significant, we'll make a reasonable effort to let you know inside the app.
 
-This privacy policy is effective as of 2026-11-08.
+This privacy policy is effective as of 2026-11-21.
 
 **Contact**
 
-Questions about this policy or your data: use the [contact form](https://liftinglab.app/#contact) at the bottom of our website.
+Questions about this policy or your data: use the [contact form](https://liftinglab.app/#contact) at the bottom of our website (start your message with "Privacy request" for a privacy request) or email {{PRIVACY_EMAIL}}.

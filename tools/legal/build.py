@@ -6,6 +6,7 @@ the published page cannot drift from the document of record. legal/*.md is the
 source of truth. Edit that, rerun this, commit both.
 
     python3 tools/legal/build.py
+    RELEASE=1 python3 tools/legal/build.py --check   # deploy gate, writes nothing
 
 Writes site/privacy/index.html and site/terms/index.html. Those are Vite
 multi-page entry points (see site/vite.config.js), so they build to
@@ -18,11 +19,24 @@ structure. The generator that produced these documents emits <strong> for every
 heading and <br> for every gap, which leaves a 15KB page with no heading
 outline at all: a screen reader user gets one undifferentiated wall and no way
 to jump between sections. Here the bold section titles become real <h2>s. No
-wording is altered, reordered, added, or removed.
+wording is altered, reordered, added, or removed. Two structural extras: each
+<h2> gets an id slugged from its text (so the contact form can link to
+/privacy/#if-you-contact-us), and <!-- HTML comments --> in the markdown (owner
+TODOs) are dropped rather than printed.
+
+**Privacy email.** The documents write {{PRIVACY_EMAIL}} (MARKER). The website
+renders it client-side from split data attributes (site/public/privacy-email.js)
+so the address is never in the HTML; the apps' import scripts substitute the real
+address. **Placeholder gate.** The old stand-in PLACEHOLDER must not return. Every run
+looks for it in legal/*.md. With RELEASE=1 in the environment it is an error
+(exit 1); otherwise a warning. `--check` runs only that gate, without writing
+pages; deploy.yml runs it with RELEASE=1 so a placeholder can never go live.
 """
 
 import html
+import os
 import re
+import sys
 import subprocess
 from pathlib import Path
 
@@ -47,6 +61,25 @@ PAGES = [
     },
 ]
 
+# The old stand-in for the privacy email. Must never deploy: the documents now
+# carry MARKER instead, and this gate fails if the stand-in comes back.
+PLACEHOLDER = "PRIVACY_EMAIL_PLACEHOLDER"
+
+# Where the documents say the privacy email. The website never prints the
+# address (the owner does not want it scraped for spam): this becomes an empty
+# <span> carrying the address in pieces, and /privacy-email.js joins them in the
+# browser. The in-app copies get the real address from their own import script.
+MARKER = "{{PRIVACY_EMAIL}}"
+# Split so this file, which is committed, does not hold the address either.
+_USER, _DOMAIN = "contact", "liftinglab.app"
+LEAKS = (_USER + "@" + _DOMAIN, _USER + "&#64;", _USER + "&commat;", _USER + "@")
+EMAIL_SPAN = (
+    f'<span class="privacy-email" data-u="{_USER}" data-d="{_DOMAIN.split(".")[0]}" '
+    f'data-t="{_DOMAIN.split(".")[1]}"><noscript>the email address we show when '
+    f'JavaScript is on (or use the contact form)</noscript></span>'
+)
+COMMENT = re.compile(r"<!--.*?-->\n?", re.S)
+
 LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)]+)\)")
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 
@@ -58,6 +91,7 @@ def inline(text: str) -> str:
     inert, then re-introduce only the tags this generator emits itself.
     """
     out = html.escape(text, quote=False)
+    out = out.replace(MARKER, EMAIL_SPAN)
     # The documents carry one raw <span> around the generator credit. It was
     # escaped a moment ago; unescape just that pair rather than allowing raw
     # HTML through generally.
@@ -67,6 +101,27 @@ def inline(text: str) -> str:
                   f'target="_blank">{m.group(1)}</a>',
         out)
     return BOLD.sub(r"<strong>\1</strong>", out)
+
+
+def slug(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def check_placeholders() -> int:
+    """Warn, or with RELEASE=1 fail, if a legal document still carries the
+    placeholder privacy email."""
+    release = os.environ.get("RELEASE") == "1"
+    hits = []
+    for meta in PAGES:
+        for n, line in enumerate((ROOT / meta["src"]).read_text().splitlines(), 1):
+            if PLACEHOLDER in line:
+                hits.append(f"{meta['src']}:{n}")
+    if not hits:
+        return 0
+    level = "error" if release else "warning"
+    print(f"{level}: placeholder {PLACEHOLDER} still present (replace the privacy "
+          f"email before deploy): {', '.join(hits)}", file=sys.stderr)
+    return 1 if release else 0
 
 
 def convert(md: str) -> str:
@@ -110,7 +165,7 @@ def convert(md: str) -> str:
         if whole:
             flush_para(), flush_list()
             text = whole.group(1).strip()
-            blocks.append(f"<h2>{inline(text)}</h2>")
+            blocks.append(f'<h2 id="{slug(text)}">{inline(text)}</h2>')
             continue
 
         flush_list()
@@ -124,15 +179,10 @@ def page(body: str, meta: dict, updated: str) -> str:
     return f"""<!doctype html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js). Kept in sync with the same snippet in index.html. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CEKMPMJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', 'G-KQ7CEKMPMJ');
-</script>
 <meta charset="utf-8" />
+<!-- Google Analytics loads only after the visitor accepts, from /consent.js
+     (Consent Mode "basic"). No gtag snippet here. Kept in sync with index.html. -->
+<script src="/consent.js" defer></script>
 <title>{meta['title']}: Lifting Lab</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="description" content="{meta['description']}" />
@@ -157,6 +207,7 @@ def page(body: str, meta: dict, updated: str) -> str:
 <meta name="twitter:image:alt" content="The Lifting Lab wordmark: a barbell through a laboratory flask." />
 <!-- Generated by tools/legal/build.py from {meta['src']}. Do not edit here. -->
 <link rel="stylesheet" href="../src/legal.css" />
+<script src="/privacy-email.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#doc">Skip to the document</a>
@@ -176,6 +227,7 @@ def page(body: str, meta: dict, updated: str) -> str:
     <a href="/privacy/">Privacy</a>
     <a href="/terms/">Terms</a>
     <a href="/#contact">Contact</a>
+    <button type="button" data-cookie-settings>Cookie settings</button>
   </nav>
 </footer>
 </body>
@@ -184,9 +236,12 @@ def page(body: str, meta: dict, updated: str) -> str:
 
 
 def main() -> int:
+    status = check_placeholders()
+    if status or "--check" in sys.argv[1:]:
+        return status
     for meta in PAGES:
         src = ROOT / meta["src"]
-        md = src.read_text()
+        md = COMMENT.sub("", src.read_text())
 
         # The effective date is stated inside each document. Read it back out
         # rather than stamping today's date, so regenerating the page does not
@@ -200,7 +255,15 @@ def main() -> int:
 
         out = ROOT / meta["out"]
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(page(body, meta, updated))
+        text = page(body, meta, updated)
+        # Last line of defence: the address must not be in the generated page.
+        for leak in LEAKS:
+            if leak in text:
+                print(f"error: {meta['out']} would contain the privacy email "
+                      f"({leak!r}); it must only be rendered client-side",
+                      file=sys.stderr)
+                return 1
+        out.write_text(text)
         print(f"wrote {meta['out']} ({out.stat().st_size // 1024} KB, "
               f"effective {updated})")
     return 0
