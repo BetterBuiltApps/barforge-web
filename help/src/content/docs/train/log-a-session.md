@@ -7,6 +7,8 @@ covers:
   - Docs/FEATURES.md#Pre-session
   - LiftingLab/Features/Train/Session/ActiveSessionView.swift
   - LiftingLab/Features/Train/Complex/ComplexSequenceRow.swift
+  - LiftingLab/Features/Train/Complex/ComplexDemoView.swift
+  - LiftingLab/Domain/WarmUpEngine.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/TrainDashboardScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/session/ActiveSessionScreen.kt
   - LiftingLab/Features/Train/Session/SetQuantityControl.swift
@@ -69,6 +71,22 @@ A program day you started late and carried past midnight stays open, so the app 
 
 The session shows one set at a time. You see the exercise, the weight in large type, the target reps, and a picture of the bar with the plates on each side. The classic lifts, squats, pulls and presses open with warm-up sets first, starting with the empty bar. These are labelled as warm-ups and are not counted as training.<!-- since 1.5 --> When the same lift comes back later in the session, such as back-off sets after a heavy top set, it has no second warm-up: you are already warm from the first.<!-- /since -->
 
+<!-- since 1.6 -->
+
+You always get fewer warm-up sets than working sets, so four working sets come with three warm-ups at most. When the app has to drop warm-ups, it drops repeated weights and the lightest steps first, and keeps the heaviest ones, so the jump to your first working set stays small. For example, four doubles at 72 kg warm up with the bar, 50 and 61. Pulls, presses and squats always keep at least one warm-up.
+
+Every warm-up is lighter than your first working set. When your working sets climb, for example four doubles from 44 kg up to 52 kg, the warm-ups lead up to the 44 kg opener, and the working sets take you the rest of the way.
+
+Heavy singles are the exception. When every working set is a single, you get at least the empty bar and the two heaviest warm-up steps, even for one working set. A squat single also gets a step at 85%, so a 180 kg single warms up with the bar, 126 and 153.
+
+You can see and change your warm-up steps in **Settings > Training > Warm-Up Ramp**. The preview there shows what you get before a few working sets and before a single.
+
+:::note[Android]
+Android uses the same rule and gives the same warm-up weights.
+:::
+
+<!-- /since -->
+
 To log a set:
 
 1. Check the weight. Tap the number to type a new one, or use the minus and plus buttons to step to the next weight your plates can build.
@@ -94,7 +112,7 @@ If you change a weight and make the lift, the remaining sets of that exercise mo
 
 <!-- since 1.5 -->
 
-A complex (several lifts on one bar) is one set with its lifts listed in order. If you miss one, the app asks **Where did it go?** so you can tap the lift that failed. Complexes cannot be filmed yet. See [Build and log a complex](/help/train/complexes/).
+A complex (several lifts on one bar) is one set with its lifts listed in order. If you miss one, the app asks **Where did it go?** so you can tap the lift that failed. Complexes cannot be filmed yet.<!-- since 1.6 --> The picture button at the top of the session, and the info button on the exercise, show every lift in the complex in order, with its reps and cues.<!-- /since --> See [Build and log a complex](/help/train/complexes/).
 
 <!-- /since -->
 

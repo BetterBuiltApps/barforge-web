@@ -12,7 +12,7 @@
 // Versions that were never submitted (1.3, 1.4) are not in the list on purpose: tag content with the release that
 // actually ships it. To add a release (say 1.6), append it here, then tag content "since 1.6".
 
-export const RELEASES = ['1.2', '1.5'];
+export const RELEASES = ['1.2', '1.5', '1.6'];
 export const DEFAULT_RELEASE = '1.2';
 
 const parse = (v) => String(v).trim().split('.').map((n) => parseInt(n, 10) || 0);

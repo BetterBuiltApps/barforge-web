@@ -7,6 +7,7 @@ covers:
   - LiftingLab/Features/Tools/BarbellLoaderView.swift
   - LiftingLab/Features/Tools/OneRMView.swift
   - LiftingLab/Features/Tools/ToolRoute.swift
+  - LiftingLab/Features/Train/ExerciseLibrary/ExerciseLibraryView.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/tools/ToolsHubScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/tools/BarbellLoaderScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/tools/OneRMScreen.kt
@@ -37,6 +38,12 @@ The Tools tab holds quick calculators and planners. They work offline, and weigh
 <!-- since 1.5 -->
 
 - **Complex Builder** (Pro): chain lifts on one bar and check every transition. See [Build and log a complex](/help/train/complexes/).
+
+<!-- /since -->
+
+<!-- since 1.6 -->
+
+- **Exercise Library**: every lift in the app, with demos, cues and a search. It is also on the Train tab. It includes hamstring and posterior chain work such as Romanian, dumbbell, single-leg and snatch-grip RDLs, leg curls, Nordic curls and barbell hip thrusts. Leg curls need a leg curl machine, which you can add to your gym in Locker, under My Gyms.
 
 <!-- /since -->
 
