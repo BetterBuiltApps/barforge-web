@@ -124,15 +124,20 @@ def page(body: str, meta: dict, updated: str) -> str:
     return f"""<!doctype html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js). Kept in sync with the same snippet in index.html. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CEKMPMJ"></script>
+<meta charset="utf-8" />
+<!-- Google tag (gtag.js) with Consent Mode v2 defaults (denied until the
+     visitor accepts in the /consent.js banner). Kept in sync with the same
+     snippet in index.html. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
+  gtag('consent', 'default', {{analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'}});
+  try {{ if (localStorage.getItem('ll-analytics-consent') === 'granted') gtag('consent', 'update', {{analytics_storage: 'granted'}}); }} catch (e) {{}}
   gtag('js', new Date());
   gtag('config', 'G-KQ7CEKMPMJ');
 </script>
-<meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CEKMPMJ"></script>
+<script src="/consent.js" defer></script>
 <title>{meta['title']}: Lifting Lab</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="description" content="{meta['description']}" />
@@ -176,6 +181,7 @@ def page(body: str, meta: dict, updated: str) -> str:
     <a href="/privacy/">Privacy</a>
     <a href="/terms/">Terms</a>
     <a href="/#contact">Contact</a>
+    <button type="button" data-cookie-settings>Cookie settings</button>
   </nav>
 </footer>
 </body>

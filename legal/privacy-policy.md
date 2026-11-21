@@ -87,7 +87,9 @@ The Lifting Lab website (liftinglab.app) is separate from the iOS and Android ap
 
 The Lifting Lab apps do not use Google Analytics or any other third-party analytics, and they send nothing to the website's analytics.
 
-You can opt out by blocking or deleting cookies in your browser settings, or by installing [Google's opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
+When you first visit the website, a banner asks whether you accept analytics cookies. Google Analytics sets cookies, and records interactions such as video plays, only after you choose Accept. Until you choose, or if you choose Decline, it sets no cookies; Google may still receive a basic signal that a page was loaded, without cookies or identifiers that recognize you from one visit to the next. Your choice is saved in your browser so the banner does not ask again. You can change it at any time with the "Cookie settings" link at the bottom of the website's home, Privacy, and Terms pages. Choosing Decline after you had accepted also removes the Google Analytics cookies the website set.
+
+You can also block or delete cookies in your browser settings, or install [Google's opt-out browser add-on](https://tools.google.com/dlpage/gaoptout).
 
 **If you contact us**
 

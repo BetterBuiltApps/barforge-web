@@ -112,5 +112,9 @@ body {
   gap: 22px;
   flex-wrap: wrap;
 }
-.legal-foot a { color: var(--text-tertiary); font: var(--type-caption); }
-.legal-foot a:hover { color: var(--text-secondary); }
+.legal-foot a,
+.legal-foot button { color: var(--text-tertiary); font: var(--type-caption); }
+.legal-foot a:hover,
+.legal-foot button:hover { color: var(--text-secondary); }
+/* "Cookie settings" reopens the analytics banner (site/public/consent.js). */
+.legal-foot button { background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
