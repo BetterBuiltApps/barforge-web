@@ -98,11 +98,17 @@ Some sets ask how hard it felt. Pick the answer that fits, from easy to all out.
 
 <!-- since 1.5 -->
 
-You can answer before or after you tap **Made**. If you tap Made first, the card moves on to the next set, but the effort question stays and now reads **How hard was that set?**, because your answer goes to the set you just finished. The row scrolls into view and flashes amber for a moment so you notice it. With Reduce Motion on, it is outlined without the animation. If you rate that set all out after tapping Made, the next sets are held at that weight just as they would have been had you rated it first. The question goes away once you log the next set, move to another exercise or step back.
+When you tap **Made**, one question comes up first: **How hard was that set?** Pick one of the five answers, from easy to all out, or tap **Skip** to log the set without a rating. Nothing is logged, the rest timer does not start and the card does not move on until you answer or skip, and the question cannot be swiped away. A set that already has a rating, such as one you log again after stepping back, is logged straight away.
 
 :::note[Android]
-The same question appears after Made, and the effort row is scrolled into view and highlighted in amber for a moment, with no fade when animations are reduced. On the exercise list, the dots for a long warm-up ramp are easier to see and wrap onto a second line instead of running off the card. A warm-up set you have not done yet is a dashed circle and a working set you have not done yet is a solid circle, with a thin line between the two groups.
+Android asks the same question the same way when you tap Made. On the exercise list, the dots for a long warm-up ramp are easier to see and wrap onto a second line instead of running off the card. A warm-up set you have not done yet is a dashed circle and a working set you have not done yet is a solid circle, with a thin line between the two groups.
 :::
+
+<!-- /since -->
+
+<!-- since 1.6 -->
+
+That question is the only place to rate a set, on iPhone and Android. There is no effort row on the set screen, so a set you skip stays unrated, a rating cannot be changed once given, and a missed set is not rated.
 
 <!-- /since -->
 
