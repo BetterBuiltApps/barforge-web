@@ -6,10 +6,9 @@ This privacy policy explains how Better Built Apps LLC ("Better Built Apps," "we
 
 *   Name: Better Built Apps LLC
 *   Address: 7901 4th St N STE 300, St. Petersburg, FL 33702
-*   Privacy contact: PRIVACY_EMAIL_PLACEHOLDER@liftinglab.app
-*   Other questions: the form at the bottom of [liftinglab.app](https://liftinglab.app/#contact)
+*   Privacy contact: {{PRIVACY_EMAIL}}
+*   Privacy requests and other questions: the [contact form](https://liftinglab.app/#contact) at the bottom of liftinglab.app. Start your message with "Privacy request" so we can find it.
 
-<!-- TODO(owner): replace privacy email before deploy -->
 
 Better Built Apps LLC is the controller for the personal data described in this policy. For any question about this policy or your data, email us at the privacy address above or use the form.
 
@@ -106,7 +105,7 @@ Google Analytics data is not linked to your name or any account, so we cannot lo
 
 **If you contact us**
 
-If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, the form sends your name, email address, and message. It is delivered by Web3Forms, a form-relay service that passes your message to us by email. If you email us directly, we receive your email address and message. We use these only to reply to you and handle your request. We do not use them for marketing, and we share them only with the service providers that carry them to us (see "Who receives data" below). We keep your messages for as long as we need to handle your request, and delete them no later than 12 months after our last exchange, unless you ask us to delete them sooner.
+If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, the form sends your name, email address, and message. It is relayed to us by email by Web3Forms, an India-based form service that acts as our processor. Web3Forms may send your IP address and email address to the spam filters CleanTalk and Akismet, and may keep a copy of your submission for up to 3 years under its own terms (see its [privacy policy](https://web3forms.com/privacy)). If you email us directly, we receive your email address and message. We use these only to reply to you and handle your request. We do not use them for marketing, and we share them only with the service providers that carry them to us (see "Who receives data" below). We keep your messages for as long as we need to handle your request, and delete our copy (in the developer's inbox) no later than 12 months after our last exchange, unless you ask us to delete it sooner.
 
 **Our website hosting**
 
@@ -131,19 +130,17 @@ We do not sell personal data. These are the only outside companies that receive 
 *   Google, which runs Google Play (purchases on Android). Google acts under its own terms and privacy policy.
 *   Google, which provides Google Analytics on our website, only after you accept analytics.
 *   GitHub, which hosts our website and receives its server logs.
-*   Web3Forms, which relays contact form messages to us by email.
-
-<!-- TODO(owner): confirm the Web3Forms DPA, storage region, and retention before naming any transfer safeguard for it. -->
+*   Web3Forms, which relays contact form messages to us by email, and the spam filters CleanTalk and Akismet it uses.
 
 **International transfers**
 
-We are based in the United States, and so are the service providers listed above. If you are in the EU, the UK, or elsewhere, information you send us or our website is transferred to the United States.
+We are based in the United States, and so are most of the service providers listed above. Web3Forms is based in India and runs on infrastructure from Amazon Web Services, Cloudflare and Hetzner; its Data Processing Agreement, which is part of its terms, uses Standard Contractual Clauses for transfers from the EEA, the UK and Switzerland. If you are in the EU, the UK, or elsewhere, information you send us or our website is transferred to the United States.
 
 For Google Analytics, Google LLC participates in the EU-U.S. Data Privacy Framework (and its UK extension), which the European Commission recognizes as providing adequate protection. For our other service providers, transfers rely on the safeguards in each provider's terms, such as standard contractual clauses where the provider offers them.
 
 **Children's privacy**
 
-Lifting Lab is not intended for children under 16 years of age, or a higher age of digital consent where one applies under local law. We do not knowingly collect personal information from children through the app, and because there is no account system, we have no practical way to collect it even if a child used the app directly.
+Lifting Lab is not intended for children under 13 years of age, and we do not knowingly collect personal information from children under 13. If you are under 16 years of age, or under a higher age of digital consent where one applies under local law, please use the app only with the permission of a parent or guardian. Because there is no account system, we have no practical way to collect a child's personal information even if a child used the app directly.
 
 Lifting Lab's coaching features let an adult coach enter and manage training information about the athletes they work with, and youth athletes are common in competitive weightlifting. If you are a coach using these features for an athlete who is a minor, you are responsible for that athlete's information: it is stored on your own device, under your control, and, as explained above, Better Built Apps LLC never receives a copy of it regardless of the athlete's age.
 
@@ -164,7 +161,7 @@ Because we hold no copy of your training data, there is nothing on our end to de
 
 *   App data stays on your device, and on iPhone in your own iCloud account if sync is on, until you delete it. We never hold a copy.
 *   Website analytics data is kept by Google Analytics for 2 months, then deleted.
-*   Messages you send us are deleted no later than 12 months after our last exchange.
+*   Messages you send us are deleted from our inbox no later than 12 months after our last exchange. Web3Forms may keep its own copy for up to 3 years, then deletes it automatically.
 *   Website server logs are kept by GitHub under its own policies.
 
 **Your privacy rights**
@@ -178,7 +175,7 @@ Depending on where you live, you may have rights under laws like the EU/UK GDPR 
 *   receive it in a portable format (data portability);
 *   withdraw your consent at any time, where we rely on consent, without affecting what was done before.
 
-For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. The app can also export your sessions and programs as files. For anything we do hold (your correspondence with us, described above), email PRIVACY_EMAIL_PLACEHOLDER@liftinglab.app or use the [contact form](https://liftinglab.app/#contact). We will respond within one month, as the GDPR requires (we may extend this by up to two further months for complex requests, and will tell you if we do).
+For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. The app can also export your sessions and programs as files. For anything we do hold (your correspondence with us, described above), use the [contact form](https://liftinglab.app/#contact) on our website (start your message with "Privacy request") or email {{PRIVACY_EMAIL}}. We will respond within one month, as the GDPR requires (we may extend this by up to two further months for complex requests, and will tell you if we do).
 
 If you believe your rights have been violated, you have the right to complain to a data protection supervisory authority. In the EU, that is the authority in the country where you live or work, or where you think the problem happened. In the UK, it is the Information Commissioner's Office (ICO). We would appreciate the chance to sort it out with you first.
 
@@ -194,4 +191,4 @@ This privacy policy is effective as of 2026-11-21.
 
 **Contact**
 
-Questions about this policy or your data: email PRIVACY_EMAIL_PLACEHOLDER@liftinglab.app, or use the [contact form](https://liftinglab.app/#contact) at the bottom of our website.
+Questions about this policy or your data: use the [contact form](https://liftinglab.app/#contact) at the bottom of our website (start your message with "Privacy request" for a privacy request) or email {{PRIVACY_EMAIL}}.
