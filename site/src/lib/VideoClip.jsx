@@ -36,10 +36,10 @@ export function VideoClip({ clip }) {
 
   const start = () => {
     setPlaying(true);
-    // Only after the visitor accepted analytics (site/public/consent.js). Consent
-    // Mode would already keep it cookieless, but a declined visitor's plays are
-    // not sent at all, which is what the privacy policy says.
-    if (typeof window.gtag === 'function' && window.llConsent?.granted?.()) {
+    // A no-op unless gtag.js was actually loaded, which site/public/consent.js
+    // does only after the visitor accepts analytics. A declined or undecided
+    // visitor's plays are not sent anywhere, which is what the privacy policy says.
+    if (window.llConsent?.loaded?.() && typeof window.gtag === 'function') {
       window.gtag('event', 'video_play', { video_title: clip.title, video_id: clip.id });
     }
   };

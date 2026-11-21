@@ -2,21 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<!-- Google tag (gtag.js). GA4 property "Lifting Lab" under the David Hicka
-     analytics account, separate from toonandtails-web so traffic never mixes.
-     Consent Mode v2: everything is denied by default, set BEFORE config, so GA
-     sets no cookies until the visitor accepts in the banner (/consent.js). A
-     stored "Accept" is re-applied here so a returning visitor is counted from
-     the first hit. The same snippet is in tools/legal/build.py. -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
-  try { if (localStorage.getItem('ll-analytics-consent') === 'granted') gtag('consent', 'update', {analytics_storage: 'granted'}); } catch (e) {}
-  gtag('js', new Date());
-  gtag('config', 'G-KQ7CEKMPMJ');
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CEKMPMJ"></script>
+<!-- Google Analytics (GA4) is NOT loaded here. Consent Mode "basic": the
+     banner script below loads gtag.js only after the visitor accepts (or on a
+     stored Accept), so nothing from Google is requested before consent. The
+     same single tag is in tools/legal/build.py. -->
 <script src="%BASE_URL%consent.js" defer></script>
 <title>Lifting Lab: Weightlifting Training App for iPhone and Android</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />

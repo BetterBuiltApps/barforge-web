@@ -1,10 +1,13 @@
-/* Analytics consent banner. Built in-house: no third-party CMP, no dependency.
+/* Analytics consent banner and Google Analytics loader. Built in-house: no
+   third-party CMP, no dependency.
 
-   Google Consent Mode v2 does the actual gating. Every page that loads GA sets
-   gtag('consent', 'default', {... all 'denied' }) inline in <head>, BEFORE
-   gtag('config'), and re-applies a stored 'granted' choice there too, so a
-   returning visitor who accepted is counted from the first hit. This file only
-   draws the banner, records the choice, and pushes the consent update.
+   Google Consent Mode "basic": nothing from Google loads until the visitor
+   accepts. The pages carry no inline gtag snippet and no googletagmanager.com
+   <script> tag; this file is the only place GA is started. On Accept (a click
+   now, or a stored Accept found on page load) it defines gtag, sets consent,
+   runs config and injects gtag.js. On Decline nothing is loaded, and any _ga*
+   cookies left from an earlier Accept are deleted. Before a choice, Google
+   receives nothing at all, not even cookieless pings.
 
    Served as a plain file from site/public/ (not bundled) so the React homepage
    and the static Privacy/Terms pages share one copy. Loaded with `defer`.
@@ -20,6 +23,19 @@
 
   var STORE_KEY = 'll-analytics-consent';
   var ID = 'll-consent';
+  // GA4 property "Lifting Lab" (separate from toonandtails-web so traffic
+  // never mixes).
+  var GA_ID = 'G-KQ7CEKMPMJ';
+  var gaLoaded = false;
+
+  // The build's prerender (site/scripts/prerender.mjs) snapshots the homepage
+  // in headless Chrome. Do nothing there: never bake the banner, or a
+  // googletagmanager.com <script>, into the shipped HTML.
+  if (navigator.webdriver) {
+    window.llConsent = { get: function () { return null; }, granted: function () { return false; },
+      loaded: function () { return false; }, open: function () {} };
+    return;
+  }
 
   function read() {
     try { return window.localStorage.getItem(STORE_KEY); } catch (e) { return null; }
@@ -28,12 +44,30 @@
     try { window.localStorage.setItem(STORE_KEY, value); } catch (e) { /* not persisted */ }
   }
   function gtag() {
-    if (typeof window.gtag === 'function') window.gtag.apply(null, arguments);
+    if (gaLoaded) window.gtag.apply(null, arguments);
   }
 
-  // On decline, also clear any GA cookies left from an earlier "Accept".
-  // Consent Mode stops GA reading or writing them, but they would otherwise sit
-  // in the browser until they expire.
+  // Runs only after an Accept. Consent is set to granted before config, ad
+  // signals stay denied, and gtag.js is requested only now.
+  function loadAnalytics() {
+    if (gaLoaded) return;
+    gaLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('consent', 'default', {
+      analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    });
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+  }
+
+  // On decline, clear any GA cookies left from an earlier "Accept". If GA was
+  // started earlier on this page, the consent update also stops it reading or
+  // writing them; on later pages it is never loaded at all.
   function clearGaCookies() {
     var host = location.hostname;
     var domains = ['', host, '.' + host, '.' + host.split('.').slice(-2).join('.')];
@@ -49,7 +83,8 @@
   function choose(value) {
     write(value);
     if (value === 'granted') {
-      gtag('consent', 'update', { analytics_storage: 'granted' });
+      if (gaLoaded) gtag('consent', 'update', { analytics_storage: 'granted' });
+      else loadAnalytics();
     } else {
       gtag('consent', 'update', { analytics_storage: 'denied' });
       clearGaCookies();
@@ -76,8 +111,10 @@
       '#' + ID + ' .ll-consent-actions{display:flex;flex-wrap:wrap;gap:10px;}',
       '#' + ID + ' button{flex:1 1 120px;min-height:44px;padding:0 18px;border-radius:12px;cursor:pointer;',
       'font:inherit;font-weight:700;border:1px solid var(--hairline,rgba(255,255,255,.08));}',
-      '#' + ID + ' .ll-accept{background:var(--amber,#f5a623);color:#000;border-color:transparent;}',
-      '#' + ID + ' .ll-decline{background:transparent;color:var(--text-primary,#fff);border-color:rgba(255,255,255,.3);}',
+      // Accept and Decline are deliberately identical: same size, colour and
+      // border, so neither answer is the visually suggested one.
+      '#' + ID + ' button{background:transparent;color:var(--text-primary,#fff);border-color:rgba(255,255,255,.3);}',
+      '#' + ID + ' button:hover{border-color:var(--text-primary,#fff);}',
       '#' + ID + ' button:focus-visible,#' + ID + ' a:focus-visible{outline:2px solid var(--amber,#f5a623);outline-offset:3px;}',
       // Footer "Cookie settings" control: a <button> that reads like the links beside it.
       '[data-cookie-settings]{background:none;border:0;padding:0;margin:0;cursor:pointer;font:inherit;color:inherit;}',
@@ -95,11 +132,13 @@
       el.id = ID;
       el.setAttribute('role', 'region');
       el.setAttribute('aria-labelledby', ID + '-title');
+      el.setAttribute('tabindex', '-1');
       el.innerHTML =
         '<h2 id="' + ID + '-title">Analytics cookies</h2>' +
-        '<p>We use Google Analytics to see which pages and demo videos people view. ' +
-        'It sets cookies only if you accept. You can change this any time from ' +
-        '&ldquo;Cookie settings&rdquo; in the footer. <a href="/privacy/">Privacy policy</a></p>' +
+        '<p>May we use Google Analytics to see which pages and demo videos people view? ' +
+        'If you accept, Google receives your visit data and sets cookies. If you decline, ' +
+        'nothing from Google loads. You can change this any time from ' +
+        '&ldquo;Cookie settings&rdquo; in the footer. <a href="/privacy/#our-website">Privacy policy</a></p>' +
         '<div class="ll-consent-actions">' +
         '<button type="button" class="ll-decline">Decline</button>' +
         '<button type="button" class="ll-accept">Accept</button>' +
@@ -116,7 +155,9 @@
     document.body.style.paddingBottom = (el.offsetHeight + 32) + 'px';
     if (fromSettings) {
       lastFocus = document.activeElement;
-      el.querySelector(read() === 'granted' ? '.ll-accept' : '.ll-decline').focus();
+      // Focus the banner itself, not either button, so neither answer is
+      // pre-selected for a keyboard user.
+      el.focus();
     }
   }
 
@@ -131,6 +172,8 @@
   window.llConsent = {
     get: read,
     granted: function () { return read() === 'granted'; },
+    // True only once gtag.js has been requested after an Accept.
+    loaded: function () { return gaLoaded; },
     open: function () { open(true); },
   };
 
@@ -140,10 +183,8 @@
     if (t) { e.preventDefault(); open(true); }
   });
 
-  // The build's prerender (site/scripts/prerender.mjs) snapshots the homepage
-  // in headless Chrome, which has no stored choice. Never bake the banner into
-  // the shipped HTML.
-  if (navigator.webdriver) return;
+  // A returning visitor who accepted before: start GA straight away.
+  if (read() === 'granted') loadAnalytics();
 
   function boot() {
     css();
