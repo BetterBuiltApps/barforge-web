@@ -75,6 +75,8 @@ The session shows one set at a time. You see the exercise, the weight in large t
 
 You always get fewer warm-up sets than working sets, so four working sets come with three warm-ups at most. When the app has to drop warm-ups, it drops repeated weights and the lightest steps first, and keeps the heaviest ones, so the jump to your first working set stays small. For example, four doubles at 72 kg warm up with the bar, 50 and 61. Pulls, presses and squats always keep at least one warm-up.
 
+Every warm-up is lighter than your first working set. When your working sets climb, for example four doubles from 44 kg up to 52 kg, the warm-ups lead up to the 44 kg opener, and the working sets take you the rest of the way.
+
 Heavy singles are the exception. When every working set is a single, you get at least the empty bar and the two heaviest warm-up steps, even for one working set. A squat single also gets a step at 85%, so a 180 kg single warms up with the bar, 126 and 153.
 
 You can see and change your warm-up steps in **Settings > Training > Warm-Up Ramp**. The preview there shows what you get before a few working sets and before a single.
