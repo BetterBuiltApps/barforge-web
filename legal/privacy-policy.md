@@ -83,7 +83,7 @@ If you use Lifting Lab's coaching features, you can export a training program or
 
 **Our website**
 
-The Lifting Lab website (liftinglab.app) is separate from the iOS and Android apps. It uses Google Analytics, a web analytics service from Google, to understand how much traffic the site gets and which pages people visit. Google Analytics uses cookies to collect information such as the pages you visit, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand site traffic, not to identify you.
+The Lifting Lab website (liftinglab.app) is separate from the iOS and Android apps. It uses Google Analytics 4, a web analytics service from Google, to understand how much traffic the site gets, which pages people visit, and how they use the site. Google Analytics uses cookies to collect information such as the pages you visit, interactions such as playing a demo video, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the apps.
 
 The Lifting Lab apps do not use Google Analytics or any other third-party analytics, and they send nothing to the website's analytics.
 
@@ -91,7 +91,7 @@ You can opt out by blocking or deleting cookies in your browser settings, or by 
 
 **If you contact us**
 
-If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, we keep your message and the contact details you provide so we can respond to you. We do not use them for marketing unless you separately agree to that, and we do not share them with anyone else.
+If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, we keep your message and the contact details you provide so we can respond to you. The form is delivered by Web3Forms, a form-relay service that passes your message to us by email. We do not use your message or details for marketing unless you separately agree to that, and we do not share them with anyone else.
 
 **Children's privacy**
 
