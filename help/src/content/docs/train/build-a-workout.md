@@ -11,6 +11,8 @@ covers:
   - LiftingLab/Domain/Complex/ComplexSelection.swift
   - LiftingLab/Domain/Builder/WorkoutGenerator.swift
   - LiftingLab/Domain/Builder/WorkoutDraft.swift
+  - LiftingLab/Domain/Builder/BlockNeed.swift
+  - LiftingLab/Domain/Builder/PyramidScheme.swift
   - LiftingLab/Domain/Builder/RepAwareIntensity.swift
   - LiftingLab/Domain/Crucible/Signals/CrucibleAthleteSignals.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/builder/WorkoutBuilderScreen.kt
@@ -47,6 +49,25 @@ Low energy changes what you get. With the blocks left blank, an energy of 1 turn
 Tick both Snatch and Clean & Jerk and you get both, snatch first. Tick both Pulls and Squats and the pulls come first, since they match the lifts before them and squats leave the legs spent. One of them is the day's main lift and gets the full load for your energy. The other is built one energy step lighter, so two heavy lifts do not stack.
 
 If an injury you logged rules out the full snatch or clean, a strong day gives you the closest lift your injury allows, such as a power snatch, instead of leaving the lift out.
+
+<!-- /since -->
+
+<!-- since 1.6 -->
+
+## How your recent training shapes the draft
+
+The app looks back over your last four weeks of training.
+
+- **Blocks left blank.** The app still leads with a classic lift, then picks the strength work you have gone longest without, such as squats you last did nine days ago. It compares each block with how often it is usually trained, so a missed squat day counts for more than a missed press day. When it is choosing between the snatch and the clean and jerk, it leans toward the one you have gone longer without.
+- **Blocks ticked.** You still get exactly what you ticked. A block you have neglected gets a little more volume, one you already trained today gets a little less, and each block favours a variation you have not done for a week or more.
+- **New to the app.** If you have logged less than four weeks, the app says so ("not logged since you started 6 days ago") and does not add volume for a block you have simply not logged yet.
+- **Sore muscles.** A sore muscle can keep a block out of a blank check-in, for example sore hamstrings keep pulls out. The note says when that happened.
+
+The "How this session was built" note says why each block is there, for example "Squats: last trained 9 days ago". It only mentions a volume change when the number of sets really changed.
+
+:::note[Android]
+The Android app looks at the same four weeks and makes the same choices, with the same wording.
+:::
 
 <!-- /since -->
 
@@ -117,7 +138,7 @@ Distances, such as a run, are shown in kilometres or miles to match your kg or l
 
 Each exercise has steppers for sets and reps. Percentage work shows a percent of your record for that lift, and effort-based work shows a target effort rating (RPE, a 1-10 scale of how hard a set feels).<!-- since 1.5 --> A cardio piece, such as a row, a bike or a run, has a Minutes stepper instead, from 5 to 60 in steps of 5.<!-- /since --><!-- since 1.5 --> A hold, such as a plank or an L-sit, has a **Time** stepper instead of Reps, from 5 to 600 seconds in steps of 5 and shown as minutes and seconds, for example 0:40. When the exercise is a Pyramid with more than one set, the stepper is called **First hold**. The Reps stepper on a counted lift goes up to 50.<!-- /since -->
 
-Each loaded exercise also has a **Pyramid** switch. When it is on, the sets climb or descend like a ladder instead of repeating one weight. Low-rep work such as doubles and singles holds its reps and ramps the weight.
+Each loaded exercise also has a **Pyramid** switch. When it is on, the sets climb or descend like a ladder instead of repeating one weight. Low-rep work such as doubles and singles holds its reps and ramps the weight.<!-- since 1.6 --> A ladder reads as its sets and reps in full, for example "2 sets · 3, 2 reps" for a set of three followed by a set of two. Sets that all have the same reps still read like "4×2": four sets of two.<!-- /since -->
 
 Sliders for volume and intensity scale the whole session.
 

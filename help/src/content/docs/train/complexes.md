@@ -9,6 +9,7 @@ covers:
   - LiftingLab/Features/Train/Complex/ComplexCopy.swift
   - LiftingLab/Domain/Complex/ComplexValidator.swift
   - LiftingLab/Domain/Complex/ComplexLoading.swift
+  - LiftingLab/Features/Train/Complex/ComplexDemoView.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/complex/ComplexBuilderScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/complex/ExerciseComplexesCard.kt
 verified_for: "1.5"
@@ -58,7 +59,13 @@ In Program Builder on Android, an exercise row also offers **Make it a complex**
 
 ## Log a complex
 
-The set card lists the parts in order, with one weight and one rest. Warm-ups are one round of the same complex at each lighter weight.
+The set card lists the parts in order, with one weight and one rest. Warm-ups are one round of the same complex at each lighter weight.<!-- since 1.6 --> Because each round is already several lifts, a complex gets one warm-up fewer than a single lift with the same number of sets.<!-- /since -->
+
+<!-- since 1.6 -->
+
+To see how the complex goes, tap the picture button at the top of the session, or the info button on the exercise. You get every lift in order, each with its demo, reps and a couple of cues, and a link to that lift's own page. Tap **Step through the sequence** to see one lift at a time, with **Back** and **Next**.
+
+<!-- /since -->
 
 1. Tap **Made** if you finished every part.
 2. If you miss, the app asks **Where did it go?** Tap the lift where it went wrong. You can then tag what happened on that lift, as with any miss.
