@@ -15,7 +15,7 @@ const COMPARISON_ROWS = [
   ['Unlimited free training history', 'Yes', '\u2013', 'Yes'],
   ['Training log book & reflections', 'Yes', '\u2013', '\u2013'],
   ['Team roster & leaderboards', '\u2013', 'Yes', 'Yes'],
-  ['Android', '\u2013', 'Yes', 'Yes'],
+  ['Android', 'Yes', 'Yes', 'Yes'],
 ];
 
 function Comparison() {

@@ -23,7 +23,7 @@ function FAQ() {
     ['How accurate is the video analysis?', 'It depends on the clip: side-on, whole bar in frame, steady phone. When tracking is weak, Lifting Lab says so and shows the evidence, rather than giving you a number it can\u2019t back up.'],
     ['Does my data leave my phone?', 'No. Analysis runs on-device. Nothing is uploaded, and there\u2019s no account required to use it.'],
     ['Kilos only?', 'Yes \u2014 kg is the only unit, matching IWF competition and the way the sport is actually coached.'],
-    ['Android?', 'Not yet. Lifting Lab is iOS-only today.'],
+    ['Android?', 'Yes. Lifting Lab is on the App Store for iPhone and on Google Play for Android.'],
     ['Do I have to fill any of this in?', 'No. Every field is optional, nothing is scored, and skipping it costs you nothing. Lifting Lab suggests a reflection every few weeks and that suggestion is dismissible.'],
   ];
   return (
