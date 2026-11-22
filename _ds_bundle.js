@@ -4255,7 +4255,7 @@ function Pricing() {
     price: free.price,
     note: 'Unlimited training log and history, forever.',
     highlight: false,
-    items: ['Adaptive daily workout builder \u2014 feel, soreness, equipment, time', 'All 5 periodized programs', 'PR tracker', 'Illustrated exercise library (71 movements)', 'Log book \u2014 per-session notes, periodic reflections, and trends', 'Every calculator \u2014 plate loader, 1RM, % table, Prilepin, Sinclair, Robi, ratios, world records', 'Warm-up generator', 'Learn the Lifts', '3 bar-path analyses per month', 'HealthKit + Strava', 'CSV export']
+    items: ['Adaptive daily workout builder \u2014 feel, soreness, equipment, time', 'All 5 periodized programs', 'PR tracker', 'Illustrated exercise library (84 movements)', 'Log book \u2014 per-session notes, periodic reflections, and trends', 'Every calculator \u2014 plate loader, 1RM, % table, Prilepin, Sinclair, Robi, ratios, world records', 'Warm-up generator', 'Learn the Lifts', '3 bar-path analyses per month', 'HealthKit + Strava', 'CSV export']
   }, {
     t: pro.name,
     price: pro.monthly,
