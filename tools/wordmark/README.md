@@ -1,3 +1,5 @@
+> **Obsolete.** This generated the old Lifting Lab flask logo. The Barforge logo comes from the brand package; see CLAUDE.md.
+
 # Wordmark generation
 
 Generates `site/public/assets/logo.svg` (the lockup) and `site/public/assets/mark.svg`

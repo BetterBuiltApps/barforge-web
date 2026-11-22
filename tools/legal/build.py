@@ -213,7 +213,7 @@ def page(body: str, meta: dict, updated: str) -> str:
 <a class="skip" href="#doc">Skip to the document</a>
 <header class="legal-head">
   <a href="/" aria-label="Barforge Weightlifting home">
-    <img src="/assets/logo.svg" alt="Barforge Weightlifting" width="156" height="45" />
+    <img src="/assets/logo.svg" alt="Barforge Weightlifting" width="156" height="35" />
   </a>
 </header>
 <main id="doc" class="legal">
