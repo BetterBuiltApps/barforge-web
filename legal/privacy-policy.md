@@ -73,9 +73,11 @@ On Android, a recording you make in the app is kept in the app's private storage
 
 **Widgets, Siri, and importing your history**
 
-Lifting Lab's widgets show your next session, this week's training, your best lifts, and your meet countdown on your Home Screen and, on iPhone, your Lock Screen. They are drawn on your device from numbers the app keeps on your device, and nothing is sent to us. Lock Screen widgets can be seen without unlocking the phone, and iOS redacts their contents while it is locked if you have set it to, in iPhone Settings. On iPhone you can also ask Siri for your PR, your next session, or your meet countdown. Siri says the answer out loud on your device, including when the phone is locked, so someone nearby may hear it. Siri itself is Apple's service, under Apple's privacy policy.
+Lifting Lab's widgets show your next session, this week's training, your best lifts, and your meet countdown on your Home Screen. They are drawn on your device from numbers the app keeps on your device, and nothing is sent to us.
 
-On Android, widgets appear on your Home Screen only, and there are no voice commands: a long-press shortcut on the app icon opens the Log PR screen.
+On iPhone, widgets can also go on your Lock Screen, where they can be seen without unlocking the phone. iOS redacts a widget's contents while the phone is locked if you have set it to, in iPhone Settings. You can also ask Siri for your PR, your next session, or your meet countdown. Siri says the answer out loud on your device, including when the phone is locked, so someone nearby may hear it. Siri itself is Apple's service, under Apple's privacy policy.
+
+On Android, there are no Lock Screen widgets and no voice commands. A long-press shortcut on the app icon opens the Log PR screen.
 
 When you import a training history from a spreadsheet, the app reads only the file you choose, or the cells you copied when you tap Paste. It does not look at your clipboard at any other time. Everything is read and checked on your device, and nothing is saved until you confirm.
 
