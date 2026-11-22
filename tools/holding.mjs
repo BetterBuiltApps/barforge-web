@@ -74,7 +74,7 @@ ${NOINDEX}
 <h1>We are updating this site</h1>
 <p>The apps keep working as usual. The privacy policy and terms below remain in force.</p>
 <nav aria-label="Legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
-<p id="contact" style="margin-top:32px">Questions or privacy requests (start the subject with "Privacy request"): <span class="privacy-email" data-u="contact" data-d="liftinglab" data-t="app"><noscript>please try again with JavaScript enabled</noscript></span></p>
+<p id="contact" style="margin-top:32px">Questions or privacy requests (start the subject with "Privacy request"): <span class="privacy-email" data-u="contact" data-d="barforge" data-t="app"><noscript>please try again with JavaScript enabled</noscript></span></p>
 <script src="/privacy-email.js" defer></script>
 </body>
 </html>

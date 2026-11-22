@@ -71,7 +71,7 @@ PLACEHOLDER = "PRIVACY_EMAIL_PLACEHOLDER"
 # browser. The in-app copies get the real address from their own import script.
 MARKER = "{{PRIVACY_EMAIL}}"
 # Split so this file, which is committed, does not hold the address either.
-_USER, _DOMAIN = "contact", "liftinglab.app"
+_USER, _DOMAIN = "contact", "barforge.app"
 LEAKS = (_USER + "@" + _DOMAIN, _USER + "&#64;", _USER + "&commat;", _USER + "@")
 EMAIL_SPAN = (
     f'<span class="privacy-email" data-u="{_USER}" data-d="{_DOMAIN.split(".")[0]}" '
