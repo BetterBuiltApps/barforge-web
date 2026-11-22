@@ -13,6 +13,12 @@ verified_for: "1.5"
 since: "1.5"
 ---
 
+<!-- since 1.6 -->
+
+Lifting Lab 1.6 has a new importer with templates, shorthand, name matching and undo. If you have 1.6, read [Import your training history](/help/start/import-your-history/) instead of this page.
+
+<!-- /since -->
+
 If you kept your training in a spreadsheet or another app, you can bring it into your log. Importing is free.
 
 ## Open the importer

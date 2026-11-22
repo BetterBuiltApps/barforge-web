@@ -23,7 +23,7 @@ On iPhone, your data is stored in two places, both under your own control:
 
 Sessions, programs, personal records, your profile, and your gym setup sync automatically between your own devices this way when iCloud is available. If iCloud can't be reached, the app keeps working fully offline using the local copy on your device.
 
-On Android, your data is stored on your device, in the app's local database and its private app storage. The Android version does not sync between devices and has no cloud account of its own. The one thing outside our control is Android's own system backup: if you have Google's device backup turned on, Android may copy some of the app's files (for example your bar-path video clips and app settings) to your Google account. Lifting Lab excludes its main training database from that backup. A backup copy lives in your own Google account, which Better Built Apps LLC cannot access, and you manage it in your Google account and device backup settings.
+On Android, your data is stored on your device, in the app's local database and its private app storage. The Android version does not sync between devices and has no cloud account of its own. Android's own system backup works like this. Lifting Lab tells Android to leave its database (your training history, profile, and the health values stored with them), your bar-path video clips, and your app settings out of Google's cloud backup, on every version of Android, so Google's device backup does not copy them to your Google account. When you set up a new phone by transferring directly from your old one on Android 12 or newer, everything moves with you, including your history, clips, and settings. That transfer is local and encrypted, between two phones you hold, and it does not pass through Better Built Apps LLC or any cloud account. On Android 8 to 11, the cloud-backup exclusions apply to that phone-to-phone transfer as well, so your training log does not move that way and stays on the old phone.
 
 **Health data**
 
@@ -35,7 +35,7 @@ On iPhone, with your permission, Lifting Lab reads the following from Apple Heal
 
 For Strength Drivers, Lifting Lab may read up to about a year of your daily sleep, heart rate variability, and resting heart rate history from Apple Health, so it can compare weeks. These readings are processed on your device and kept only in the app's memory; they are not saved in the app's data.
 
-If you choose to use a bodyweight reading from Apple Health, that one value is saved in the app's data with your other bodyweight entries, and so it is also synced to your own private iCloud account when iCloud sync is available, like the rest of your training data.
+If you choose to use a bodyweight reading from Apple Health, it is stored only on that iPhone. It is not synced to iCloud and is not included in backups. A bodyweight you type in yourself is part of your profile and syncs to your private iCloud.
 
 With your permission, Lifting Lab also writes your finished workouts to Apple Health, so they appear in the Fitness app and count toward your Activity rings.
 
@@ -70,6 +70,18 @@ We're describing this processing explicitly and separately from the rest of this
 On iPhone, recordings you make in the app are also saved to your device's Photos library as a backup, so switching phones never loses your analysis history. Whether the video files themselves also sync through iCloud is a separate, opt-in setting, kept apart from the rest of sync so filming does not silently consume a large amount of your iCloud storage. The copy in Photos belongs to your Photos library, not to the app: deleting an analysis in Lifting Lab removes the app's own copy of the video, but does not delete the copy in Photos. To remove it, delete the video in the Photos app.
 
 On Android, a recording you make in the app is kept in the app's private storage. Newer versions of the Android app, on Android 10 and newer, also save a copy to your phone's shared gallery, in the Movies/Lifting Lab folder, so the video survives a reinstall or a new phone; earlier versions kept the private copy only, and so does the app on Android 9 and older. If the phone refuses the copy, only the private copy exists. A clip you import was already in your gallery, and the app does not copy it there again. The gallery copy lives in your phone's shared media storage, not in the app's private storage: other apps you have allowed to access your photos and videos can see it, and if your phone backs up its gallery (for example with Google Photos), the copy may be backed up too. Better Built Apps LLC receives none of it. Deleting a clip in Lifting Lab deletes the app's own file, but it does not delete the gallery copy. To remove the copy, delete the video from the Movies/Lifting Lab folder using your gallery app or a file manager, and delete it from your gallery backup too if you have one.
+
+**Widgets, Siri, and importing your history**
+
+Lifting Lab's widgets show your next session, this week's training, your best lifts, and your meet countdown on your Home Screen. They are drawn on your device from numbers the app keeps on your device, and nothing is sent to us.
+
+On iPhone, widgets can also go on your Lock Screen, where they can be seen without unlocking the phone. iOS redacts a widget's contents while the phone is locked if you have set it to, in iPhone Settings. You can also ask Siri for your PR, your next session, or your meet countdown. Siri says the answer out loud on your device, including when the phone is locked, so someone nearby may hear it. Siri itself is Apple's service, under Apple's privacy policy.
+
+On Android, there are no Lock Screen widgets and no voice commands. A long-press shortcut on the app icon opens the Log PR screen.
+
+When you import a training history from a spreadsheet, the app reads only the file you choose, or the cells you copied when you tap Paste. It does not look at your clipboard at any other time. Everything is read and checked on your device, and nothing is saved until you confirm.
+
+On Android, a program or session file shared to Lifting Lab from another app asks you before it is saved.
 
 **Subscriptions and purchases**
 
@@ -152,7 +164,7 @@ Because your training data lives on your device and, on iPhone, optionally in yo
 *   Deleting the app removes its local data from your device.
 *   Deleting a bar-path clip in the app does not delete the copy of it in your Photos library (iPhone) or in the Movies/Lifting Lab folder of your gallery (Android 10 and newer, in versions of the app that make the copy). Remove that copy yourself, in the Photos app or your gallery app, as described above.
 *   Managing or deleting your iCloud data is done through your Apple ID / iCloud settings.
-*   On Android, if Google's device backup is on, any backup copy is managed and deleted through your Google account and device backup settings.
+*   On Android, Lifting Lab's data is kept out of Google's device backup, so there is no backup copy of it in your Google account to manage. On a new phone set up by phone-to-phone transfer, the copy lives on that phone and is removed by deleting the app or its data.
 *   On Android, Health Connect data is managed in Health Connect, where you can review and delete it and withdraw Lifting Lab's access.
 
 Because we hold no copy of your training data, there is nothing on our end to delete when you take any of these steps, we simply never had it. The one thing we do hold is any correspondence you've sent us directly (for example, through our contact form), which we keep only as long as needed to handle it and no longer than 12 months after our last exchange, and which you can ask us to delete at any time.
@@ -181,13 +193,13 @@ If you believe your rights have been violated, you have the right to complain to
 
 **Security**
 
-Your training data benefits from the security of your device and, on iPhone, your own Apple ID and iCloud account, both of which are protected by Apple's platform security. On Android, it benefits from your device's lock screen, storage encryption, and Android's app sandbox, and your Google account if you use device backup. Because we never receive a copy of your data, there is no central Better Built Apps database of user training data to be breached.
+Your training data benefits from the security of your device and, on iPhone, your own Apple ID and iCloud account, both of which are protected by Apple's platform security. On Android, it benefits from your device's lock screen, storage encryption, and Android's app sandbox. Because we never receive a copy of your data, there is no central Better Built Apps database of user training data to be breached.
 
 **Changes to this policy**
 
 We may update this policy as the app changes. We'll post the updated version here with a new effective date. If a change is significant, we'll make a reasonable effort to let you know inside the app.
 
-This privacy policy is effective as of 2026-11-21.
+This privacy policy is effective as of 2026-11-22.
 
 **Contact**
 
