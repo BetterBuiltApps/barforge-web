@@ -1,7 +1,7 @@
-# Lifting Lab, marketing site
+# Barforge Weightlifting, marketing site
 
-A single-page React 18 site on Vite 6, deployed to GitHub Pages at **liftinglab.app**.
-It markets the Lifting Lab iOS app, which lives in a sibling repo (`../LiftingLab`).
+A single-page React 18 site on Vite 6, deployed to GitHub Pages at **barforgeweightlifting.com**.
+It markets the Barforge Weightlifting iOS app, which lives in a sibling repo (`../LiftingLab`).
 
 ## What actually ships
 
@@ -18,7 +18,7 @@ never touches:
 | `guidelines/` | 21 `*.card.html` spec cards. Documentation. |
 | `ui_kits/marketing_site/` | The prototype ancestor of `site/src/sections/`. Superseded. |
 | `ui_kits/ios_app/` | An HTML recreation of the iPhone app. **Read-only.** See below. |
-| `help/` | The how-to guides (Starlight). **Also ships**, at `liftinglab.app/help/`. See below. |
+| `help/` | The how-to guides (Starlight). **Also ships**, at `barforgeweightlifting.com/help/`. See below. |
 | `_ds_bundle.js`, `_ds_manifest.json` | Generated dumps. Derived, not authored. |
 
 Editing anything outside `site/` and `tokens/` expecting the site to change is
@@ -144,7 +144,7 @@ only what a Release build ships, Pro marked). Its dark theme in
 ## Regenerating the page images
 
 The home page no longer uses app screenshots. Every image of the app is a **still from a walkthrough video** (a headline above a
-phone), made by the video project (`Lifting Lab - Videos`, `scripts/v2/web-export.mjs`) and read through `site/src/lib/stills.js`
+phone), made by the video project (`Barforge Weightlifting - Videos`, `scripts/v2/web-export.mjs`) and read through `site/src/lib/stills.js`
 and `StillShot` in `Chrome.jsx`. To change one: re-render the video in the video project, run `node scripts/v2/web-export.mjs`
 there, review the new `site/src/data/stills.<release>.json` and `site/public/assets/stills/`, and commit. The old PNGs in
 `site/public/assets/screens/` are unreferenced; delete them when you are sure nothing needs them. Alt text lives in the data

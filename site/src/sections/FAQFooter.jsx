@@ -17,17 +17,17 @@ const V16 = released('1.6');
 export const FAQ_ITEMS = [
   ['Do I need an account?', 'No. There is no account and no signup. Setup asks a few questions you can skip, and one tap to confirm you are 16 or older, or that a guardian agrees.'],
   ['Is it really free?', 'Yes, and generously. The daily dashboard, guided workouts, Build My Workout, the Beginner Foundation program, the PR tracker, the illustrated exercise library, every calculator, sharing, and three bar-path analyses a month never expire, never lock, and need no account. Pro is a separate add-on for unlimited analysis and the rest of the programs.'],
-  ['Do I have to follow a fixed program?', `No. Tell Lifting Lab how you feel, what's sore, and how much time you have, and it builds the session, or run ${V16 ? 'one of 16 built-in programs' : 'one of the five periodized programs'} if you want a full cycle. Either way, nothing is locked: reorder, swap, or adjust anything before or during the workout.`],
+  ['Do I have to follow a fixed program?', `No. Tell Barforge Weightlifting how you feel, what's sore, and how much time you have, and it builds the session, or run ${V16 ? 'one of 16 built-in programs' : 'one of the five periodized programs'} if you want a full cycle. Either way, nothing is locked: reorder, swap, or adjust anything before or during the workout.`],
   ['Do I need any hardware?', 'No. Bar Trace reads speed, path and phase timing from a phone video. No sensor, no clip-on unit, no pairing.'],
-  ['How accurate is the video analysis?', 'It depends on the clip: side-on, whole bar in frame, steady phone. When tracking is weak, Lifting Lab says so and shows the evidence, rather than giving you a number it can\'t back up.'],
-  ['Does my data leave my phone?', `Video analysis runs entirely on-device. No clip or lift data is sent anywhere to score it. On iPhone, training data syncs to your own private iCloud so it follows you across devices (clip sync is a separate opt-in), never to a third-party server. On Android there is no sync: your sessions, records and clips stay on the phone.${V16 ? ' A bodyweight read from Apple Health stays on your iPhone and is not synced.' : ''} Either way, no Lifting Lab account is required.`],
+  ['How accurate is the video analysis?', 'It depends on the clip: side-on, whole bar in frame, steady phone. When tracking is weak, Barforge Weightlifting says so and shows the evidence, rather than giving you a number it can\'t back up.'],
+  ['Does my data leave my phone?', `Video analysis runs entirely on-device. No clip or lift data is sent anywhere to score it. On iPhone, training data syncs to your own private iCloud so it follows you across devices (clip sync is a separate opt-in), never to a third-party server. On Android there is no sync: your sessions, records and clips stay on the phone.${V16 ? ' A bodyweight read from Apple Health stays on your iPhone and is not synced.' : ''} Either way, no Barforge Weightlifting account is required.`],
   ['Kilos or pounds?', 'Both. Pick kg or lb in Settings and every screen follows your choice, plus there\'s a dedicated kg to lb converter in Tools. Everything is stored in kg internally, matching IWF competition and the way the sport is actually coached, and converted for display.'],
-  ['Is there an Android app?', 'Yes. Lifting Lab is on the App Store for iPhone and on Google Play for Android. Neither needs an account, and the free tier is the same on both. Pro is billed through the store you installed from: Apple on iPhone, Google Play on Android.'],
+  ['Is there an Android app?', 'Yes. Barforge Weightlifting is on the App Store for iPhone and on Google Play for Android. Neither needs an account, and the free tier is the same on both. Pro is billed through the store you installed from: Apple on iPhone, Google Play on Android.'],
   ...(V16 ? [
-    ['Can I bring my old training log?', 'Yes. Import a CSV from Hevy or Strong, a Lifting Lab export, or your own spreadsheet: one row per exercise with a Sets column, shorthand like 80x2x3, or cells pasted straight from Sheets, Excel or Numbers. You check every row before anything is saved, and you can undo an import. Free on both apps.'],
-    ['Does it have widgets or Siri?', 'Widgets, on both apps: your next session, your best lifts, and a meet countdown (Pro). On iPhone they also go on the Lock Screen, and Siri answers "What\'s my snatch PR in Lifting Lab?" or "What\'s my next session in Lifting Lab?" and can start a new PR for you to check and save. Android has no voice commands; long-press the app icon for Log a PR instead.'],
+    ['Can I bring my old training log?', 'Yes. Import a CSV from Hevy or Strong, a Barforge Weightlifting export, or your own spreadsheet: one row per exercise with a Sets column, shorthand like 80x2x3, or cells pasted straight from Sheets, Excel or Numbers. You check every row before anything is saved, and you can undo an import. Free on both apps.'],
+    ['Does it have widgets or Siri?', 'Widgets, on both apps: your next session, your best lifts, and a meet countdown (Pro). On iPhone they also go on the Lock Screen, and Siri answers "What\'s my snatch PR in Barforge Weightlifting?" or "What\'s my next session in Barforge Weightlifting?" and can start a new PR for you to check and save. Android has no voice commands; long-press the app icon for Log a PR instead.'],
   ] : []),
-  ['Do I have to fill any of this in?', 'No. Every field is optional, nothing is scored, and skipping it costs you nothing. Lifting Lab suggests a reflection every few weeks and that suggestion is dismissible.'],
+  ['Do I have to fill any of this in?', 'No. Every field is optional, nothing is scored, and skipping it costs you nothing. Barforge Weightlifting suggests a reflection every few weeks and that suggestion is dismissible.'],
 ];
 
 function FAQItem({ q, a }) {
@@ -105,7 +105,7 @@ export function SiteFooter() {
       borderTop: 'var(--border-hairline-1)',
     }}>
       <div style={{ ...siteWrap, display: 'grid', gap: 24, justifyItems: 'center', textAlign: 'center' }}>
-        <img src={asset('assets/logo.svg')} alt="Lifting Lab" style={{ height: 40 }} />
+        <img src={asset('assets/logo.svg')} alt="Barforge Weightlifting" style={{ height: 40 }} />
         <p style={{
           margin: 0, fontFamily: 'var(--font-display)', fontWeight: 'var(--weight-extrabold)',
           fontSize: 'clamp(18px,2vw,22px)', letterSpacing: '-0.01em', color: 'var(--text-secondary)',
@@ -128,7 +128,7 @@ export function SiteFooter() {
             .filter(([, href]) => href)
             .map(([label, href, src]) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
-                aria-label={`Lifting Lab on ${label}`}
+                aria-label={`Barforge Weightlifting on ${label}`}
                 style={{
                   display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                   width: 48, height: 48, borderRadius: 'var(--radius-row)', background: 'var(--text-primary)',
@@ -149,7 +149,7 @@ export function SiteFooter() {
         </nav>
         <p style={{ margin: 0, maxWidth: '68ch', font: 'var(--type-caption)', color: 'var(--text-tertiary)' }}>
           Built for competitive weightlifting. Sinclair coefficients are the official 2021 to 2024 IWF values.
-          Lifting Lab is not affiliated with, endorsed by, or connected to the IWF, USA Weightlifting, or any
+          Barforge Weightlifting is not affiliated with, endorsed by, or connected to the IWF, USA Weightlifting, or any
           equipment manufacturer.
           {/* App Store is referenced in copy throughout the page (the hero
               and pricing CTAs show the real badge), so this credit runs

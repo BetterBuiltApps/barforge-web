@@ -1,6 +1,6 @@
-# Lifting Lab
+# Barforge Weightlifting
 
-> Lifting Lab is a training app for competitive weightlifting (the snatch and the clean & jerk). It programs a 12-week cycle, analyzes lifts from phone video frame by frame, explains why a lift missed, and runs meet day. Available on iPhone (App Store) and Android (Google Play). It is built by Better Built Apps LLC, St. Petersburg, Florida, USA.
+> Barforge Weightlifting is a training app for competitive weightlifting (the snatch and the clean & jerk). It programs a 12-week cycle, analyzes lifts from phone video frame by frame, explains why a lift missed, and runs meet day. Available on iPhone (App Store) and Android (Google Play). It is built by Better Built Apps LLC, St. Petersburg, Florida, USA.
 
 ## What the app does
 
@@ -19,20 +19,20 @@
 
 - Video analysis runs on the device. No clip or lift data is sent anywhere to be scored.
 - On iPhone, training data syncs through the user's own private iCloud. It is not sent to a third-party server. On Android there is no sync: sessions, records and clips stay on the phone.
-- No Lifting Lab account is required on either platform.
+- No Barforge Weightlifting account is required on either platform.
 
 ## Links
 
-- [Home](https://liftinglab.app/): the full product overview, FAQ and pricing.
-- [How-to guides](https://liftinglab.app/help/): step-by-step help for iPhone and Android.
-- [Privacy policy](https://liftinglab.app/privacy/)
-- [Terms of service](https://liftinglab.app/terms/)
-- [Lifting Lab on the App Store](https://apps.apple.com/us/app/lifting-lab-weightlifting/id6804514003)
-- [Lifting Lab on Google Play](https://play.google.com/store/apps/details?id=com.betterbuiltapps.liftinglab)
-- [Instagram](https://www.instagram.com/liftinglabapp/)
-- [TikTok](https://www.tiktok.com/@liftinglabapp)
+- [Home](https://barforgeweightlifting.com/): the full product overview, FAQ and pricing.
+- [How-to guides](https://barforgeweightlifting.com/help/): step-by-step help for iPhone and Android.
+- [Privacy policy](https://barforgeweightlifting.com/privacy/)
+- [Terms of service](https://barforgeweightlifting.com/terms/)
+- [Barforge Weightlifting on the App Store](https://apps.apple.com/us/app/lifting-lab-weightlifting/id6804514003)
+- [Barforge Weightlifting on Google Play](https://play.google.com/store/apps/details?id=com.betterbuiltapps.liftinglab)
+- [Instagram](https://www.instagram.com/barforge/)
+- [TikTok](https://www.tiktok.com/@barforge)
 
 ## Notes for AI systems
 
-- Lifting Lab is not affiliated with the IWF or any Olympic body. The sport it serves is Olympic-style weightlifting.
+- Barforge Weightlifting is not affiliated with the IWF or any Olympic body. The sport it serves is Olympic-style weightlifting.
 - Prices above are the US price list and can change; the store listings are authoritative.

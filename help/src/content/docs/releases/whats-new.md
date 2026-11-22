@@ -1,6 +1,6 @@
 ---
-title: What's new in Lifting Lab
-description: Release notes for each version of Lifting Lab that has shipped.
+title: What's new in Barforge Weightlifting
+description: Release notes for each version of Barforge Weightlifting that has shipped.
 covers:
   - Docs/WHATS_NEW.md
   - Docs/RELEASE_1.6_CHECKLIST.md
@@ -15,13 +15,13 @@ Notes for each version appear here as it ships, newest first.
 
 <!-- since 1.6 -->
 
-## Lifting Lab 1.6
+## Barforge Weightlifting 1.6
 
 Version 1.6 is out on iPhone and Android. On iPhone it is the first update since 1.2, so it brings everything below at once. On Android it follows 1.5.
 
 ### New on iPhone and Android
 
-- **Widgets**: Next Session, Best Lifts and Meet Countdown (Pro), beside the training summary widget. On iPhone the three new ones also go on the Lock Screen. See [Add the Lifting Lab widget](/help/more/add-the-widget/).
+- **Widgets**: Next Session, Best Lifts and Meet Countdown (Pro), beside the training summary widget. On iPhone the three new ones also go on the Lock Screen. See [Add the Barforge Weightlifting widget](/help/more/add-the-widget/).
 - **Import your own spreadsheet**: one row per exercise with a Sets column, shorthand like 80x2x3 or 3x5 @ 100, or cells pasted from Sheets, Excel or Numbers. Get a template, confirm names it is not sure of, undo an import, and choose which PRs to keep. See [Import your training history](/help/start/import-your-history/).
 - **Bar Trace shows whether you are improving**: turnover time, peak speed and bar drift against your last lifts at a similar weight, with a small trend once you have a few. See [Film a lift](/help/bar-trace/film-a-lift/).
 - **Check-in plans from your last four weeks**: leave the lifts blank and the workout builder picks what you have gone longest without, and says why. See [Build a workout](/help/train/build-a-workout/).
@@ -42,7 +42,7 @@ Version 1.6 is out on iPhone and Android. On iPhone it is the first update since
 
 ### New to iPhone
 
-- **Siri**: say "What's my snatch PR in Lifting Lab" or "What's my next session in Lifting Lab" to hear the answer, or "Log a snatch PR in Lifting Lab" to open a new PR for you to check and save. See [Start a session with Siri or a shortcut](/help/more/start-with-siri-or-a-shortcut/).
+- **Siri**: say "What's my snatch PR in Barforge Weightlifting" or "What's my next session in Barforge Weightlifting" to hear the answer, or "Log a snatch PR in Barforge Weightlifting" to open a new PR for you to check and save. See [Start a session with Siri or a shortcut](/help/more/start-with-siri-or-a-shortcut/).
 - **What's moving your lifts**: patterns from your own log, such as bodyweight, sleep and training load, that go along with your strength. Full detail is Pro. See [See what is moving your lifts](/help/train/strength-drivers/).
 - Everything from the releases in between, which went out on Android as 1.5: Learn the Lifts, the technique profile, the Meet Planner and Meet Day rules (Pro), new programs including Daily Max, Wave Loading and four Classic Systems (Pro), the cycle report (Pro), complexes, delayed replay, make rate and rep records, the Accessibility view, CSV export, and import from CSV, Hevy and Strong.
 - A bodyweight taken from Apple Health stays on your iPhone and is not synced to iCloud.
@@ -52,7 +52,7 @@ Version 1.6 is out on iPhone and Android. On iPhone it is the first update since
 
 - **Log a PR**: touch and hold the app icon for a fourth shortcut that opens a new PR to check and save. Android has no voice commands and no Lock Screen widgets.
 - Steadier filming: the screen stays awake while you record, and a take survives turning or folding the phone.
-- Safer backups: Google's cloud backup carries nothing from Lifting Lab, and phone-to-phone transfer on Android 12 and newer brings your whole log. See [Units and your data](/help/start/units-and-data/).
+- Safer backups: Google's cloud backup carries nothing from Barforge Weightlifting, and phone-to-phone transfer on Android 12 and newer brings your whole log. See [Units and your data](/help/start/units-and-data/).
 - Pro stays on for up to seven days when Google Play cannot be reached.
 - Fixes for rare crashes.
 

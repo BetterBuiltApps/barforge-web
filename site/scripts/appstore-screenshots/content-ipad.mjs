@@ -11,7 +11,7 @@
 
 import { resolve } from 'node:path';
 
-const ROOT = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development/Lifting Lab';
+const ROOT = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development/Barforge Weightlifting';
 const SCREENCAPS_IPAD = resolve(ROOT, 'Screencaps', 'ipad');
 const IMAGES = resolve(ROOT, 'Images');
 

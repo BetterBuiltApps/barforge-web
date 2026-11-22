@@ -1,4 +1,4 @@
-// The smart link at liftinglab.app/get. One URL for every video description,
+// The smart link at barforgeweightlifting.com/get. One URL for every video description,
 // QR code, and social bio link, so a store listing change or an Android
 // launch never means re-cutting a caption or re-printing a code. Reads
 // SITE.links.appStore and SITE.android from config.js, the same source every

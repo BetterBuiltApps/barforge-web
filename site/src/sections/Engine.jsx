@@ -24,7 +24,7 @@ export function Engine() {
           <div className="split" style={{ '--split-cols': 'minmax(0,1fr) minmax(0,1fr)', alignItems: 'start' }}>
             <div style={{ display: 'grid', gap: 28 }}>
               <SiteHead title="It already knows how you train." max={560}
-                body="Before it builds today's session, Lifting Lab reads your last month: how often you trained, how long sessions ran, where your misses clustered. Then it scales volume, intensity and rest to match. It never rewrites your program, and it shows its work." />
+                body="Before it builds today's session, Barforge Weightlifting reads your last month: how often you trained, how long sessions ran, where your misses clustered. Then it scales volume, intensity and rest to match. It never rewrites your program, and it shows its work." />
               <dl className="engine-facts">
                 {FACTS.map(([k, v]) => (
                   <div key={k}><dt>{k}</dt><dd>{v}</dd></div>

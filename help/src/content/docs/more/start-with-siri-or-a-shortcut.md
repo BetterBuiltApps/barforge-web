@@ -14,7 +14,7 @@ verified_for: "1.6"
 since: "1.5"
 ---
 
-Siri and the Shortcuts app can take you straight to the part of Lifting Lab you use most, without you finding it first. This is free.
+Siri and the Shortcuts app can take you straight to the part of Barforge Weightlifting you use most, without you finding it first. This is free.
 
 ## What you can ask for
 
@@ -30,7 +30,7 @@ Siri and the Shortcuts app can take you straight to the part of Lifting Lab you 
 
 The lifts Siri knows are snatch, clean and jerk, clean, back squat, front squat and power snatch. PR and next-session answers are free.
 
-Siri speaks these answers on your phone, and that includes when it is locked, so anyone nearby can hear your PR. Nothing is sent to Lifting Lab.
+Siri speaks these answers on your phone, and that includes when it is locked, so anyone nearby can hear your PR. Nothing is sent to Barforge Weightlifting.
 
 <!-- /since -->
 
@@ -38,13 +38,13 @@ Siri speaks these answers on your phone, and that includes when it is locked, so
 
 Say one of these, using the app's name at the end:
 
-- "Start my session in Lifting Lab"
-- "Open my Log Book in Lifting Lab"
-- "How long until my meet in Lifting Lab"
+- "Start my session in Barforge Weightlifting"
+- "Open my Log Book in Barforge Weightlifting"
+- "How long until my meet in Barforge Weightlifting"
 <!-- since 1.6 -->
-- "What's my snatch PR in Lifting Lab"
-- "What's my next session in Lifting Lab"
-- "Log a snatch PR in Lifting Lab"
+- "What's my snatch PR in Barforge Weightlifting"
+- "What's my next session in Barforge Weightlifting"
+- "Log a snatch PR in Barforge Weightlifting"
 <!-- /since -->
 
 On iPhone, a request made before first-time setup is finished waits until you finish it.
@@ -53,11 +53,11 @@ On iPhone, a request made before first-time setup is finished waits until you fi
 
 1. Open the **Shortcuts** app.
 2. Tap the plus button to make a new shortcut, then tap **Add Action**.
-3. Search for **Lifting Lab** and pick **Start My Session**, **Open My Log Book** or **Show My Next Meet Countdown**<!-- since 1.6 -->, or **What's My PR**, **What's My Next Session** or **Log a PR**<!-- /since -->.
+3. Search for **Barforge Weightlifting** and pick **Start My Session**, **Open My Log Book** or **Show My Next Meet Countdown**<!-- since 1.6 -->, or **What's My PR**, **What's My Next Session** or **Log a PR**<!-- /since -->.
 4. Tap **Done**.
 
 :::note[Android]
-Android has no spoken phrases yet. Instead, touch and hold the Lifting Lab icon to see three shortcuts: **Start my session**, **Log Book** and **Next meet**. Drag any of them onto your home screen to keep it there.
+Android has no spoken phrases yet. Instead, touch and hold the Barforge Weightlifting icon to see three shortcuts: **Start my session**, **Log Book** and **Next meet**. Drag any of them onto your home screen to keep it there.
 
 **Next meet** opens the Meet Planner. A shortcut tapped while a set is in progress or the camera is open does not interrupt it. A short message, **Finish or leave this workout first**, tells you it was skipped. A shortcut tapped before first-time setup is finished does nothing.
 <!-- since 1.6 -->

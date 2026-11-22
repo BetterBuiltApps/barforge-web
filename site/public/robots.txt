@@ -28,5 +28,5 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://liftinglab.app/sitemap.xml
-Sitemap: https://liftinglab.app/help/sitemap-index.xml
+Sitemap: https://barforgeweightlifting.com/sitemap.xml
+Sitemap: https://barforgeweightlifting.com/help/sitemap-index.xml

@@ -91,4 +91,4 @@ These terms and conditions are effective as of 2026-11-23.
 
 **Contact**
 
-Questions about these Terms: use the [contact form](https://barforge.app/weightlifting/#contact) at the bottom of our website.
+Questions about these Terms: use the [contact form](https://barforgeweightlifting.com/#contact) at the bottom of our website.

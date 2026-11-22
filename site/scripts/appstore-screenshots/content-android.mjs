@@ -8,7 +8,7 @@
 // a new device is "a new config entry and a second content.mjs, not a rewrite".
 //
 // Sources are real captures from the Android emulator at 1080x2160 (1:2),
-// in `Lifting Lab - Andriod/screencaps`. Nothing is mocked: the bar-path shot
+// in `Barforge Weightlifting - Andriod/screencaps`. Nothing is mocked: the bar-path shot
 // is a real analyzed clip, the others are the app on seeded sample data.
 //
 // Play wants phone screenshots at 16:9 or 9:16, each side 320 to 3840 px, so
@@ -22,10 +22,10 @@
 import { resolve } from 'node:path';
 
 const APPS = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development';
-const ANDROID_ROOT = resolve(APPS, 'Lifting Lab - Andriod');
+const ANDROID_ROOT = resolve(APPS, 'Barforge Weightlifting - Andriod');
 const SCREENCAPS = resolve(ANDROID_ROOT, 'screencaps');
 // The lifter photos live with the iPhone assets; they are shared brand imagery.
-const IMAGES = resolve(APPS, 'Lifting Lab - iPhone', 'Images');
+const IMAGES = resolve(APPS, 'Barforge Weightlifting - iPhone', 'Images');
 
 const BG = {
   cleanJerkMale: { file: resolve(IMAGES, 'ChatGPT Image Aug 17, 2026, 07_36_59 PM (1).png'), x: 66 },

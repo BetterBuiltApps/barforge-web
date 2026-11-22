@@ -15,7 +15,7 @@ since: "1.5"
 
 <!-- since 1.6 -->
 
-The importer also reads your own spreadsheet, with a template, shorthand like 80x2x3, name matching and undo. For those, read [Import your training history](/help/start/import-your-history/). This page covers CSV files from Hevy, Strong and a Lifting Lab export.
+The importer also reads your own spreadsheet, with a template, shorthand like 80x2x3, name matching and undo. For those, read [Import your training history](/help/start/import-your-history/). This page covers CSV files from Hevy, Strong and a Barforge Weightlifting export.
 
 <!-- /since -->
 
@@ -29,7 +29,7 @@ Go to **Settings**, then **Data & Privacy**, then tap **Import Training History 
 
 The importer reads these files, and the review tells you which one it recognised:
 
-- **Lifting Lab's own export**, from iPhone or Android.
+- **Barforge Weightlifting's own export**, from iPhone or Android.
 - **Hevy.** In Hevy, open Profile, Settings, Export & Import Data, Export Data, then Export Workouts. The importer looks for the columns title, start_time, exercise_title, set_type, weight_kg or weight_lbs, reps and rpe. Start times need English month names, and a start time in another language is listed as skipped. Times are read in your phone's time zone, so a workout near midnight can land on the neighbouring day.
 - **Strong.** Export your workouts from Strong. The importer looks for Date, Workout Name, Exercise Name, Set Order, Weight, Reps and RPE. W marks a warm-up set, and D and F mark drop and failure sets, which are imported as working sets. Older Strong files do not name the weight unit, so after you choose the file the review asks whether the weights are in kg or lb. Pick the unit Strong was set to, because the wrong one scales every weight by 2.2.
 - **Any other spreadsheet** with a date, an exercise, reps and a weight for every set. Other apps' files are not read by name.

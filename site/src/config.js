@@ -1,4 +1,4 @@
-/* Lifting Lab landing page, configuration. The app is live on the App Store,
+/* Barforge Weightlifting landing page, configuration. The app is live on the App Store,
    so every CTA on the site reads from `released` below and shows the real
    download badge and listing link. Flip back to false only if the listing
    is ever pulled. */
@@ -31,8 +31,8 @@ export const SITE = {
     get: '/get/',
     privacy: '/privacy/',
     terms: '/terms/',
-    instagram: 'https://www.instagram.com/liftinglabapp/',
-    tiktok: 'https://www.tiktok.com/@liftinglabapp',
+    instagram: 'https://www.instagram.com/barforge/',
+    tiktok: 'https://www.tiktok.com/@barforge',
     // No `support` mailto any more. It sent people out to a mail client, which
     // most never came back from, and the contact form is now the one route in.
     // The footer drops any link whose href is missing, so nothing else changed.
@@ -42,7 +42,7 @@ export const SITE = {
     playStore: 'https://play.google.com/store/apps/details?id=com.betterbuiltapps.liftinglab',
   },
   // Mirrors `released` above, but for the Android app. /get (the smart link
-  // at liftinglab.app/get) reads this to decide whether an Android visitor
+  // at barforgeweightlifting.com/get) reads this to decide whether an Android visitor
   // gets sent to a real Play Store listing or sees a "coming soon" message.
   // The app is live on Google Play, so this is true. Flip it back to false
   // only if the listing is ever pulled.
@@ -59,7 +59,7 @@ export const SITE = {
     // whatever we do with it, so there is nothing here to hide and no .env to
     // add. Rotate it in the Web3Forms dashboard if it ever attracts spam.
     accessKey: 'cd2da567-17a7-4cfb-834a-88534b13fa37',
-    subject: 'Lifting Lab site: new message',
+    subject: 'Barforge Weightlifting site: new message',
   },
   // Official badge, US/UK English, white lockup (product owner's call, over
   // the black lockup Apple states as its preferred default). The App Store

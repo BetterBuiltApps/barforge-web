@@ -4,7 +4,7 @@
 //   node scripts/appstore-screenshots/generate.mjs android-tablet
 //
 // Sources are real captures from the Android emulator resized to a tablet
-// shape (1600x2560 at 320 dpi, so 800x1280 dp), in `Lifting Lab - Andriod/
+// shape (1600x2560 at 320 dpi, so 800x1280 dp), in `Barforge Weightlifting - Andriod/
 // screencaps-tablet`. They are the app as it really renders at that size, not
 // mockups. The app has no tablet-specific layout: most screens are the phone
 // layout at full width, so the set uses the four screens that fill a tablet
@@ -17,7 +17,7 @@ import { resolve } from 'node:path';
 import { SHOTS as PHONE_SHOTS } from './content-android.mjs';
 
 const APPS = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development';
-const ANDROID_ROOT = resolve(APPS, 'Lifting Lab - Andriod');
+const ANDROID_ROOT = resolve(APPS, 'Barforge Weightlifting - Andriod');
 const SCREENCAPS = resolve(ANDROID_ROOT, 'screencaps-tablet');
 
 // Same lifter photos and crops as the phone set, so the two sets match.

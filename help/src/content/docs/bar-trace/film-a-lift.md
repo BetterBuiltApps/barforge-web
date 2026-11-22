@@ -1,6 +1,6 @@
 ---
 title: Film a lift and read your bar path
-description: Record or import a clip, mark the plate, and read the bar path Lifting Lab traces for you.
+description: Record or import a clip, mark the plate, and read the bar path Barforge Weightlifting traces for you.
 covers:
   - Docs/FEATURES.md#Tab 2, Bar Trace
   - LiftingLab/Features/BarPath/BarPathHomeView.swift
@@ -82,10 +82,10 @@ Standing too close is the most common problem: the plate looks oversized and the
 
 <!-- since 1.5 -->
 
-A clip you record in the app is also saved to your photo library, so the video survives a new phone or a reinstall. The first time, iPhone asks for permission to add to Photos. If you decline, or a save fails, the app tells you once: your recordings then live only inside Lifting Lab and are left out of iCloud backup, so a new phone will not bring them over. You can allow "Add Photos Only" in Settings. Clips you import already live in your library and are not copied again.
+A clip you record in the app is also saved to your photo library, so the video survives a new phone or a reinstall. The first time, iPhone asks for permission to add to Photos. If you decline, or a save fails, the app tells you once: your recordings then live only inside Barforge Weightlifting and are left out of iCloud backup, so a new phone will not bring them over. You can allow "Add Photos Only" in Settings. Clips you import already live in your library and are not copied again.
 
 :::note[Android]
-Recorded clips are copied to your gallery, in the Movies folder under Lifting Lab, on Android 10 and newer, with no permission prompt. If the phone refuses the copy or it fails, for example with no free space, Lifting Lab tells you once for each of those two cases that it holds the only copy of the clip, so a new phone or a reinstall will not bring it over. On Android 9 and older the clip stays in the app only, so keep your own copy if you want one.<!-- since 1.6 --> Moving to a new phone with Android's phone-to-phone transfer, on Android 12 and newer, brings the clips you filmed in Lifting Lab across with the rest of your training. Google's cloud backup does not carry them.<!-- /since -->
+Recorded clips are copied to your gallery, in the Movies folder under Barforge Weightlifting, on Android 10 and newer, with no permission prompt. If the phone refuses the copy or it fails, for example with no free space, Barforge Weightlifting tells you once for each of those two cases that it holds the only copy of the clip, so a new phone or a reinstall will not bring it over. On Android 9 and older the clip stays in the app only, so keep your own copy if you want one.<!-- since 1.6 --> Moving to a new phone with Android's phone-to-phone transfer, on Android 12 and newer, brings the clips you filmed in Barforge Weightlifting across with the rest of your training. Google's cloud backup does not carry them.<!-- /since -->
 :::
 
 <!-- /since -->
@@ -195,7 +195,7 @@ The grades on the Bar Trace tab follow the level too: change it, go back to the 
 ## Share, compare and manage
 
 - **Share** makes a vertical clip with the trace and stats on it.<!-- since 1.5 --> On iPhone, a NEW PR badge is added only when the clip is of a made single, filmed from a logged set, that set your record. A miss, a tie of your best, or a clip imported on its own never carries it. The Android share clip has no PR badge. If the rendered clip is gone before it can be shared, nothing is sent and a banner says the file could not be prepared (on Android, the save-failure banner).<!-- /since -->
-- **Compare** overlays two analyses (Pro).<!-- since 1.5 --> The Compare button appears on the Bar Trace tab once you have two analyses. On a Free plan it is still there: tap it and Lifting Lab shows what Pro adds.<!-- /since --> Once you pick the first clip, only clips of the same exercise are listed, so you can never compare two different lifts.<!-- since 1.5 --> A change too small to measure is not called better or worse, and when the two lifts were at different weights, bar speed is shown but not judged, because the bar moves slower as the weight goes up.<!-- /since -->
+- **Compare** overlays two analyses (Pro).<!-- since 1.5 --> The Compare button appears on the Bar Trace tab once you have two analyses. On a Free plan it is still there: tap it and Barforge Weightlifting shows what Pro adds.<!-- /since --> Once you pick the first clip, only clips of the same exercise are listed, so you can never compare two different lifts.<!-- since 1.5 --> A change too small to measure is not called better or worse, and when the two lifts were at different weights, bar speed is shown but not judged, because the bar moves slower as the weight goes up.<!-- /since -->
 - **Re-analyze** and **Delete** are in the menu on the result screen.
 
 :::note

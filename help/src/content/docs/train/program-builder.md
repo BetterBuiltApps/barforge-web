@@ -69,7 +69,7 @@ On Android, an exercise row also offers **Make it a complex**, and a day offers 
 
 Your programs appear under **Custom and Imported** on the Programs screen, where you open one and tap **Start This Program** like any other. Your own programs are never locked behind Pro to run.
 
-The **Export** menu on a program offers **Print Program**, **Save as PDF** and **Send to Another Athlete (.liftinglab)**, a file anyone with Lifting Lab can open. To add a program someone sent you, tap **Add a Program You Were Sent** at the foot of the Programs screen and choose the file.
+The **Export** menu on a program offers **Print Program**, **Save as PDF** and **Send to Another Athlete (.liftinglab)**, a file anyone with Barforge Weightlifting can open. To add a program someone sent you, tap **Add a Program You Were Sent** at the foot of the Programs screen and choose the file.
 
 <!-- since 1.5 -->
 
@@ -89,18 +89,18 @@ On Android the **Export** menu offers the same three choices, and the Programs s
 
 <!-- since 1.5 -->
 
-Long-press a routine on the Programs screen and choose **Share (.liftinglabworkout)**. Lifting Lab makes a small file you can send by AirDrop, Messages, email or Files. Your friend taps it to open it in Lifting Lab, and it appears under their Routines. If they already have a routine with the same name, theirs is kept and the new one becomes "Name (2)".
+Long-press a routine on the Programs screen and choose **Share (.liftinglabworkout)**. Barforge Weightlifting makes a small file you can send by AirDrop, Messages, email or Files. Your friend taps it to open it in Barforge Weightlifting, and it appears under their Routines. If they already have a routine with the same name, theirs is kept and the new one becomes "Name (2)".
 
 The file holds the exercises, sets, reps and percentages or effort levels, so loads are worked out from your friend's own maxes. It does not include your records or your weight history. The one exception is a row you set to a fixed weight: that row keeps the weight you typed.
 
-A file from a newer version of Lifting Lab, or one that uses an exercise your friend's version does not have, is not imported, and the app asks them to update. A routine that cannot be read has no Share option.
+A file from a newer version of Barforge Weightlifting, or one that uses an exercise your friend's version does not have, is not imported, and the app asks them to update. A routine that cannot be read has no Share option.
 
 A file that was edited by hand, or damaged, is made safe on the way in. A set count, rep count, time, distance or intensity beyond what the builder allows is brought back to the nearest allowed value, and a complex that cannot be lifted as written is replaced by its main lift. Either way the import message tells your friend what was changed. This is the same on iPhone and Android.
 
-If Lifting Lab cannot prepare the file to send, for example because the device is out of storage, nothing is sent and a banner says so. On iPhone it reads **Couldn't prepare the file to share**. On Android it is the save-failure banner, **Couldn't save your last change**, with the step it was on. Your programs are not affected. The same banner appears when a program PDF, a program file (.liftinglab) or a session file cannot be prepared.
+If Barforge Weightlifting cannot prepare the file to send, for example because the device is out of storage, nothing is sent and a banner says so. On iPhone it reads **Couldn't prepare the file to share**. On Android it is the save-failure banner, **Couldn't save your last change**, with the step it was on. Your programs are not affected. The same banner appears when a program PDF, a program file (.liftinglab) or a session file cannot be prepared.
 
 :::note[Android]
-Long-press the routine card in the same way. The menu item has the same name, and the file goes out through Android's share sheet, so the apps offered are the ones on your phone (AirDrop is iPhone only). Tapping a received file in Files, a chat or an email opens it in Lifting Lab. Workout files work between iPhone and Android in both directions.
+Long-press the routine card in the same way. The menu item has the same name, and the file goes out through Android's share sheet, so the apps offered are the ones on your phone (AirDrop is iPhone only). Tapping a received file in Files, a chat or an email opens it in Barforge Weightlifting. Workout files work between iPhone and Android in both directions.
 :::
 
 <!-- /since -->

@@ -1,5 +1,5 @@
 ---
-title: Get started with Lifting Lab
+title: Get started with Barforge Weightlifting
 description: A first look at the app's tabs and what to expect the first time you open it.
 covers:
   - Docs/FEATURES.md#Onboarding
@@ -11,9 +11,9 @@ covers:
 verified_for: "1.5"
 ---
 
-Lifting Lab is a training companion for Olympic weightlifting. It helps you plan a session, log every set, film a lift and trace the bar, and keep track of your records. This page covers the first launch and where things live.
+Barforge Weightlifting is a training companion for Olympic weightlifting. It helps you plan a session, log every set, film a lift and trace the bar, and keep track of your records. This page covers the first launch and where things live.
 
-These guides cover Lifting Lab on iPhone and on Android. Where the two differ, a note says so.
+These guides cover Barforge Weightlifting on iPhone and on Android. Where the two differ, a note says so.
 
 <video controls playsinline preload="none" poster="/help/videos/v2/L4-poster.webp" width="300" aria-describedby="L4-desc">
   <source src="/help/videos/v2/L4.mp4" type="video/mp4">

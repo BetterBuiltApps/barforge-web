@@ -188,7 +188,7 @@ export function Arc() {
                 Weights come from your real PRs, with the plates already worked out.
               </p>
               <p className="arc-lede arc-lede--quiet">
-                Miss a session and Lifting Lab reschedules it. More programs are Pro.
+                Miss a session and Barforge Weightlifting reschedules it. More programs are Pro.
               </p>
             </div>
             <div className="arc-close-shots">
@@ -236,7 +236,7 @@ export function Arc() {
             </div>
             <div className="arc-miss-body">
               <p className="arc-lede">
-                Film the set on your phone. Lifting Lab traces the bar, grades the lift and names the one
+                Film the set on your phone. Barforge Weightlifting traces the bar, grades the lift and names the one
                 thing to fix. No sensor, no pairing.
               </p>
               <p className="arc-lede arc-lede--quiet">
@@ -257,7 +257,7 @@ export function Arc() {
             <div className="arc-row">
               <div>
                 <p className="arc-lede">
-                  Taper week is arithmetic. Lifting Lab does it from your own lifts, not a table.
+                  Taper week is arithmetic. Barforge Weightlifting does it from your own lifts, not a table.
                 </p>
                 <dl className="arc-facts">
                   <div><dt>Sinclair</dt><dd>Your total, scored for your bodyweight</dd></div>

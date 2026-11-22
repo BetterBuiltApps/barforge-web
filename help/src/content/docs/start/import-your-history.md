@@ -74,5 +74,5 @@ its reason, and **Share Skipped Rows** gives you the list as a CSV to fix in the
 :::note[Android]
 The **Import Training History (CSV)** row is in the **Data** section of **Settings**, next to Export, not under Data & Privacy. The file picker is the system document picker. The results are the same as on iPhone.
 
-A workout file (**.liftinglabworkout**) or program file shared to Lifting Lab from another app shows what is in it first. Nothing is saved until you tap **Save**, and **Cancel** saves nothing.
+A workout file (**.liftinglabworkout**) or program file shared to Barforge Weightlifting from another app shows what is in it first. Nothing is saved until you tap **Save**, and **Cancel** saves nothing.
 :::

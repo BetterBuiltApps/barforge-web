@@ -97,11 +97,11 @@
   "videos": {
     "ML0": {
       "id": "ML0",
-      "title": "Lifting Lab, all of it",
+      "title": "Barforge Weightlifting, all of it",
       "kind": "master",
       "plan": "Mixed",
       "hook": "No account. No signup. Just lift.",
-      "body": "The core of Lifting Lab.",
+      "body": "The core of Barforge Weightlifting.",
       "seconds": 30,
       "mp4": "assets/video/v2/ML0.mp4",
       "poster": "assets/video/v2/ML0-poster.webp",

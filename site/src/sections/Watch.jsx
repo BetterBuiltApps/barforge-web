@@ -72,7 +72,7 @@ export function Watch() {
         </div>
 
         <p className="watch-foot">
-          Pro marks a feature that Pro unlocks. Lifting Lab is free to download, with no account needed.{' '}
+          Pro marks a feature that Pro unlocks. Barforge Weightlifting is free to download, with no account needed.{' '}
           <a href="/help/">Step by step guides</a>
         </p>
       </div>

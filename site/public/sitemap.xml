@@ -4,7 +4,7 @@
      claim pages that do not exist. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://liftinglab.app/</loc>
+    <loc>https://barforgeweightlifting.com/</loc>
     <!-- No lastmod here: it is stamped onto the built copy at deploy time
          with today's real date, see scripts/prerender.mjs. A hand-written
          date in source is exactly the kind of thing that goes stale the
@@ -13,13 +13,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://liftinglab.app/privacy/</loc>
+    <loc>https://barforgeweightlifting.com/privacy/</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://liftinglab.app/terms/</loc>
+    <loc>https://barforgeweightlifting.com/terms/</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

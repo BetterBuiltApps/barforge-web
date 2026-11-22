@@ -36,14 +36,14 @@ export function StructuredData() {
   const softwareApplication = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Lifting Lab',
-    '@id': 'https://liftinglab.app/#app',
+    name: 'Barforge Weightlifting',
+    '@id': 'https://barforgeweightlifting.com/#app',
     applicationCategory: 'HealthApplication',
     applicationSubCategory: 'Olympic weightlifting: snatch and clean & jerk',
     // Android is live on Google Play (SITE.android.released).
     operatingSystem: SITE.android.released ? 'iOS, Android' : 'iOS',
-    image: 'https://liftinglab.app/assets/og.png',
-    publisher: { '@id': 'https://liftinglab.app/#org' },
+    image: 'https://barforgeweightlifting.com/assets/og.png',
+    publisher: { '@id': 'https://barforgeweightlifting.com/#org' },
     featureList: [
       '12-week and peaking training cycles',
       'Frame-by-frame bar-path video analysis',
@@ -58,8 +58,8 @@ export function StructuredData() {
         'Home Screen widgets, and Lock Screen widgets and Siri on iPhone',
       ] : []),
     ],
-    description: 'Snatch. Clean & Jerk. Measured. Film a lift and see where the bar went. Get the fix before your next set. Lifting Lab programs your cycle and gets you through meet day. Built for one sport: the snatch and the clean & jerk.',
-    url: 'https://liftinglab.app/',
+    description: 'Snatch. Clean & Jerk. Measured. Film a lift and see where the bar went. Get the fix before your next set. Barforge Weightlifting programs your cycle and gets you through meet day. Built for one sport: the snatch and the clean & jerk.',
+    url: 'https://barforgeweightlifting.com/',
     // Same reasoning as AppStoreButton (Chrome.jsx): don't tell Google there
     // are live purchasable offers for an app that isn't in the App Store
     // yet. Google can surface `offers` as a price rich result, which would
@@ -89,11 +89,11 @@ export function StructuredData() {
   const organization = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://liftinglab.app/#org',
+    '@id': 'https://barforgeweightlifting.com/#org',
     name: 'Better Built Apps LLC',
-    alternateName: 'Lifting Lab',
-    url: 'https://liftinglab.app/',
-    logo: 'https://liftinglab.app/assets/mark.svg',
+    alternateName: 'Barforge Weightlifting',
+    url: 'https://barforgeweightlifting.com/',
+    logo: 'https://barforgeweightlifting.com/assets/mark.svg',
     sameAs: [SITE.links.instagram, SITE.links.tiktok].filter(Boolean),
     address: {
       '@type': 'PostalAddress',
@@ -108,10 +108,10 @@ export function StructuredData() {
   const website = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://liftinglab.app/#website',
-    name: 'Lifting Lab',
-    url: 'https://liftinglab.app/',
-    publisher: { '@id': 'https://liftinglab.app/#org' },
+    '@id': 'https://barforgeweightlifting.com/#website',
+    name: 'Barforge Weightlifting',
+    url: 'https://barforgeweightlifting.com/',
+    publisher: { '@id': 'https://barforgeweightlifting.com/#org' },
     inLanguage: 'en',
   };
 

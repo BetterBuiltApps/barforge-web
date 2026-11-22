@@ -1,5 +1,5 @@
 ---
-title: Add the Lifting Lab widget
+title: Add the Barforge Weightlifting widget
 description: Put your next session, this week's tonnage, your best lifts, your latest PR and the days to your meet on your home screen.
 covers:
   - LiftingLabWidgets/LiftingLabSummaryWidget.swift
@@ -15,7 +15,7 @@ verified_for: "1.6"
 since: "1.5"
 ---
 
-The Lifting Lab widget puts the numbers you check most on your home screen, so you can see them without opening the app. It is free.
+The Barforge Weightlifting widget puts the numbers you check most on your home screen, so you can see them without opening the app. It is free.
 
 <!-- since 1.6 -->
 
@@ -46,25 +46,25 @@ It comes in two sizes, small and medium.
 
 1. Touch and hold an empty spot on your home screen.
 2. Tap the plus button in the top corner.
-3. Search for **Lifting Lab** and pick the widget.
+3. Search for **Barforge Weightlifting** and pick the widget.
 4. Choose small or medium, then tap **Add Widget**.
 
 <!-- since 1.6 -->
 
 ## Add one to your Lock Screen (iPhone)
 
-Touch and hold the Lock Screen, tap **Customize**, then tap the widget area and choose Lifting Lab. Lock Screen widgets can be seen without unlocking your phone. To hide what they show until you unlock it, go to **Settings**, then **Face ID & Passcode**, and turn off widgets under **Allow access when locked**.
+Touch and hold the Lock Screen, tap **Customize**, then tap the widget area and choose Barforge Weightlifting. Lock Screen widgets can be seen without unlocking your phone. To hide what they show until you unlock it, go to **Settings**, then **Face ID & Passcode**, and turn off widgets under **Allow access when locked**.
 
 <!-- /since -->
 
 ## When it updates
 
-On iPhone the widget refreshes when you open the app, leave it, finish a session<!-- since 1.6 -->, save a PR<!-- /since -->, or your Pro status changes. Today and Tomorrow flip at midnight on their own.<!-- since 1.6 --> Next Session and the meet countdown also move on at midnight by themselves.<!-- /since --> If the numbers come from an earlier day, the widget says **As of** with that date, so you know how old they are. Open Lifting Lab to bring it up to date.
+On iPhone the widget refreshes when you open the app, leave it, finish a session<!-- since 1.6 -->, save a PR<!-- /since -->, or your Pro status changes. Today and Tomorrow flip at midnight on their own.<!-- since 1.6 --> Next Session and the meet countdown also move on at midnight by themselves.<!-- /since --> If the numbers come from an earlier day, the widget says **As of** with that date, so you know how old they are. Open Barforge Weightlifting to bring it up to date.
 
 :::note[Android]
-To add it, touch and hold an empty spot on your home screen, tap **Widgets**, then find **Lifting Lab**.
+To add it, touch and hold an empty spot on your home screen, tap **Widgets**, then find **Barforge Weightlifting**.
 
-The Android widget reads your log directly instead of a saved copy, and it refreshes shortly after a session, a set, a PR or a program change is saved, or after your Pro status changes. With no PR logged, the tile reads **No PR logged**. If it cannot read your log it says so and asks you to open Lifting Lab.
+The Android widget reads your log directly instead of a saved copy, and it refreshes shortly after a session, a set, a PR or a program change is saved, or after your Pro status changes. With no PR logged, the tile reads **No PR logged**. If it cannot read your log it says so and asks you to open Barforge Weightlifting.
 <!-- since 1.6 -->
 
 There are no Lock Screen widgets on Android. The three new widgets are on the home screen only, under **Widgets** in the same list. They read your log the same way and refresh when a session, set, PR or program change is saved, or your Pro status changes. Next Session and Meet Countdown are short and wide, and Best Lifts is square.

@@ -37,7 +37,7 @@ export function SiteNav() {
     }}>
     <nav aria-label="Primary">
       <div style={{ ...siteWrap, display: 'flex', alignItems: 'center', gap: 28, height: 68 }}>
-        <a href="#main" aria-label="Lifting Lab, back to top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' }); }} style={{ display: 'inline-flex' }}>
+        <a href="#main" aria-label="Barforge Weightlifting, back to top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' }); }} style={{ display: 'inline-flex' }}>
           <img src={asset('assets/logo.svg')} alt="" style={{ height: 34 }} />
         </a>
         <span style={{ flex: 1 }} />
@@ -64,7 +64,7 @@ export function SiteNav() {
             e.preventDefault();
             window.scrollTo({ top: el.offsetTop - 88, behavior: prefersReduced ? 'auto' : 'smooth' });
           }}>
-            Get Lifting Lab
+            Get Barforge Weightlifting
           </Button>
         </span>
         <button
@@ -94,7 +94,7 @@ export function SiteNav() {
               {/* The CTA the bar cannot fit at this width. */}
               <a href="#pricing" onClick={() => setMenuOpen(false)}
                  style={{ font: 'var(--type-headline)', fontWeight: 700, color: 'var(--amber)', padding: '14px 0' }}>
-                Get Lifting Lab
+                Get Barforge Weightlifting
               </a>
             </div>
           </motion.div>
@@ -212,7 +212,7 @@ function ComingSoonPill({ height, children }) {
 }
 
 /** App Store / Google Play CTA, used in hero and pricing. On Android
- * (`useDevice`, same UA sniff liftinglab.app/get uses), this reads
+ * (`useDevice`, same UA sniff barforgeweightlifting.com/get uses), this reads
  * SITE.android: with a released listing it shows Google's official badge
  * linked to Play; before that it shows a "coming soon" pill rather than a
  * store badge nothing backs.
@@ -320,7 +320,7 @@ const HEALTH_BADGE_HEIGHT = 40;
 /** A plain download button for the repeated asks lower on the page. Apple's badge rules allow one App Store badge per layout,
  * so the badge itself stays in the hero and in Pricing; these rows use a normal button that goes to the same store listing
  * (Google Play on Android). Never the Apple logo, never a copy of the badge artwork. */
-export function DownloadButton({ children = 'Download Lifting Lab' }) {
+export function DownloadButton({ children = 'Download Barforge Weightlifting' }) {
   const device = useDevice();
   const android = device === 'android';
   // A desktop visitor goes to /get, which shows both store badges; a phone goes straight to its own store.

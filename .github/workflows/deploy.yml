@@ -72,7 +72,7 @@ jobs:
       - name: Build
         working-directory: site
         run: npm run build
-      # The guides are served at liftinglab.app/help/ (astro base: /help), so
+      # The guides are served at barforgeweightlifting.com/help/ (astro base: /help), so
       # their build output is copied under the site's dist after the site build.
       - name: Install help dependencies
         working-directory: help

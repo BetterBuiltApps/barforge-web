@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-/** Shared UA sniffing. liftinglab.app/get (get.js, no React) uses this to
+/** Shared UA sniffing. barforgeweightlifting.com/get (get.js, no React) uses this to
  * redirect outright; AppStoreButton and HealthBadge (Chrome.jsx) use the
  * `useDevice` hook below to swap in Android-specific copy instead of
  * claiming an Apple-only capability, or a Play Store listing that doesn't

@@ -26,7 +26,7 @@ often loud. Attention is measured in the rest between sets.
 
 ## Product Purpose
 
-Lifting Lab is an iPhone and Android app for Olympic weightlifting. It programs the training
+Barforge Weightlifting is an iPhone and Android app for Olympic weightlifting. It programs the training
 cycle, builds each day's session around how the lifter actually feels, analyzes
 lifts from phone video, and plans meet day. This site is its marketing page. Both apps are live, so its job is to make the app
 understood and downloaded. `SITE.released` and `SITE.android.released` gate the store CTAs.
@@ -81,7 +81,7 @@ warm at the wrong time is a real failure.
 
 ## Brand Commitments
 
-- Name: **Lifting Lab**. The name is fixed; the rest of the identity is not
+- Name: **Barforge Weightlifting**. The name is fixed; the rest of the identity is not
   treated as untouchable.
 - Dark interface, single amber accent (`#F5A623` on `#1A1A1A`), mirroring the
   app's `LiftingLab/Theme/Theme.swift`, which is the token source of truth.

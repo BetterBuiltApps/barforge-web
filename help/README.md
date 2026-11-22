@@ -1,4 +1,4 @@
-# Lifting Lab Help (liftinglab.app/help/)
+# Barforge Weightlifting Help (barforgeweightlifting.com/help/)
 
 Task-based how-to guides for the app. Starlight (Astro), plain Markdown, one
 article per task. Deployed with the marketing site: `deploy.yml` builds this and

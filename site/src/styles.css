@@ -80,7 +80,7 @@ a:hover { color: var(--amber); }
 }
 
 /* Rotating amber highlight sweeping around an element's own border, used on
-   the Pro pricing card and the nav's "Get Lifting Lab" button. Pure CSS: a
+   the Pro pricing card and the nav's "Get Barforge Weightlifting" button. Pure CSS: a
    masked conic-gradient ring, animated via an animatable custom property. */
 @property --border-angle {
   syntax: '<angle>';

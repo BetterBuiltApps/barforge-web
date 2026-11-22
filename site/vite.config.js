@@ -18,7 +18,7 @@ const dataFile = (name) => {
   return resolve(__dirname, `src/data/${name}.${v}.json`);
 };
 
-// Served at the custom domain liftinglab.app (see public/CNAME), so assets
+// Served at the custom domain barforgeweightlifting.com (see public/CNAME), so assets
 // resolve from the root. Switch back to '/lifting-lab-website/' if the
 // custom domain is ever removed and this falls back to the github.io URL.
 export default defineConfig({

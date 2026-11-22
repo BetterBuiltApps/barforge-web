@@ -2,18 +2,18 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import remarkSince from './src/plugins/remark-since.mjs';
 
-// Served at liftinglab.app/help/. The deploy workflow copies dist/ into
+// Served at barforgeweightlifting.com/help/. The deploy workflow copies dist/ into
 // site/dist/help, so the base has to match that path exactly.
 export default defineConfig({
-  site: 'https://liftinglab.app',
+  site: 'https://barforgeweightlifting.com',
   base: '/help',
   trailingSlash: 'always',
   // Release gating: text between since markers is dropped until APP_RELEASE reaches that version (tools/release.mjs).
   markdown: { remarkPlugins: [remarkSince] },
   integrations: [
     starlight({
-      title: 'Lifting Lab Help',
-      description: 'Step-by-step guides for Lifting Lab, the snatch and clean & jerk training app: logging sessions, building workouts, Bar Trace and more.',
+      title: 'Barforge Weightlifting Help',
+      description: 'Step-by-step guides for Barforge Weightlifting, the snatch and clean & jerk training app: logging sessions, building workouts, Bar Trace and more.',
       // Dark only is the brand. The theme picker is replaced with nothing and
       // the light palette is overridden in custom.css, so no visitor can land
       // in a light theme.
@@ -25,12 +25,12 @@ export default defineConfig({
         { tag: 'link', attrs: { rel: 'icon', href: '/favicon.ico', sizes: '48x48' } },
         { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' } },
         { tag: 'meta', attrs: { name: 'theme-color', content: '#1A1A1A' } },
-        { tag: 'meta', attrs: { property: 'og:image', content: 'https://liftinglab.app/assets/og.png' } },
-        { tag: 'meta', attrs: { property: 'og:image:alt', content: 'The Lifting Lab wordmark: a barbell through a laboratory flask.' } },
+        { tag: 'meta', attrs: { property: 'og:image', content: 'https://barforgeweightlifting.com/assets/og.png' } },
+        { tag: 'meta', attrs: { property: 'og:image:alt', content: 'The Barforge Weightlifting wordmark.' } },
         { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
-        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://liftinglab.app/assets/og.png' } },
+        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://barforgeweightlifting.com/assets/og.png' } },
       ],
-      social: [{ icon: 'external', label: 'liftinglab.app', href: 'https://liftinglab.app/' }],
+      social: [{ icon: 'external', label: 'barforgeweightlifting.com', href: 'https://barforgeweightlifting.com/' }],
       sidebar: [
         { label: 'Start here', items: [{ autogenerate: { directory: 'start' } }] },
         { label: 'Training', items: [{ autogenerate: { directory: 'train' } }] },

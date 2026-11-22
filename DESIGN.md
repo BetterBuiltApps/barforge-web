@@ -1,5 +1,5 @@
 ---
-name: Lifting Lab
+name: Barforge Weightlifting
 description: The dark instrument palette of a competitive weightlifting app, carried onto the web.
 colors:
   bg: "#1a1a1a"
@@ -144,7 +144,7 @@ components:
     typography: "{typography.subheadline}"
 ---
 
-# Design System: Lifting Lab
+# Design System: Barforge Weightlifting
 
 ## Overview
 

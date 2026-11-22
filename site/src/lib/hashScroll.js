@@ -1,4 +1,4 @@
-// Land on the section a link like liftinglab.app/#contact points at.
+// Land on the section a link like barforgeweightlifting.com/#contact points at.
 //
 // The page is rendered by React after the browser has already tried to jump to
 // the hash, so the target did not exist yet and the page stayed at the top. This

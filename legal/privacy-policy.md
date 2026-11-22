@@ -7,7 +7,7 @@ This privacy policy explains how Better Built Apps LLC ("Better Built Apps," "we
 *   Name: Better Built Apps LLC
 *   Address: 7901 4th St N STE 300, St. Petersburg, FL 33702
 *   Privacy contact: {{PRIVACY_EMAIL}}
-*   Privacy requests and other questions: the [contact form](https://barforge.app/weightlifting/#contact) at the bottom of barforge.app/weightlifting. Start your message with "Privacy request" so we can find it.
+*   Privacy requests and other questions: the [contact form](https://barforgeweightlifting.com/#contact) at the bottom of barforgeweightlifting.com. Start your message with "Privacy request" so we can find it.
 
 
 Better Built Apps LLC is the controller for the personal data described in this policy. For any question about this policy or your data, email us at the privacy address above or use the form.
@@ -99,13 +99,13 @@ If you use Barforge Weightlifting's coaching features, you can export a training
 
 *   We do not operate a server that stores your training data.
 *   We do not use third-party analytics, advertising, or tracking SDKs of any kind in the Barforge Weightlifting apps. The apps do not use Google Analytics. Our website is separate: see "Our website" below.
-*   We do not use cookies in the apps (Barforge Weightlifting is a native app). Our website, barforge.app, does set cookies: see "Our website" below.
+*   We do not use cookies in the apps (Barforge Weightlifting is a native app). Our website, barforgeweightlifting.com, does set cookies: see "Our website" below.
 *   We do not track your precise location.
 *   We do not sell your personal information, and we do not share it with third parties for their own purposes.
 
 **Our website**
 
-The Barforge website (barforge.app) is separate from the iOS and Android apps. It uses Google Analytics 4, a web analytics service from Google, to understand how much traffic the site gets, which pages people visit, and how they use the site. Google Analytics uses cookies to collect information such as the pages you visit, interactions such as playing a demo video, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the apps.
+The Barforge Weightlifting website (barforgeweightlifting.com) is separate from the iOS and Android apps. It uses Google Analytics 4, a web analytics service from Google, to understand how much traffic the site gets, which pages people visit, and how they use the site. Google Analytics uses cookies to collect information such as the pages you visit, interactions such as playing a demo video, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the apps.
 
 The Barforge Weightlifting apps do not use Google Analytics or any other third-party analytics, and they send nothing to the website's analytics.
 
@@ -117,7 +117,7 @@ Google Analytics data is not linked to your name or any account, so we cannot lo
 
 **If you contact us**
 
-If you reach us through the [contact form](https://barforge.app/weightlifting/#contact) on our website, the form sends your name, email address, and message. It is relayed to us by email by Web3Forms, an India-based form service that acts as our processor. Web3Forms may send your IP address and email address to the spam filters CleanTalk and Akismet, and may keep a copy of your submission for up to 3 years under its own terms (see its [privacy policy](https://web3forms.com/privacy)). If you email us directly, we receive your email address and message. We use these only to reply to you and handle your request. We do not use them for marketing, and we share them only with the service providers that carry them to us (see "Who receives data" below). We keep your messages for as long as we need to handle your request, and delete our copy (in the developer's inbox) no later than 12 months after our last exchange, unless you ask us to delete it sooner.
+If you reach us through the [contact form](https://barforgeweightlifting.com/#contact) on our website, the form sends your name, email address, and message. It is relayed to us by email by Web3Forms, an India-based form service that acts as our processor. Web3Forms may send your IP address and email address to the spam filters CleanTalk and Akismet, and may keep a copy of your submission for up to 3 years under its own terms (see its [privacy policy](https://web3forms.com/privacy)). If you email us directly, we receive your email address and message. We use these only to reply to you and handle your request. We do not use them for marketing, and we share them only with the service providers that carry them to us (see "Who receives data" below). We keep your messages for as long as we need to handle your request, and delete our copy (in the developer's inbox) no later than 12 months after our last exchange, unless you ask us to delete it sooner.
 
 **Our website hosting**
 
@@ -187,7 +187,7 @@ Depending on where you live, you may have rights under laws like the EU/UK GDPR 
 *   receive it in a portable format (data portability);
 *   withdraw your consent at any time, where we rely on consent, without affecting what was done before.
 
-For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. The app can also export your sessions and programs as files. For anything we do hold (your correspondence with us, described above), use the [contact form](https://barforge.app/weightlifting/#contact) on our website (start your message with "Privacy request") or email {{PRIVACY_EMAIL}}. We will respond within one month, as the GDPR requires (we may extend this by up to two further months for complex requests, and will tell you if we do).
+For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. The app can also export your sessions and programs as files. For anything we do hold (your correspondence with us, described above), use the [contact form](https://barforgeweightlifting.com/#contact) on our website (start your message with "Privacy request") or email {{PRIVACY_EMAIL}}. We will respond within one month, as the GDPR requires (we may extend this by up to two further months for complex requests, and will tell you if we do).
 
 If you believe your rights have been violated, you have the right to complain to a data protection supervisory authority. In the EU, that is the authority in the country where you live or work, or where you think the problem happened. In the UK, it is the Information Commissioner's Office (ICO). We would appreciate the chance to sort it out with you first.
 
@@ -203,4 +203,4 @@ This privacy policy is effective as of 2026-11-23.
 
 **Contact**
 
-Questions about this policy or your data: use the [contact form](https://barforge.app/weightlifting/#contact) at the bottom of our website (start your message with "Privacy request" for a privacy request) or email {{PRIVACY_EMAIL}}.
+Questions about this policy or your data: use the [contact form](https://barforgeweightlifting.com/#contact) at the bottom of our website (start your message with "Privacy request" for a privacy request) or email {{PRIVACY_EMAIL}}.

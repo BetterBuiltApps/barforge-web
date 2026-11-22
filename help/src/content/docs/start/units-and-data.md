@@ -58,7 +58,7 @@ On a new iPhone signed in to the same iCloud account, the app waits a few second
 
 <!-- since 1.6 -->
 
-With iCloud sync on, a workout or PR you log on one of your devices shows up on the others while Lifting Lab is open or in the background, without reopening the app.
+With iCloud sync on, a workout or PR you log on one of your devices shows up on the others while Barforge Weightlifting is open or in the background, without reopening the app.
 
 A bodyweight taken from Apple Health (**Use Health value** in your profile) stays on that iPhone. It is not synced to iCloud and not included in your iPhone backup. A bodyweight you type in yourself syncs like the rest of your training.
 
@@ -67,13 +67,13 @@ A bodyweight taken from Apple Health (**Use Health value** in your profile) stay
 Bar Trace video clips are handled separately. They save to your photo library either way. You can choose in Data & Privacy whether they also sync to iCloud so your other devices can play them, and the screen shows how much space your clips use.
 
 :::note[Android]
-Android keeps everything on the phone. There is no iCloud sync and no sync setting. Your sessions, records, profile and Bar Trace clips are stored on this device only, clips are copied into the app's private storage, and the app makes no network calls of its own.<!-- since 1.5 --> Clips you record in the app are also copied to your gallery (Movies, then Lifting Lab) on Android 10 and newer, so you keep the video if you change phones. What your gallery backs up is up to you; Lifting Lab sends nothing.<!-- /since -->
+Android keeps everything on the phone. There is no iCloud sync and no sync setting. Your sessions, records, profile and Bar Trace clips are stored on this device only, clips are copied into the app's private storage, and the app makes no network calls of its own.<!-- since 1.5 --> Clips you record in the app are also copied to your gallery (Movies, then Barforge Weightlifting) on Android 10 and newer, so you keep the video if you change phones. What your gallery backs up is up to you; Barforge Weightlifting sends nothing.<!-- /since -->
 :::
 
 <!-- since 1.6 -->
 
 :::note[Android: a new phone]
-Google's cloud backup of your phone carries nothing from Lifting Lab: not your training log, not your clips and not your settings. Moving to a new phone with Android's phone-to-phone transfer, on Android 12 and newer, brings everything across: your history, PRs, programs, meets, clips and settings. On Android 11 and older, phone-to-phone transfer leaves Lifting Lab's data behind too, so export your data as CSV first and import it on the new phone.
+Google's cloud backup of your phone carries nothing from Barforge Weightlifting: not your training log, not your clips and not your settings. Moving to a new phone with Android's phone-to-phone transfer, on Android 12 and newer, brings everything across: your history, PRs, programs, meets, clips and settings. On Android 11 and older, phone-to-phone transfer leaves Barforge Weightlifting's data behind too, so export your data as CSV first and import it on the new phone.
 :::
 
 <!-- /since -->
