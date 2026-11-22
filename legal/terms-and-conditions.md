@@ -1,6 +1,6 @@
 **Terms & Conditions**
 
-These terms and conditions apply to the Lifting Lab app for iOS, operated by Better Built Apps LLC (collectively, the "Application"). Better Built Apps LLC is referred to below as "we," "us," or the "Service Provider."
+These terms and conditions apply to the Barforge Weightlifting app for iOS, previously named Lifting Lab, operated by Better Built Apps LLC (collectively, the "Application"). Better Built Apps LLC is referred to below as "we," "us," or the "Service Provider."
 
 By downloading or using the Application, you agree to these Terms and Conditions. Please read them carefully.
 
@@ -16,11 +16,11 @@ The Service Provider retains all intellectual property rights in the Application
 
 You must be at least 16 years of age, or the age of digital consent in your jurisdiction if higher, to use the Application yourself. If you are below that age, a parent or legal guardian must review and accept these Terms on your behalf.
 
-Lifting Lab's coaching features let an adult coach enter and manage training information about the athletes they work with, which can include minors, since youth athletes are common in competitive weightlifting. A coach using these features represents that they have whatever authority or consent is needed to enter and store that athlete's information on their own device, and remains responsible for it.
+Barforge Weightlifting's coaching features let an adult coach enter and manage training information about the athletes they work with, which can include minors, since youth athletes are common in competitive weightlifting. A coach using these features represents that they have whatever authority or consent is needed to enter and store that athlete's information on their own device, and remains responsible for it.
 
 **Not medical advice: read this before you lift**
 
-Lifting Lab is a training log and coaching tool. It is not a medical device, and nothing in the app, including readiness suggestions, warm-up guidance, percentage and RPE-based weight prescriptions, and technique feedback, is medical advice or a substitute for it.
+Barforge Weightlifting is a training log and coaching tool. It is not a medical device, and nothing in the app, including readiness suggestions, warm-up guidance, percentage and RPE-based weight prescriptions, and technique feedback, is medical advice or a substitute for it.
 
 Talk to a physician before beginning any exercise program, particularly if you have any pre-existing health condition, injury, or concern. Weightlifting carries an inherent risk of injury. By using the Application, you acknowledge that risk and assume full responsibility for your own safety, technique, and the loads you choose to lift, regardless of any suggestion, prescription, or feedback the Application provides.
 
@@ -28,7 +28,7 @@ The Application's technique feedback, including anything derived from camera-bas
 
 **Subscriptions**
 
-Lifting Lab is free to use for its core features: the daily dashboard, guided and manually built workouts, the Beginner Foundation program, the personal record tracker, the exercise library, the calculators, sharing, and a limited number of bar-path video analyses, all without an account.
+Barforge Weightlifting is free to use for its core features: the daily dashboard, guided and manually built workouts, the Beginner Foundation program, the personal record tracker, the exercise library, the calculators, sharing, and a limited number of bar-path video analyses, all without an account.
 
 Two optional, auto-renewing subscriptions extend it:
 
@@ -41,11 +41,11 @@ Where offered, subscriptions are billed through your Apple App Store account at 
 
 You agree not to use the Application unlawfully, to reverse engineer or attempt to extract its source code beyond what applicable law permits, or to interfere with its normal operation.
 
-Lifting Lab does not host content on behalf of users or make it available to other users or the public: there is no feed, no profile visible to anyone else, and no comments. When you export a program or session file to share with a coach or athlete, that transfer happens directly between your device and theirs, through a share sheet you choose (AirDrop, Mail, Messages, or Files); it is not hosted, transmitted, or moderated by us.
+Barforge Weightlifting does not host content on behalf of users or make it available to other users or the public: there is no feed, no profile visible to anyone else, and no comments. When you export a program or session file to share with a coach or athlete, that transfer happens directly between your device and theirs, through a share sheet you choose (AirDrop, Mail, Messages, or Files); it is not hosted, transmitted, or moderated by us.
 
 **Connectivity**
 
-Lifting Lab's core training features, logging a workout, building a session, browsing your history, and the calculators, work fully offline. An internet connection is needed for iCloud sync between your own devices and, if you use them, features that verify a subscription. You're responsible for your own device's connectivity and any data charges from your carrier.
+Barforge Weightlifting's core training features, logging a workout, building a session, browsing your history, and the calculators, work fully offline. An internet connection is needed for iCloud sync between your own devices and, if you use them, features that verify a subscription. You're responsible for your own device's connectivity and any data charges from your carrier.
 
 **Limitation of liability**
 
@@ -87,8 +87,8 @@ These Terms, together with the Privacy Policy, are the entire agreement between 
 
 We may update these Terms from time to time; the current version is always posted here. Material changes will be reflected by a new effective date below.
 
-These terms and conditions are effective as of 2026-08-16.
+These terms and conditions are effective as of 2026-11-23.
 
 **Contact**
 
-Questions about these Terms: use the [contact form](https://liftinglab.app/#contact) at the bottom of our website.
+Questions about these Terms: use the [contact form](https://barforge.app/weightlifting/#contact) at the bottom of our website.

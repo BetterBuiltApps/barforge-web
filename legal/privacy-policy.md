@@ -1,20 +1,20 @@
 **Privacy Policy**
 
-This privacy policy explains how Better Built Apps LLC ("Better Built Apps," "we," "us") handles data in connection with the Lifting Lab app for iPhone and for Android (the "Application"). It is written to describe what Lifting Lab actually does, not a generic template, because the honest answer to most of these questions is: your training data stays on your device, and on iPhone, in your own iCloud account. Where the two versions differ, this policy says which one it is describing.
+This privacy policy explains how Better Built Apps LLC ("Better Built Apps," "we," "us") handles data in connection with the Barforge Weightlifting app for iPhone and for Android, previously named Lifting Lab (the "Application"). It is written to describe what Barforge Weightlifting actually does, not a generic template, because the honest answer to most of these questions is: your training data stays on your device, and on iPhone, in your own iCloud account. Where the two versions differ, this policy says which one it is describing.
 
 **Company Information**
 
 *   Name: Better Built Apps LLC
 *   Address: 7901 4th St N STE 300, St. Petersburg, FL 33702
 *   Privacy contact: {{PRIVACY_EMAIL}}
-*   Privacy requests and other questions: the [contact form](https://liftinglab.app/#contact) at the bottom of liftinglab.app. Start your message with "Privacy request" so we can find it.
+*   Privacy requests and other questions: the [contact form](https://barforge.app/weightlifting/#contact) at the bottom of barforge.app/weightlifting. Start your message with "Privacy request" so we can find it.
 
 
 Better Built Apps LLC is the controller for the personal data described in this policy. For any question about this policy or your data, email us at the privacy address above or use the form.
 
 **There is no account, and no server holding your training data**
 
-Lifting Lab does not require or offer account registration. There is no username, no password, and no Better Built Apps server that receives, stores, or has visibility into your workouts, personal records, video, or profile information.
+Barforge Weightlifting does not require or offer account registration. There is no username, no password, and no Better Built Apps server that receives, stores, or has visibility into your workouts, personal records, video, or profile information.
 
 On iPhone, your data is stored in two places, both under your own control:
 
@@ -23,57 +23,57 @@ On iPhone, your data is stored in two places, both under your own control:
 
 Sessions, programs, personal records, your profile, and your gym setup sync automatically between your own devices this way when iCloud is available. If iCloud can't be reached, the app keeps working fully offline using the local copy on your device.
 
-On Android, your data is stored on your device, in the app's local database and its private app storage. The Android version does not sync between devices and has no cloud account of its own. Android's own system backup works like this. Lifting Lab tells Android to leave its database (your training history, profile, and the health values stored with them), your bar-path video clips, and your app settings out of Google's cloud backup, on every version of Android, so Google's device backup does not copy them to your Google account. When you set up a new phone by transferring directly from your old one on Android 12 or newer, everything moves with you, including your history, clips, and settings. That transfer is local and encrypted, between two phones you hold, and it does not pass through Better Built Apps LLC or any cloud account. On Android 8 to 11, the cloud-backup exclusions apply to that phone-to-phone transfer as well, so your training log does not move that way and stays on the old phone.
+On Android, your data is stored on your device, in the app's local database and its private app storage. The Android version does not sync between devices and has no cloud account of its own. Android's own system backup works like this. Barforge Weightlifting tells Android to leave its database (your training history, profile, and the health values stored with them), your bar-path video clips, and your app settings out of Google's cloud backup, on every version of Android, so Google's device backup does not copy them to your Google account. When you set up a new phone by transferring directly from your old one on Android 12 or newer, everything moves with you, including your history, clips, and settings. That transfer is local and encrypted, between two phones you hold, and it does not pass through Better Built Apps LLC or any cloud account. On Android 8 to 11, the cloud-backup exclusions apply to that phone-to-phone transfer as well, so your training log does not move that way and stays on the old phone.
 
 **Health data**
 
-On iPhone, with your permission, Lifting Lab reads the following from Apple Health:
+On iPhone, with your permission, Barforge Weightlifting reads the following from Apple Health:
 
 *   Heart rate, to power the adaptive rest timer during a workout.
 *   Heart rate variability, resting heart rate, and sleep, to suggest a readiness level before a session, to hold a program day's suggested level down when last night's recovery is clearly low, and to show how sleep, heart rate variability, and resting heart rate relate to your lifts in Strength Drivers.
 *   Your latest bodyweight, to keep your profile current.
 
-For Strength Drivers, Lifting Lab may read up to about a year of your daily sleep, heart rate variability, and resting heart rate history from Apple Health, so it can compare weeks. These readings are processed on your device and kept only in the app's memory; they are not saved in the app's data.
+For Strength Drivers, Barforge Weightlifting may read up to about a year of your daily sleep, heart rate variability, and resting heart rate history from Apple Health, so it can compare weeks. These readings are processed on your device and kept only in the app's memory; they are not saved in the app's data.
 
 If you choose to use a bodyweight reading from Apple Health, it is stored only on that iPhone. It is not synced to iCloud and is not included in backups. A bodyweight you type in yourself is part of your profile and syncs to your private iCloud.
 
-With your permission, Lifting Lab also writes your finished workouts to Apple Health, so they appear in the Fitness app and count toward your Activity rings.
+With your permission, Barforge Weightlifting also writes your finished workouts to Apple Health, so they appear in the Fitness app and count toward your Activity rings.
 
 Every one of these is optional and can be turned off individually in Settings. None of it is requested up front: iOS asks for each permission only when you first use the specific feature that needs it, with an explanation of why beforehand. Health data is read and written through Apple's HealthKit store on your device. We do not receive a copy of it, we do not use it for advertising, and we do not share it with any third party.
 
-On Android, Lifting Lab connects to Health Connect, Android's on-device health data store. With your permission, it reads:
+On Android, Barforge Weightlifting connects to Health Connect, Android's on-device health data store. With your permission, it reads:
 
 *   Heart rate, to power the adaptive rest timer during a workout.
 *   Heart rate variability, resting heart rate, and sleep, to suggest a readiness level before a session, to hold a program day's suggested level down when last night's recovery is clearly low, and to show how sleep, heart rate variability, and resting heart rate relate to your lifts in Strength Drivers.
 *   Your weight, to keep your bodyweight current.
 
-By default, Health Connect lets an app read only about the last 30 days of data. Where your phone supports it, Lifting Lab also asks for permission to read older Health Connect data (up to about a year of daily sleep, heart rate variability, and resting heart rate), used only for the Strength Drivers trends. Without that permission, Strength Drivers works with the shorter history Health Connect allows by default. These readings are processed on your device and are not saved in the app's data.
+By default, Health Connect lets an app read only about the last 30 days of data. Where your phone supports it, Barforge Weightlifting also asks for permission to read older Health Connect data (up to about a year of daily sleep, heart rate variability, and resting heart rate), used only for the Strength Drivers trends. Without that permission, Strength Drivers works with the shorter history Health Connect allows by default. These readings are processed on your device and are not saved in the app's data.
 
 If you choose to use a weight reading from Health Connect, that one value is saved in the app's database on your device with your other bodyweight entries.
 
-With your permission, Lifting Lab also writes your finished workouts to Health Connect as exercise sessions with active calories burned, so other health apps you use can show them.
+With your permission, Barforge Weightlifting also writes your finished workouts to Health Connect as exercise sessions with active calories burned, so other health apps you use can show them.
 
 Every one of these is optional and has its own switch in Settings. Nothing is requested up front: Android shows its Health Connect permission screen only when you turn on the feature that needs it, and you can withdraw any permission at any time in Health Connect. Health Connect data is read and written on your device. We do not receive a copy of it. We use it only to provide the features described above. We do not sell it, we do not use it for advertising, and we do not transfer it to any third party.
 
 **Injury and pain records**
 
-In Locker, under Body, you can record an area you are training around, along with pain check-ins and a note in your own words. You type this in yourself, and it can describe your health, so we name it separately. It is stored on your device. On iPhone it is also stored in your own private iCloud database, with the rest of your training data, when iCloud sync is available. On Android it stays on your device only. These records are never shared with us. They are not written to Apple Health or Health Connect, and they are not included in the program, session, or training files you export. Lifting Lab uses them only on your device, to adjust the training it suggests, for example by swapping an exercise or limiting a kind of loading. Deleting an injury in the app deletes its check-ins too, from your device and, on iPhone, from iCloud once sync catches up.
+In Locker, under Body, you can record an area you are training around, along with pain check-ins and a note in your own words. You type this in yourself, and it can describe your health, so we name it separately. It is stored on your device. On iPhone it is also stored in your own private iCloud database, with the rest of your training data, when iCloud sync is available. On Android it stays on your device only. These records are never shared with us. They are not written to Apple Health or Health Connect, and they are not included in the program, session, or training files you export. Barforge Weightlifting uses them only on your device, to adjust the training it suggests, for example by swapping an exercise or limiting a kind of loading. Deleting an injury in the app deletes its check-ins too, from your device and, on iPhone, from iCloud once sync catches up.
 
 **Camera, video, and on-device body tracking**
 
-Lifting Lab's bar-path analysis feature uses your device's camera to record video of a lift, with your permission, so it can be analyzed. That analysis, including tracking the barbell and estimating your body's position through the lift, runs entirely on your device, using Apple's built in Vision framework on iPhone and an on-device pose model (Google's MediaPipe) on Android. No video, image, or position data generated by this analysis is transmitted to Better Built Apps LLC or to any third party, at any point, unless you deliberately choose to export or share a specific clip yourself.
+Barforge Weightlifting's bar-path analysis feature uses your device's camera to record video of a lift, with your permission, so it can be analyzed. That analysis, including tracking the barbell and estimating your body's position through the lift, runs entirely on your device, using Apple's built in Vision framework on iPhone and an on-device pose model (Google's MediaPipe) on Android. No video, image, or position data generated by this analysis is transmitted to Better Built Apps LLC or to any third party, at any point, unless you deliberately choose to export or share a specific clip yourself.
 
 On Android, the camera permission is required to record a lift in the app, and the microphone permission is optional: if you allow it, the clip's sound is recorded with the video, and if you don't, the clip is recorded without sound. The analysis never uses sound. You can also import a clip you already have instead of recording one.
 
 We're describing this processing explicitly and separately from the rest of this policy, even though it never leaves your device, because it involves estimating a body's position and movement, which some jurisdictions treat as sensitive or biometric information regardless of where the processing happens. Nothing about this analysis is used to identify you as a person; it exists only to measure a barbell's path and give you feedback on your technique.
 
-On iPhone, recordings you make in the app are also saved to your device's Photos library as a backup, so switching phones never loses your analysis history. Whether the video files themselves also sync through iCloud is a separate, opt-in setting, kept apart from the rest of sync so filming does not silently consume a large amount of your iCloud storage. The copy in Photos belongs to your Photos library, not to the app: deleting an analysis in Lifting Lab removes the app's own copy of the video, but does not delete the copy in Photos. To remove it, delete the video in the Photos app.
+On iPhone, recordings you make in the app are also saved to your device's Photos library as a backup, so switching phones never loses your analysis history. Whether the video files themselves also sync through iCloud is a separate, opt-in setting, kept apart from the rest of sync so filming does not silently consume a large amount of your iCloud storage. The copy in Photos belongs to your Photos library, not to the app: deleting an analysis in Barforge Weightlifting removes the app's own copy of the video, but does not delete the copy in Photos. To remove it, delete the video in the Photos app.
 
-On Android, a recording you make in the app is kept in the app's private storage. Newer versions of the Android app, on Android 10 and newer, also save a copy to your phone's shared gallery, in the Movies/Lifting Lab folder, so the video survives a reinstall or a new phone; earlier versions kept the private copy only, and so does the app on Android 9 and older. If the phone refuses the copy, only the private copy exists. A clip you import was already in your gallery, and the app does not copy it there again. The gallery copy lives in your phone's shared media storage, not in the app's private storage: other apps you have allowed to access your photos and videos can see it, and if your phone backs up its gallery (for example with Google Photos), the copy may be backed up too. Better Built Apps LLC receives none of it. Deleting a clip in Lifting Lab deletes the app's own file, but it does not delete the gallery copy. To remove the copy, delete the video from the Movies/Lifting Lab folder using your gallery app or a file manager, and delete it from your gallery backup too if you have one.
+On Android, a recording you make in the app is kept in the app's private storage. Newer versions of the Android app, on Android 10 and newer, also save a copy to your phone's shared gallery, in the Movies/Barforge Weightlifting folder (Movies/Barforge Weightlifting in versions released before the app was renamed), so the video survives a reinstall or a new phone; earlier versions kept the private copy only, and so does the app on Android 9 and older. If the phone refuses the copy, only the private copy exists. A clip you import was already in your gallery, and the app does not copy it there again. The gallery copy lives in your phone's shared media storage, not in the app's private storage: other apps you have allowed to access your photos and videos can see it, and if your phone backs up its gallery (for example with Google Photos), the copy may be backed up too. Better Built Apps LLC receives none of it. Deleting a clip in Barforge Weightlifting deletes the app's own file, but it does not delete the gallery copy. To remove the copy, delete the video from the Movies/Barforge Weightlifting folder (or Movies/Barforge Weightlifting, for clips saved before the rename) using your gallery app or a file manager, and delete it from your gallery backup too if you have one.
 
 **Widgets, Siri, and importing your history**
 
-Lifting Lab's widgets show your next session, this week's training, your best lifts, and your meet countdown on your Home Screen. They are drawn on your device from numbers the app keeps on your device, and nothing is sent to us.
+Barforge Weightlifting's widgets show your next session, this week's training, your best lifts, and your meet countdown on your Home Screen. They are drawn on your device from numbers the app keeps on your device, and nothing is sent to us.
 
 On iPhone, widgets can also go on your Lock Screen, where they can be seen without unlocking the phone. iOS redacts a widget's contents while the phone is locked if you have set it to, in iPhone Settings. You can also ask Siri for your PR, your next session, or your meet countdown. Siri says the answer out loud on your device, including when the phone is locked, so someone nearby may hear it. Siri itself is Apple's service, under Apple's privacy policy.
 
@@ -81,33 +81,33 @@ On Android, there are no Lock Screen widgets and no voice commands. A long-press
 
 When you import a training history from a spreadsheet, the app reads only the file you choose, or the cells you copied when you tap Paste. It does not look at your clipboard at any other time. Everything is read and checked on your device, and nothing is saved until you confirm.
 
-On Android, a program or session file shared to Lifting Lab from another app asks you before it is saved.
+On Android, a program or session file shared to Barforge Weightlifting from another app asks you before it is saved.
 
 **Subscriptions and purchases**
 
-Lifting Lab Pro is a subscription sold through the Apple App Store on iPhone and through Google Play on Android. The store handles the purchase: Apple or Google collects your payment details and manages billing, and Better Built Apps LLC never sees your card or other payment information. The app asks the store whether your account has an active subscription, and on Android it also asks Google Play for the price to display. That is how the app knows whether to unlock Pro features. Neither store's answer is shared with anyone else by us. Apple's and Google's own privacy policies govern what they do with purchase data.
+Barforge Weightlifting Pro is a subscription sold through the Apple App Store on iPhone and through Google Play on Android. The store handles the purchase: Apple or Google collects your payment details and manages billing, and Better Built Apps LLC never sees your card or other payment information. The app asks the store whether your account has an active subscription, and on Android it also asks Google Play for the price to display. That is how the app knows whether to unlock Pro features. Neither store's answer is shared with anyone else by us. Apple's and Google's own privacy policies govern what they do with purchase data.
 
 **Notifications and other Android permissions**
 
-On Android, the app may ask for permission to show notifications, which it uses for the rest timer: an ongoing notification that counts the rest while you are out of the app, and, if you turn rest alerts on, a "Rest complete" alert. It also uses vibration for haptic feedback. The internet permission exists for Google Play, described above, and nothing else: the only network traffic Lifting Lab generates on Android is with Google Play, for your subscription. The app does not request your location or your contacts.
+On Android, the app may ask for permission to show notifications, which it uses for the rest timer: an ongoing notification that counts the rest while you are out of the app, and, if you turn rest alerts on, a "Rest complete" alert. It also uses vibration for haptic feedback. The internet permission exists for Google Play, described above, and nothing else: the only network traffic Barforge Weightlifting generates on Android is with Google Play, for your subscription. The app does not request your location or your contacts.
 
 **Sharing a program or session with a coach**
 
-If you use Lifting Lab's coaching features, you can export a training program or a completed session as a file (a .liftinglab or .liftinglabsession file) and send it to someone directly, using your device's own share sheet: for example AirDrop, Mail, Messages, or Files on iPhone, or any app on your Android share sheet. This is a transfer you initiate, directly between devices. It does not pass through, and is never visible to, Better Built Apps LLC. If you are a coach entering information about an athlete you train, that information is stored on your own device and, like everything else described in this policy, is never sent to us.
+If you use Barforge Weightlifting's coaching features, you can export a training program or a completed session as a file (a .liftinglab or .liftinglabsession file) and send it to someone directly, using your device's own share sheet: for example AirDrop, Mail, Messages, or Files on iPhone, or any app on your Android share sheet. This is a transfer you initiate, directly between devices. It does not pass through, and is never visible to, Better Built Apps LLC. If you are a coach entering information about an athlete you train, that information is stored on your own device and, like everything else described in this policy, is never sent to us.
 
 **What we do not do**
 
 *   We do not operate a server that stores your training data.
-*   We do not use third-party analytics, advertising, or tracking SDKs of any kind in the Lifting Lab apps. The apps do not use Google Analytics. Our website is separate: see "Our website" below.
-*   We do not use cookies in the apps (Lifting Lab is a native app). Our website, liftinglab.app, does set cookies: see "Our website" below.
+*   We do not use third-party analytics, advertising, or tracking SDKs of any kind in the Barforge Weightlifting apps. The apps do not use Google Analytics. Our website is separate: see "Our website" below.
+*   We do not use cookies in the apps (Barforge Weightlifting is a native app). Our website, barforge.app, does set cookies: see "Our website" below.
 *   We do not track your precise location.
 *   We do not sell your personal information, and we do not share it with third parties for their own purposes.
 
 **Our website**
 
-The Lifting Lab website (liftinglab.app) is separate from the iOS and Android apps. It uses Google Analytics 4, a web analytics service from Google, to understand how much traffic the site gets, which pages people visit, and how they use the site. Google Analytics uses cookies to collect information such as the pages you visit, interactions such as playing a demo video, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the apps.
+The Barforge website (barforge.app) is separate from the iOS and Android apps. It uses Google Analytics 4, a web analytics service from Google, to understand how much traffic the site gets, which pages people visit, and how they use the site. Google Analytics uses cookies to collect information such as the pages you visit, interactions such as playing a demo video, your approximate location, and your device and browser type. Google processes that information under [its own privacy policy](https://policies.google.com/privacy). We use the reports to understand how the site is used, not to identify you, and we do not combine them with anything from the apps.
 
-The Lifting Lab apps do not use Google Analytics or any other third-party analytics, and they send nothing to the website's analytics.
+The Barforge Weightlifting apps do not use Google Analytics or any other third-party analytics, and they send nothing to the website's analytics.
 
 When you first visit the website, a banner asks whether you accept analytics. The website loads Google Analytics only after you choose Accept; from then on it sets cookies and records page views and interactions such as video plays. Until you choose, or if you choose Decline, Google Analytics is not loaded at all, so it sets no cookies and Google receives nothing from it. Your choice is saved in your browser so the banner does not ask again. You can change it at any time with the "Cookie settings" link at the bottom of the website's home, Privacy, and Terms pages. Choosing Decline after you had accepted also removes the Google Analytics cookies the website set.
 
@@ -117,7 +117,7 @@ Google Analytics data is not linked to your name or any account, so we cannot lo
 
 **If you contact us**
 
-If you reach us through the [contact form](https://liftinglab.app/#contact) on our website, the form sends your name, email address, and message. It is relayed to us by email by Web3Forms, an India-based form service that acts as our processor. Web3Forms may send your IP address and email address to the spam filters CleanTalk and Akismet, and may keep a copy of your submission for up to 3 years under its own terms (see its [privacy policy](https://web3forms.com/privacy)). If you email us directly, we receive your email address and message. We use these only to reply to you and handle your request. We do not use them for marketing, and we share them only with the service providers that carry them to us (see "Who receives data" below). We keep your messages for as long as we need to handle your request, and delete our copy (in the developer's inbox) no later than 12 months after our last exchange, unless you ask us to delete it sooner.
+If you reach us through the [contact form](https://barforge.app/weightlifting/#contact) on our website, the form sends your name, email address, and message. It is relayed to us by email by Web3Forms, an India-based form service that acts as our processor. Web3Forms may send your IP address and email address to the spam filters CleanTalk and Akismet, and may keep a copy of your submission for up to 3 years under its own terms (see its [privacy policy](https://web3forms.com/privacy)). If you email us directly, we receive your email address and message. We use these only to reply to you and handle your request. We do not use them for marketing, and we share them only with the service providers that carry them to us (see "Who receives data" below). We keep your messages for as long as we need to handle your request, and delete our copy (in the developer's inbox) no later than 12 months after our last exchange, unless you ask us to delete it sooner.
 
 **Our website hosting**
 
@@ -152,9 +152,9 @@ For Google Analytics, Google LLC participates in the EU-U.S. Data Privacy Framew
 
 **Children's privacy**
 
-Lifting Lab is not intended for children under 13 years of age, and we do not knowingly collect personal information from children under 13. If you are under 16 years of age, or under a higher age of digital consent where one applies under local law, please use the app only with the permission of a parent or guardian. Because there is no account system, we have no practical way to collect a child's personal information even if a child used the app directly.
+Barforge Weightlifting is not intended for children under 13 years of age, and we do not knowingly collect personal information from children under 13. If you are under 16 years of age, or under a higher age of digital consent where one applies under local law, please use the app only with the permission of a parent or guardian. Because there is no account system, we have no practical way to collect a child's personal information even if a child used the app directly.
 
-Lifting Lab's coaching features let an adult coach enter and manage training information about the athletes they work with, and youth athletes are common in competitive weightlifting. If you are a coach using these features for an athlete who is a minor, you are responsible for that athlete's information: it is stored on your own device, under your control, and, as explained above, Better Built Apps LLC never receives a copy of it regardless of the athlete's age.
+Barforge Weightlifting's coaching features let an adult coach enter and manage training information about the athletes they work with, and youth athletes are common in competitive weightlifting. If you are a coach using these features for an athlete who is a minor, you are responsible for that athlete's information: it is stored on your own device, under your control, and, as explained above, Better Built Apps LLC never receives a copy of it regardless of the athlete's age.
 
 **Your data, your control**
 
@@ -162,10 +162,10 @@ Because your training data lives on your device and, on iPhone, optionally in yo
 
 *   Deleting data within the app removes it from your device (and, on iPhone, from iCloud once sync catches up).
 *   Deleting the app removes its local data from your device.
-*   Deleting a bar-path clip in the app does not delete the copy of it in your Photos library (iPhone) or in the Movies/Lifting Lab folder of your gallery (Android 10 and newer, in versions of the app that make the copy). Remove that copy yourself, in the Photos app or your gallery app, as described above.
+*   Deleting a bar-path clip in the app does not delete the copy of it in your Photos library (iPhone) or in the Movies/Barforge Weightlifting or Movies/Barforge Weightlifting folder of your gallery (Android 10 and newer, in versions of the app that make the copy). Remove that copy yourself, in the Photos app or your gallery app, as described above.
 *   Managing or deleting your iCloud data is done through your Apple ID / iCloud settings.
-*   On Android, Lifting Lab's data is kept out of Google's device backup, so there is no backup copy of it in your Google account to manage. On a new phone set up by phone-to-phone transfer, the copy lives on that phone and is removed by deleting the app or its data.
-*   On Android, Health Connect data is managed in Health Connect, where you can review and delete it and withdraw Lifting Lab's access.
+*   On Android, Barforge Weightlifting's data is kept out of Google's device backup, so there is no backup copy of it in your Google account to manage. On a new phone set up by phone-to-phone transfer, the copy lives on that phone and is removed by deleting the app or its data.
+*   On Android, Health Connect data is managed in Health Connect, where you can review and delete it and withdraw Barforge Weightlifting's access.
 
 Because we hold no copy of your training data, there is nothing on our end to delete when you take any of these steps, we simply never had it. The one thing we do hold is any correspondence you've sent us directly (for example, through our contact form), which we keep only as long as needed to handle it and no longer than 12 months after our last exchange, and which you can ask us to delete at any time.
 
@@ -187,7 +187,7 @@ Depending on where you live, you may have rights under laws like the EU/UK GDPR 
 *   receive it in a portable format (data portability);
 *   withdraw your consent at any time, where we rely on consent, without affecting what was done before.
 
-For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. The app can also export your sessions and programs as files. For anything we do hold (your correspondence with us, described above), use the [contact form](https://liftinglab.app/#contact) on our website (start your message with "Privacy request") or email {{PRIVACY_EMAIL}}. We will respond within one month, as the GDPR requires (we may extend this by up to two further months for complex requests, and will tell you if we do).
+For the vast majority of your data, the practical way to exercise these rights is directly, in the app or in your device's iCloud, Google account, or Health Connect settings, since that's where your data actually lives and we have no access to it. The app can also export your sessions and programs as files. For anything we do hold (your correspondence with us, described above), use the [contact form](https://barforge.app/weightlifting/#contact) on our website (start your message with "Privacy request") or email {{PRIVACY_EMAIL}}. We will respond within one month, as the GDPR requires (we may extend this by up to two further months for complex requests, and will tell you if we do).
 
 If you believe your rights have been violated, you have the right to complain to a data protection supervisory authority. In the EU, that is the authority in the country where you live or work, or where you think the problem happened. In the UK, it is the Information Commissioner's Office (ICO). We would appreciate the chance to sort it out with you first.
 
@@ -199,8 +199,8 @@ Your training data benefits from the security of your device and, on iPhone, you
 
 We may update this policy as the app changes. We'll post the updated version here with a new effective date. If a change is significant, we'll make a reasonable effort to let you know inside the app.
 
-This privacy policy is effective as of 2026-11-22.
+This privacy policy is effective as of 2026-11-23.
 
 **Contact**
 
-Questions about this policy or your data: use the [contact form](https://liftinglab.app/#contact) at the bottom of our website (start your message with "Privacy request" for a privacy request) or email {{PRIVACY_EMAIL}}.
+Questions about this policy or your data: use the [contact form](https://barforge.app/weightlifting/#contact) at the bottom of our website (start your message with "Privacy request" for a privacy request) or email {{PRIVACY_EMAIL}}.
