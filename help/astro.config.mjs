@@ -13,7 +13,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Lifting Lab Help',
-      description: 'Step-by-step guides for logging sessions, building workouts, Bar Trace and the rest of Lifting Lab.',
+      description: 'Step-by-step guides for Lifting Lab, the snatch and clean & jerk training app: logging sessions, building workouts, Bar Trace and more.',
       // Dark only is the brand. The theme picker is replaced with nothing and
       // the light palette is overridden in custom.css, so no visitor can land
       // in a light theme.

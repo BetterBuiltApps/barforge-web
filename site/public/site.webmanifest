@@ -1,7 +1,7 @@
 {
   "name": "Lifting Lab",
   "short_name": "Lifting Lab",
-  "description": "Weightlifting training app for the snatch and the clean & jerk.",
+  "description": "Snatch. Clean & Jerk. Measured. Film a lift, see where the bar went, and get the fix before your next set.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#1A1A1A",

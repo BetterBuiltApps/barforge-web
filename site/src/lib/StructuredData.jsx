@@ -39,7 +39,7 @@ export function StructuredData() {
     name: 'Lifting Lab',
     '@id': 'https://liftinglab.app/#app',
     applicationCategory: 'HealthApplication',
-    applicationSubCategory: 'Weightlifting training',
+    applicationSubCategory: 'Olympic weightlifting: snatch and clean & jerk',
     // Android is live on Google Play (SITE.android.released).
     operatingSystem: SITE.android.released ? 'iOS, Android' : 'iOS',
     image: 'https://liftinglab.app/assets/og.png',
@@ -58,7 +58,7 @@ export function StructuredData() {
         'Home Screen widgets, and Lock Screen widgets and Siri on iPhone',
       ] : []),
     ],
-    description: 'Lifting Lab programs your cycle, analyzes your lifts frame by frame, tells you why it missed, and gets you through meet day. Built for one sport: the snatch and the clean & jerk.',
+    description: 'Snatch. Clean & Jerk. Measured. Film a lift and see where the bar went. Get the fix before your next set. Lifting Lab programs your cycle and gets you through meet day. Built for one sport: the snatch and the clean & jerk.',
     url: 'https://liftinglab.app/',
     // Same reasoning as AppStoreButton (Chrome.jsx): don't tell Google there
     // are live purchasable offers for an app that isn't in the App Store
