@@ -228,24 +228,43 @@ export function AppStoreButton({ size = 'large' }) {
   const device = useDevice();
   const height = APP_STORE_BADGE_HEIGHT[size];
 
+  const playReady = SITE.android.released && SITE.android.playStoreUrl;
+  const playBadge = (
+    <a href={SITE.android.playStoreUrl} aria-label="Get it on Google Play">
+      {/* The official badge, scaled only. The artwork carries its own clear
+          space (visible badge is 166 of 250px tall), so the element is
+          sized to 250/166 of the height the visible badge should have. */}
+      <img
+        src={asset(SITE.googlePlayBadgeSrc)}
+        alt="Get it on Google Play"
+        width={Math.round(height * 1.506 * (646 / 250))}
+        height={Math.round(height * 1.506)}
+        style={{ display: 'block', height: height * 1.506, width: 'auto' }}
+      />
+    </a>
+  );
+
   if (device === 'android') {
-    if (SITE.android.released && SITE.android.playStoreUrl) {
-      return (
-        <a href={SITE.android.playStoreUrl} aria-label="Get it on Google Play">
-          {/* The official badge, scaled only. The artwork carries its own clear
-              space (visible badge is 166 of 250px tall), so the element is
-              sized to 250/166 of the height the visible badge should have. */}
+    if (playReady) return playBadge;
+    return <ComingSoonPill height={height}>Coming soon to Google Play</ComingSoonPill>;
+  }
+
+  // A desktop visitor (and the prerendered snapshot crawlers read) gets both
+  // stores, since both apps are live. Apple asks for the black badge whenever
+  // another platform's badge sits beside it, as on /get.
+  if (device === 'other' && SITE.released && playReady) {
+    return (
+      <span style={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'var(--copy-justify, flex-start)' }}>
+        <a href={SITE.links.appStore} aria-label={SITE.ctaPrimary}>
           <img
-            src={asset(SITE.googlePlayBadgeSrc)}
-            alt="Get it on Google Play"
-            width={Math.round(height * 1.506 * (646 / 250))}
-            height={Math.round(height * 1.506)}
-            style={{ display: 'block', height: height * 1.506, width: 'auto' }}
+            src={asset(SITE.appStoreBadgeBlackSrc)}
+            alt="Download on the App Store"
+            style={{ height, display: 'block', padding: height / 4 }}
           />
         </a>
-      );
-    }
-    return <ComingSoonPill height={height}>Coming soon to Google Play</ComingSoonPill>;
+        {playBadge}
+      </span>
+    );
   }
 
   // Pre-release, this doesn't fall back to an unlinked copy of the real
@@ -304,7 +323,9 @@ const HEALTH_BADGE_HEIGHT = 40;
 export function DownloadButton({ children = 'Download Lifting Lab' }) {
   const device = useDevice();
   const android = device === 'android';
-  const href = android ? SITE.android.playStoreUrl : SITE.links.appStore;
+  // A desktop visitor goes to /get, which shows both store badges; a phone goes straight to its own store.
+  const href = android ? SITE.android.playStoreUrl
+    : device === 'other' && SITE.android.released ? SITE.links.get : SITE.links.appStore;
   if (android ? !SITE.android.released : !SITE.released) return null;
   return (
     <Button as="a" variant="primary" size="large" href={href}>
