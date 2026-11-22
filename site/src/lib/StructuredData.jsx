@@ -1,6 +1,7 @@
 import React from 'react';
 import { SITE } from '../config';
 import { FAQ_ITEMS } from '../sections/FAQFooter';
+import { released } from './release';
 
 /* Renders four JSON-LD blocks. Plain <script> tags in the render tree
    rather than a head-manipulation effect, so they exist on first paint and
@@ -49,7 +50,13 @@ export function StructuredData() {
       'Technique Doctor diagnosis of missed lifts',
       'Adaptive daily workouts',
       'Meet Day warm-up pacing and attempt board',
-      'Apple Health sync',
+      'Apple Health and Health Connect sync',
+      // 1.6 additions (release flag, RELEASING.md).
+      ...(released('1.6') ? [
+        'Meet Planner with training blocks worked back from your meet',
+        'Import training history from a spreadsheet, CSV, Hevy or Strong',
+        'Home Screen widgets, and Lock Screen widgets and Siri on iPhone',
+      ] : []),
     ],
     description: 'Lifting Lab programs your cycle, analyzes your lifts frame by frame, tells you why it missed, and gets you through meet day. Built for one sport: the snatch and the clean & jerk.',
     url: 'https://liftinglab.app/',

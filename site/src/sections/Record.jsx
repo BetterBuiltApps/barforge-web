@@ -2,6 +2,7 @@ import React from 'react';
 import { siteWrap, SiteHead, StillShot } from './Chrome';
 import { Reveal } from '../lib/Reveal';
 import { still } from '../lib/stills';
+import { released } from '../lib/release';
 
 /* The Log Book and progress, one section. Levels and badges are computed from the training log, so history counts from day
    one. Nothing here needs filling in. */
@@ -14,7 +15,10 @@ export function Record() {
       <div style={{ ...siteWrap, display: 'grid', gap: 'clamp(40px,5vw,64px)' }}>
         <Reveal>
           <SiteHead center title="Every session counts." max={640}
-            body="Your PRs, your Log Book and your notes in one place. Levels, streaks and badges come from your real training, so your history counts from day one. Nothing to fill in." />
+            body={'Your PRs, your Log Book and your notes in one place. Levels, streaks and badges come from your real training, so your history counts from day one. Nothing to fill in.'
+              + (released('1.6')
+                ? ' Bring your old log with you from a spreadsheet, Hevy or Strong, and keep your next session and best lifts on a widget.'
+                : '')} />
         </Reveal>
         <div className="record-row">
           <StillShot s={still('G1', 1)} />
