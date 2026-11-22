@@ -71,8 +71,9 @@ failing and no visual error on desktop.** After any layout edit, verify at
 - **Amber is an accent, not a fill.** Black label on amber; never amber text on
   amber (`--accent-fg` is `#000`).
 - **Honest UI.** The app's rule applies to marketing copy too: don't claim a
-  capability the app doesn't ship. `site/src/config.js` has `released: false`,
-  which gates every App Store CTA, respect it.
+  capability the app doesn't ship. `site/src/config.js` has `released` (App
+  Store) and `android.released` (Google Play), which gate every store CTA;
+  both are true now that both apps are live.
 - **No Olympic marks** or IWF branding beyond descriptive body copy.
 - Tap targets: 44px minimum, 56px (`--tap-target-chalky`) for anything a lifter
   hits with chalked hands.
@@ -87,8 +88,8 @@ no test to catch a bad port.
 
 ## Releases: nothing unreleased goes live early
 
-What the site and the guides say is controlled by one flag, `APP_RELEASE` (`tools/release.mjs`): `1.2` is what the App Store ships
-today, `1.5` is the next release. Copy, guide text, videos and stills for a feature that is not in the live app must be tagged
+What the site and the guides say is controlled by one flag, `APP_RELEASE` (`tools/release.mjs`): `1.2` is what the App Store shipped
+until 1.6, and `1.6` is the release that follows it on both platforms (iOS never shipped 1.5; Android 1.5 was live before 1.6). Copy, guide text, videos and stills for a feature that is not in the live app must be tagged
 "since <version>" so they stay out of the build until the flag is flipped on release day. Read `RELEASING.md` for how to tag content,
 how to preview a release, and how to flip it. `tools/release-guard.mjs` fails the deploy if unreleased content is in the output.
 
