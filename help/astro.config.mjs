@@ -21,6 +21,14 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css'],
       head: [
         { tag: 'script', content: "document.documentElement.dataset.theme='dark';try{localStorage.setItem('starlight-theme','dark')}catch(e){}" },
+        // Same icons and share card as the main site (site/public), which deploys alongside /help.
+        { tag: 'link', attrs: { rel: 'icon', href: '/favicon.ico', sizes: '48x48' } },
+        { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' } },
+        { tag: 'meta', attrs: { name: 'theme-color', content: '#1A1A1A' } },
+        { tag: 'meta', attrs: { property: 'og:image', content: 'https://liftinglab.app/assets/og.png' } },
+        { tag: 'meta', attrs: { property: 'og:image:alt', content: 'The Lifting Lab wordmark: a barbell through a laboratory flask.' } },
+        { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
+        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://liftinglab.app/assets/og.png' } },
       ],
       social: [{ icon: 'external', label: 'liftinglab.app', href: 'https://liftinglab.app/' }],
       sidebar: [
