@@ -8,7 +8,7 @@ const FACTS = [
   ['No account', 'No signup. Just lift.'],
   ['On your phone', 'Video analysis never leaves the device.'],
   ['Free to start', 'Logging, Beginner Foundation, every calculator.'],
-  ['78 movements', 'Every one illustrated.'],
+  ['84 movements', 'Every one illustrated.'],
   ['Offline first', 'Train with no signal.'],
 ];
 
