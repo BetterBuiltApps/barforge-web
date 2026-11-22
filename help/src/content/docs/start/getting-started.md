@@ -50,7 +50,7 @@ Along the bottom of the screen you will find:
 - **Train.** Your home screen. It shows what is waiting for you today, your week, recent records, and shortcuts to programs, your PRs, your Log Book (a history of every session) and the exercise library. This is where you log sets.
 - **Bar Trace.** Film a lift and the app traces the path of the bar so you can see what went wrong and what to fix.
 - **Build** (the plus button in the middle). The one place to start something new. See below.
-- **Tools.** Offline calculators and helpers: warm-ups, training percentages, plate loading, a kg and lb converter, a one-rep-max estimator and strength ratios. Some meet-day tools are Pro.
+- **Tools.** Offline calculators and helpers: warm-ups, training percentages, plate loading, a kg and lb converter, a one-rep-max estimator and strength ratios.<!-- since 1.6 --> The exercise library and a hand care guide are there too.<!-- /since --> Some meet-day tools are Pro.
 - **Locker.** Your profile, your gyms and plates, your level and streak, and Settings.
 
 ## Starting something new with Build

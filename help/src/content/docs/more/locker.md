@@ -8,7 +8,9 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/SettingsScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/PlayerProgressScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/LockerHomeScreen.kt
-verified_for: "1.4"
+  - LiftingLab/Features/Me/TrainingSettingsView.swift
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/TrainingSettingsScreen.kt
+verified_for: "1.6"
 ---
 
 The Locker tab is about you: who you are as a lifter, how you are progressing, and how the app behaves.
@@ -26,7 +28,7 @@ The Locker tab is about you: who you are as a lifter, how you are progressing, a
 
 The top of the Locker shows your photo, age category, bodyweight and experience, plus your level, XP and streak. Three stats sit underneath: Sinclair, your total, and your clean and jerk to snatch ratio. Tap any of them to open the tool that works it out. That includes a stat showing a dash, where the tool will tell you what is missing.
 
-Open your profile to set your name, coach's name, date of birth, bodyweight, weight class, photo and height.<!-- since 1.5 --> A Technique section walks you through finding your grip, squat stance, lead leg and dip depth.<!-- /since -->
+Open your profile to set your name, coach's name, date of birth, bodyweight, weight class, photo and height.<!-- since 1.5 --> A Technique section walks you through finding your grip, squat stance, lead leg and dip depth.<!-- /since --><!-- since 1.6 --> On iPhone, **Use Health value** under bodyweight takes your latest weigh-in from Apple Health. That reading stays on this iPhone and is not synced to iCloud, and the row says so. A bodyweight you type in yourself syncs to your other devices as before.<!-- /since -->
 
 Other sections in the Locker:
 
@@ -41,10 +43,16 @@ Tap the level strip to see your level, an XP breakdown, your streak and your bad
 
 Open Settings from the Locker. The main rows are:
 
-- **Training**: rest timer, bar choice, your warm-up ramp, and how custom workouts pick exercises.
+- **Training**: rest timer, bar choice, your warm-up ramp, and how custom workouts pick exercises.<!-- since 1.6 --> It also holds **Drift heads-up before heavy singles**, the note a set card shows before a heavy single when today's filmed reps show the bar drifting forward. The note is Pro, and the switch is on until you turn it off.<!-- /since -->
 - **Reset Your Numbers**: coming back from illness or injury? Enter what you can lift now and workouts load from that. Your records stay untouched.
 - **Apple Health** (Health Connect on Android): four switches for adapting rest, suggesting readiness, saving workouts and syncing bodyweight.
-- **Film Room**: the grading level for technique grades. It never changes the referee lights.
+- **Film Room**: the grading level for technique grades. It changes the technique grade only.
+<!-- since 1.6 -->
+
+- **Session Coaching**: **Hold to verify**, off until you turn it on. On technique sets of a lift with a catch, the set card reminds you to hold the receiving position for a slow two or three count before you recover. It never stops you logging the set and times nothing.
+
+<!-- /since -->
+
 - **Sounds**, and **Units** for kilograms or pounds.
 - **Data & Privacy**: clip storage<!-- since 1.5 -->, exporting your data as CSV files and importing a training history from one (see [Import your training history from a CSV](/help/start/import-from-csv/)). On Android those two rows sit under **Data** in Settings itself<!-- /since -->, and the Privacy Policy and Terms are under **About**.
 
@@ -79,5 +87,5 @@ Switching to a new iPhone? Tap Restore Purchases once you have signed in with th
 :::
 
 :::note[Android]
-On Android, Pro is billed to your Google Play account.<!-- since 1.5 --> While you are on Free, the Subscription screen lists what Pro includes above the plan buttons. If prices cannot load there is a Try Again button, and if a purchase does not go through, a line under the buttons says so. If you pay with a slower method such as cash or a bank transfer, the screen says the payment is pending, and Pro unlocks as soon as Google Play confirms it. Buying again does not speed it up.<!-- /since --> Once you have Pro, the screen has a Manage in Google Play button to change or cancel it. There is no Restore Purchases button: the app checks Google Play for your subscription itself, so a new phone signed in with the same Google account gets Pro back.
+On Android, Pro is billed to your Google Play account.<!-- since 1.5 --> While you are on Free, the Subscription screen lists what Pro includes above the plan buttons. If prices cannot load there is a Try Again button, and if a purchase does not go through, a line under the buttons says so. If you pay with a slower method such as cash or a bank transfer, the screen says the payment is pending, and Pro unlocks as soon as Google Play confirms it. Buying again does not speed it up.<!-- /since --> Once you have Pro, the screen has a Manage in Google Play button to change or cancel it. There is no Restore Purchases button: the app checks Google Play for your subscription itself, so a new phone signed in with the same Google account gets Pro back.<!-- since 1.6 --> If Google Play cannot be reached when the app opens, Pro stays on from the last time Google Play confirmed it, for up to seven days.<!-- /since -->
 :::

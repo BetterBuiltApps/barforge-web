@@ -18,7 +18,7 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/DriverDetailScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/strengthdrivers/StrengthDriversService.kt
   - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/progression/StrengthDriversCopy.kt
-verified_for: ""
+verified_for: "1.6"
 since: "1.5"
 ---
 

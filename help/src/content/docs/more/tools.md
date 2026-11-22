@@ -15,7 +15,10 @@ covers:
   - LiftingLab/Features/Compete/MeetPlannerView.swift
   - LiftingLab/Domain/Competition/MeetCountdown.swift
   - LiftingLab/Domain/RecentWin.swift
-verified_for: "1.5"
+  - LiftingLab/Features/Tools/HandCareView.swift
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/tools/HandCareScreen.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/tools/TrainingPercentScreen.kt
+verified_for: "1.6"
 ---
 
 The Tools tab holds quick calculators and planners. They work offline, and weights show in the unit you chose in Settings.
@@ -44,12 +47,13 @@ The Tools tab holds quick calculators and planners. They work offline, and weigh
 <!-- since 1.6 -->
 
 - **Exercise Library**: every lift in the app, with demos, cues and a search. It is also on the Train tab. It includes hamstring and posterior chain work such as Romanian, dumbbell, single-leg and snatch-grip RDLs, leg curls, Nordic curls and barbell hip thrusts. Leg curls need a leg curl machine, which you can add to your gym in Locker, under My Gyms.
+- **Hand Care**: keeping calluses low, looking after your hands while you train, what to do when the skin tears, and when to get it looked at. General care tips, not medical advice.
 
 <!-- /since -->
 
 **Calculate**
 
-- **Training %**: working weights at each percentage of a lift, with the plates to load.<!-- since 1.5 --> A lift you reset under Reset Your Numbers loads from that number, not its old record.<!-- /since -->
+- **Training %**: working weights at each percentage of a lift, with the plates to load.<!-- since 1.5 --> A lift you reset under Reset Your Numbers loads from that number, not its old record.<!-- /since --><!-- since 1.6 --> Its intensity zones guide has five bands that line up with the rest of the app, including the reps per set in the table above it.<!-- /since -->
 - **Barbell Loader**: shows which plates to put on the bar for a target weight.
 - **kg ↔ lb**: converts between the two.
 
@@ -60,7 +64,7 @@ The Tools tab holds quick calculators and planners. They work offline, and weigh
 
 **Compete**
 
-- **Meet Day** (Pro): a warm-up room and six-attempt board<!-- since 1.5 -->, with a clock for attempt timing and a check of your attempts against the platform rules. Type your official weigh-in on the setup screen, or change it on the meet screen once you have weighed in: the Sinclair score and the saved meet use that number, not the weight in your profile. The attempt count, the warm-up marker and the clock stay where you left them if you switch tabs or the app closes mid-meet. The warm-ups build to your first attempt as it stands on the board, so if you change your opener, the warm-ups and the hold weight change with it. The warm-up card only shows a **Hold** weight while the session is running long and you should repeat a lighter set to mark time, and it never asks for more than the heaviest warm-up you have taken. If you have not taken a warm-up yet, it says **Wait**<!-- /since -->.
+- **Meet Day** (Pro): a warm-up room and six-attempt board<!-- since 1.5 -->, with a clock for attempt timing and a check of your attempts against the platform rules. Type your official weigh-in on the setup screen, or change it on the meet screen once you have weighed in: the Sinclair score and the saved meet use that number, not the weight in your profile. The attempt count, the warm-up marker and the clock stay where you left them if you switch tabs or the app closes mid-meet.<!-- /since --><!-- since 1.6 --> So does the lift you switched to, on iPhone and on Android, including when you back out to the Tools tab and return.<!-- /since --><!-- since 1.5 --> The warm-ups build to your first attempt as it stands on the board, so if you change your opener, the warm-ups and the hold weight change with it. The warm-up card only shows a **Hold** weight while the session is running long and you should repeat a lighter set to mark time, and it never asks for more than the heaviest warm-up you have taken. If you have not taken a warm-up yet, it says **Wait**<!-- /since -->.
 
 <!-- since 1.5 -->
 

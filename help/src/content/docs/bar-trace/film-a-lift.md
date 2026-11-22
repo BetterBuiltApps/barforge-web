@@ -12,9 +12,7 @@ covers:
   - LiftingLab/Features/BarPath/PlateSeedView.swift
   - LiftingLab/Features/BarPath/CaptureResultView.swift
   - LiftingLab/Features/BarPath/BarPathPlayerView.swift
-  - LiftingLab/Features/BarPath/JudgingLightsCard.swift
   - LiftingLab/Domain/BarPath/LiftJudging.swift
-  - LiftingLab/Domain/BarPath/JerkSegment.swift
   - LiftingLab/Domain/BarPath/BarPathScore.swift
   - LiftingLab/Domain/BarPath/GradingStandard.swift
   - LiftingLab/Features/BarPath/ScoreRingCard.swift
@@ -27,9 +25,7 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/ui/CaptureResultScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/ui/DelayedReplayScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/player/BarPathPlayerScreen.kt
-  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/player/JudgingLightsCard.kt
   - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/barpath/LiftJudging.kt
-  - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/barpath/JerkSegment.kt
   - lifting-lab-android/domain/src/main/kotlin/com/betterbuiltapps/liftinglab/domain/barpath/BarPathScore.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/player/TechniqueFindingsCard.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/share/ShareClipScreen.kt
@@ -43,7 +39,12 @@ covers:
   - LiftingLab/Features/BarPath/PhotoLibrarySaver.swift
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/ui/PlateSeedScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/ui/CameraCaptureScreen.kt
-verified_for: "1.5"
+  - LiftingLab/Features/BarPath/BarTraceProgressCard.swift
+  - LiftingLab/Features/BarPath/ConsistencyCard.swift
+  - LiftingLab/Domain/BarPath/ProgressComparison.swift
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/player/PlayerCards.kt
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/barpath/ConsistencyCard.kt
+verified_for: "1.6"
 ---
 
 Bar Trace turns a video of your lift into a line showing where the bar travelled, plus a grade and the things worth fixing. You can film inside the app or bring in a clip you already have.
@@ -84,7 +85,7 @@ Standing too close is the most common problem: the plate looks oversized and the
 A clip you record in the app is also saved to your photo library, so the video survives a new phone or a reinstall. The first time, iPhone asks for permission to add to Photos. If you decline, or a save fails, the app tells you once: your recordings then live only inside Lifting Lab and are left out of iCloud backup, so a new phone will not bring them over. You can allow "Add Photos Only" in Settings. Clips you import already live in your library and are not copied again.
 
 :::note[Android]
-Recorded clips are copied to your gallery, in the Movies folder under Lifting Lab, on Android 10 and newer, with no permission prompt. If the phone refuses the copy or it fails, for example with no free space, Lifting Lab tells you once for each of those two cases that it holds the only copy of the clip, so a new phone or a reinstall will not bring it over. On Android 9 and older the clip stays in the app only, so keep your own copy if you want one.
+Recorded clips are copied to your gallery, in the Movies folder under Lifting Lab, on Android 10 and newer, with no permission prompt. If the phone refuses the copy or it fails, for example with no free space, Lifting Lab tells you once for each of those two cases that it holds the only copy of the clip, so a new phone or a reinstall will not bring it over. On Android 9 and older the clip stays in the app only, so keep your own copy if you want one.<!-- since 1.6 --> Moving to a new phone with Android's phone-to-phone transfer, on Android 12 and newer, brings the clips you filmed in Lifting Lab across with the rest of your training. Google's cloud backup does not carry them.<!-- /since -->
 :::
 
 <!-- /since -->
@@ -111,6 +112,8 @@ If the trace fails, the app takes you back to the circle. Most failures are a ci
 
 The bar path is traced on your phone<!-- since 1.5 -->, the same way on iPhone and Android<!-- /since -->. From the top of the result screen down you get:
 
+<!-- until 1.6 -->
+
 1. Your video with the traced path.
 2. Whether the lift would count, shown as three referee-style lights (for the snatch, the clean and jerk, and their variations). See [How the lights judge a clean and jerk](#how-the-lights-judge-a-clean-and-jerk).
 3. A technique grade, with a bar for each part of the lift.
@@ -118,6 +121,38 @@ The bar path is traced on your phone<!-- since 1.5 -->, the same way on iPhone a
 5. Speed, phase and position details. Tap a row or drag the graph to jump to that moment in the video.
 
 Once you have two or more lifts of the same type, numbers are compared with your own average.<!-- since 1.5 --> Speed and bar height depend on the weight, so those are only compared with your clips within about 10% of this weight (90 to 110 kg around a 100 kg lift), and a new Speed PR is judged the same way: a light clip never holds the record for a heavy attempt. Peak speed counts only the upward pull, never a bar you dropped. A number is only called "vs your average" once at least two of your other clips have that number, because one other clip is not an average. A clip that is missing a number, for example a peak speed that could not be read, does not count towards it.<!-- /since --> If something could not be read, the card says why.
+
+<!-- /until -->
+
+<!-- since 1.6 -->
+
+1. Your video with the traced path.
+2. A technique grade, with a bar for each part of the lift and the grading level it was marked at.
+3. What to fix first, with drills that address it. To see which faults keep coming back across your lifts, open [Technique Doctor](/help/train/technique-doctor/).
+4. A tip on where to put the phone, only when the clip itself showed a problem, such as the plate leaving the top of the frame.
+5. **Breakdown**: only the numbers that show whether you are getting better or tell you what to fix. A part with nothing to say is left out.
+
+There are no referee lights and no separate speed tiles any more. From one phone camera the lights rarely gave a verdict you could use, and a raw number with nothing to compare it against did not tell you what to do.
+
+### Are you getting better?
+
+At the top of Breakdown, the lift is compared with your last lifts of the same kind at a similar weight, within about 10% (90 to 110 kg around a 100 kg lift), up to the five most recent. You see turnover time (for snatches and cleans), peak speed and bar drift, each as this lift against the last one that has it, for example **0.30 s, was 0.38 s: faster**. Once there are three earlier lifts, a small trend line shows where the last few went. Mean pull speed and bar height are not compared, because neither is better simply for being higher or lower.
+
+When there is nothing to compare with, one line says why: the clip is not tagged with its lift and weight, the tracking was not good enough to trust, or this is your first lift at this weight. Film it again at a similar weight and the screen starts showing whether you are improving.
+
+Under it, **Lift Phases** shows the pull, the turnover (marked **On time** or **Slow**, with a cue when it is slow) and how far under the bar's highest point you caught it, and **Positions** lists only the positions that are off target. Tap a position to jump to that moment in the video.
+
+A speed PR still only counts against your clips at a similar weight, peak speed counts only the upward pull, and if something could not be read, the screen says why.
+
+### Rep consistency (Pro)
+
+Film three or more reps of one lift at one weight in a workout, each from its set, and the result scores how alike their bar paths were, from 0 to 100, with the average spread in centimetres. The score only appears when there is one: too few reps, rough tracking or a clip imported on its own shows nothing. Compare shows the same score for two clips from one workout at one weight.
+
+:::note[Android]
+Android shows the same comparison, phases, positions and consistency score.
+:::
+
+<!-- /since -->
 
 <!-- since 1.5 -->
 
@@ -135,19 +170,11 @@ Delayed Replay shows the camera feed 3, 5, 8 or 10 seconds behind. Prop the phon
 
 <!-- /since -->
 
+<!-- until 1.6 -->
+
 ## How the lights judge a clean and jerk
 
-<!-- since 1.5 -->
-
-For a clean and jerk the lights follow the whole lift, not just the clean. After the clean, the app looks for the bar resting on your shoulders and measures the jerk from there: the dip, the drive and the catch overhead. It checks that the dip and drive are one movement, so a bar that stops or comes back up partway through the dip, or sinks during the drive, is flagged, and that you do not press the bar out once it is overhead. The final hold at the top is then judged for stillness and a locked-out finish. A red light names the specific fault, for example that the bar stopped in the dip.
-
-If the app cannot find the jerk, the jerk light says why and stays off. The most common reason is a clip that ends at the rack with the message "The clip ends before the jerk."
-
-:::tip
-Keep filming through the jerk and include the overhead hold, until the bar is still above your head. A clip that stops at the shoulders cannot be judged past the clean.
-:::
-
-<!-- /since -->
+<!-- /until -->
 
 ## Pick a grading level
 
@@ -159,7 +186,7 @@ The technique grade is marked at a grading level: **Learning**, **Standard** (th
 - **Standard** grades catch depth against the lift you tagged.
 - **Advanced** allows the narrowest margins.
 
-The same clip never scores lower at a gentler level, so moving from Advanced to Learning can only keep or raise the grade. The referee lights are not affected: they follow the competition rules at every level.
+The same clip never scores lower at a gentler level, so moving from Advanced to Learning can only keep or raise the grade.
 
 The grades on the Bar Trace tab follow the level too: change it, go back to the list, and every clip is graded at the new level, not the one it was first graded at.
 
