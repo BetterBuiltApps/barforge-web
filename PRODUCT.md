@@ -26,10 +26,10 @@ often loud. Attention is measured in the rest between sets.
 
 ## Product Purpose
 
-Lifting Lab is an iOS app for Olympic weightlifting. It programs the training
+Lifting Lab is an iPhone and Android app for Olympic weightlifting. It programs the training
 cycle, builds each day's session around how the lifter actually feels, analyzes
-lifts from phone video, and plans meet day. This site is its marketing page, pre-launch, so its job is to make the app understood and awaited, not
-downloaded. `SITE.released` gates every App Store CTA.
+lifts from phone video, and plans meet day. This site is its marketing page. Both apps are live, so its job is to make the app
+understood and downloaded. `SITE.released` and `SITE.android.released` gate the store CTAs.
 
 Success for the page: a lifter in any of the three situations above recognizes
 their own problem in it and believes this app was built for their sport rather
@@ -72,10 +72,12 @@ warm at the wrong time is a real failure.
   it. Training data syncs to the user's own private iCloud; clip sync is a
   separate opt-in. No account required.
 - Stored in kg internally, matching IWF competition; kg/lb is a display choice.
-- Free tier is permanent and substantial: training log, adaptive builder, all
-  five programs, PR tracker, exercise library, every calculator, and three
-  bar-path analyses a month.
-- **Not yet released.** Nothing on the site may imply it is available.
+- Free tier is permanent and substantial: training log, adaptive builder, the
+  Beginner Foundation program, PR tracker, exercise library (84 movements),
+  every calculator, Learn the Lifts, history import, and three bar-path
+  analyses a month. From 1.6 there are 16 built-in programs; the other 15 are
+  Pro, with the Meet Planner and Meet Day, unlimited analysis, the cycle report
+  and building programs and complexes (`ProFeature` in both apps).
 
 ## Brand Commitments
 
@@ -93,25 +95,24 @@ warm at the wrong time is a real failure.
 
 ## Evidence on Hand
 
-- 29 real screenshots of the shipping app in `site/public/assets/screens/`,
-  with WebP variants. These are the strongest proof the page has.
+- Stills and walkthrough videos of the shipping app, from the video project
+  (`site/src/data/stills.<release>.json`, `videos.<release>.json`). These are
+  the strongest proof the page has.
 - Sinclair coefficients are the official 2021 to 2024 IWF values.
-- Pricing is set: Free $0; Pro $4.99/mo, $29.99/yr, $79.99 lifetime; Coach
-  $12.99/mo, $99/yr.
+- Pricing: Free $0; Pro $12.99/mo or $99.99/yr (one plan, both stores;
+  `SITE.pricing` in `site/src/config.js`).
 - **Absent, and not to be invented:** no testimonials, no named users, no
   athlete endorsements, no download or user counts, no press, no benchmark
-  results for the bar-path accuracy. The app has not shipped, so no one has
-  used it.
-- `site/public/assets/logo.svg` is still a placeholder wordmark.
-- Privacy and Terms pages do not exist yet. App Store review requires a
-  reachable privacy policy, so this is a launch blocker.
+  results for the bar-path accuracy.
+- The wordmark is generated (`tools/wordmark/`), and the Privacy and Terms
+  pages are built from `legal/*.md`.
 
 ## Product Principles
 
 1. **Earn the claim or drop it.** The app's own rule is that it says when it
    doesn't know; a page that oversells it contradicts the product.
-2. **Show the app, don't describe it.** Real screenshots are the only proof
-   available pre-launch, and there are 29 of them.
+2. **Show the app, don't describe it.** Real stills and videos of the app are
+   the proof; describe nothing they cannot show.
 3. **Speak the sport.** Sinclair, Robi, warm-up room, chalk, attempts. The
    specificity is the positioning; generic fitness language erases it.
 4. **Respect the reading situation.** Not a desk audience. Assume a phone, a

@@ -3,6 +3,12 @@ import { Card, Icon } from '../design-system';
 import { siteWrap, SiteHead, AppStoreButton } from './Chrome';
 import { SITE } from '../config';
 import { asset } from '../lib/asset';
+import { released } from '../lib/release';
+
+/* What Pro unlocks, from the apps' ProFeature lists (iOS Entitlements.swift, Android ProFeature). From 1.6 the library is 16
+   built-in programs and every one but Beginner Foundation is Pro, so "the other four programs" is a 1.2 fact and stays behind
+   the release flag (RELEASING.md). */
+const V16 = released('1.6');
 
 export function Pricing() {
   const { free, pro } = SITE.pricing;
@@ -10,14 +16,28 @@ export function Pricing() {
     { t: free.name, price: free.price, note: 'Everything you need to train, forever, no account required.', highlight: false, items: [
       'Unlimited training log and history',
       'The adaptive daily workout builder, shaped by your own training record',
-      'Beginner Foundation, the full 12-week program',
+      'Beginner Foundation, the full 10-week program',
       'Technique Doctor, including recent-lift technique diagnosis',
       'PR tracker, exercise library, and every training calculator',
       'Warm-up generator',
       'Three bar-path video analyses every month',
-      'Levels, streaks, badges, and Apple Health sync',
+      ...(V16 ? [
+        'Learn the Lifts, step by step',
+        'Import your history from a spreadsheet, CSV, Hevy or Strong',
+        'Home Screen widgets for your next session and best lifts',
+      ] : []),
+      'Levels, streaks, badges, and Apple Health or Health Connect sync',
     ] },
-    { t: pro.name, price: pro.monthly, sub: pro.yearly, note: 'The coaching: full video analysis and the rest of the programs.', highlight: true, items: [
+    { t: pro.name, price: pro.monthly, sub: pro.yearly, note: 'The coaching: full video analysis and the rest of the programs.', highlight: true, items: V16 ? [
+      'Unlimited bar-path analyses, with side-by-side compare and rep consistency',
+      'Full Technique Doctor history',
+      '15 more programs, from Daily Max and Wave Loading to four Classic Systems',
+      'Build your own programs and complexes',
+      'Meet Planner and Meet Day: blocks back from your meet, warm-up pacing and the attempt board',
+      'The cycle report when a program ends',
+      'The full breakdown of what is moving your lifts',
+      'Import data from a VBT sensor you already own',
+    ] : [
       'Unlimited bar-path analyses, with side-by-side compare',
       'Full Technique Doctor history',
       'The other four programs: Strength, Specification, Peak, and Masters',
@@ -36,7 +56,9 @@ export function Pricing() {
     }}>
       <div style={{ ...siteWrap, display: 'grid', gap: 36 }}>
         <SiteHead center title="Everything you need to start is free." max={720}
-          body="Log your training, get an adaptive session every day, and run Beginner Foundation, free, forever. Pro adds unlimited video analysis, the other four programs, and meet day." />
+          body={V16
+            ? 'Log your training, get an adaptive session every day, and run Beginner Foundation, free, forever. Pro adds unlimited video analysis, 15 more programs, and the Meet Planner and Meet Day.'
+            : 'Log your training, get an adaptive session every day, and run Beginner Foundation, free, forever. Pro adds unlimited video analysis, the other four programs, and meet day.'} />
         <div className="pricing-grid">
           {tiers.map((tier) => (
             <Card key={tier.t} className={tier.highlight ? 'animated-border' : undefined} style={{

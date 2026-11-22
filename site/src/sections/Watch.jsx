@@ -6,6 +6,13 @@ import { VideoClip } from '../lib/VideoClip';
 // written by the video project's scripts/v2/web-export.mjs. A release that is not reached is not imported, so its titles,
 // captions and paths are not in the shipped JavaScript.
 import data from '@videos';
+import { released } from '../lib/release';
+
+/* Videos that show something a later release removed, keyed to that release. Until the video project re-renders them they
+   leave the gallery once the flag reaches it. F3 shows the referee lights, which both apps dropped before 1.6 (iOS 93cce2f,
+   2026-11-16). Delete an entry once its video is re-rendered. */
+const RETIRED = { F3: '1.6' };
+const shown = (id) => !(id in RETIRED) || !released(RETIRED[id]);
 
 /* A gallery of short walkthroughs, one tab per area: the area's summary first,
    then the videos that go deeper. The data is generated (src/data/videos.<release>.json, written by the video project's
@@ -17,7 +24,7 @@ export function Watch() {
   const [active, setActive] = React.useState(data.tabs[0].key);
   const tabRefs = React.useRef({});
   const tab = data.tabs.find((t) => t.key === active) ?? data.tabs[0];
-  const clips = tab.ids.map((id) => data.videos[id]).filter(Boolean);
+  const clips = tab.ids.filter(shown).map((id) => data.videos[id]).filter(Boolean);
 
   const onKeyDown = (e) => {
     const i = data.tabs.findIndex((t) => t.key === active);

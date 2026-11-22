@@ -44,7 +44,7 @@ In a day, give it a name and a **Weekday offset**, which places it in the week f
   - **RPE**: a target effort from 5 to 10.
   - **Bodyweight**: no load.
 - **Rest** for that exercise, from 30 to 600 seconds in 15 second steps.
-- **Accessory**, to mark it as supporting work, and **Notes** for yourself or the lifter.
+- **Accessory**, to mark it as supporting work, and **Notes** for yourself or the lifter.<!-- since 1.6 --> Each exercise can also have a **Tempo**, optional, typed as four figures such as 3-1-X-1 or 31X1: seconds down, seconds still at the bottom, seconds up (X for as fast as you can) and seconds at the top. The meaning is spelled out under the field, and a tempo that is only half typed says **Not saved yet**. The tempo shows on the set card when you train the day, stays when you swap the movement, and travels with the program when you share it.<!-- /since -->
 - **Swap**, which keeps the sets, reps, rest and note and changes the movement, and **Remove**.<!-- since 1.5 --> If the new movement is measured differently, such as a squat swapped for a plank, the amount starts from the new movement's usual one instead of carrying 5 reps over as 5 seconds.<!-- /since -->
 
 You can drag exercises to reorder them. The app asks before it deletes anything you wrote.

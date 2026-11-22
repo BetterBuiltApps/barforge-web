@@ -84,7 +84,7 @@ export function Hero() {
             </div>
           </div>
           <div style={{ width: '100%', display: 'grid', justifyItems: 'center' }}>
-            <StillShot s={still('F3', 1)} priority lcp caption="One grade out of 100, checked against the competition rules" />
+            <StillShot s={still('F3', 1)} priority lcp caption="One grade out of 100 for the lift" />
           </div>
         </div>
       </div>

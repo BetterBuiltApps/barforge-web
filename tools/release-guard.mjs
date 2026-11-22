@@ -2,7 +2,7 @@
 // builds and after help/dist was copied into site/dist/help (the workflow does this). Checks, for every release above APP_RELEASE:
 //   1. no staged file (site/release/<v>/**, help/release/<v>/**) exists in the output
 //   2. no Help page whose frontmatter says `since: "<v>"` was built
-//   3. no since marker was left in any built HTML
+//   3. no since or until marker was left in any built HTML
 //   4. none of the gallery videos or page stills that only exist from <v> are named in the shipped HTML or JavaScript
 // With the flag at the newest release it only checks 3. Exit code 1 on any finding.
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
@@ -63,7 +63,7 @@ for (const v of later) {
 }
 // 3. leftover markers
 for (const p of textFiles.filter((f) => f.endsWith('.html'))) {
-  if (/<!--\s*\/?since\b/.test(read(p))) problems.push(`a since marker is left in ${relative(out, p)}`);
+  if (/<!--\s*\/?(since|until)\b/.test(read(p))) problems.push(`a since or until marker is left in ${relative(out, p)}`);
 }
 
 if (problems.length) {

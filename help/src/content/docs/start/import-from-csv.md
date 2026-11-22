@@ -15,7 +15,7 @@ since: "1.5"
 
 <!-- since 1.6 -->
 
-Lifting Lab 1.6 has a new importer with templates, shorthand, name matching and undo. If you have 1.6, read [Import your training history](/help/start/import-your-history/) instead of this page.
+The importer also reads your own spreadsheet, with a template, shorthand like 80x2x3, name matching and undo. For those, read [Import your training history](/help/start/import-your-history/). This page covers CSV files from Hevy, Strong and a Lifting Lab export.
 
 <!-- /since -->
 

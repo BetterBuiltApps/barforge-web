@@ -15,7 +15,10 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/session/SetQuantityControl.kt
   - LiftingLab/App/LaunchReconciler.swift
   - LiftingLab/Features/Train/Session/ActiveSessionModel.swift
-verified_for: "1.5"
+  - LiftingLab/Features/Train/Session/MissRiskHeadsUpBanner.swift
+  - LiftingLab/Domain/Coaching/MissRiskCopy.swift
+  - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/train/session/SessionSetFocusCard.kt
+verified_for: "1.6"
 ---
 
 <video controls playsinline preload="none" poster="/help/videos/v2/B2-poster.webp" width="300" aria-describedby="B2-desc">
@@ -87,6 +90,20 @@ Android uses the same rule and gives the same warm-up weights.
 
 <!-- /since -->
 
+<!-- since 1.6 -->
+
+A lift in a program you wrote yourself can carry a **tempo**, such as 3-1-X-1. The set card shows it under the weight and spells out what it means: three seconds down, one second still at the bottom, drive up fast, one second at the top. Nothing is timed for you. See [Write your own program](/help/train/program-builder/).
+
+If you turn on **Hold to verify** in **Settings**, under **Session Coaching**, technique sets of a lift with a catch show a reminder under the weight: hold the receiving position for a slow two or three count before you recover. It is only a reminder. Made and Miss work as usual.
+
+**Pro:** before a heavy single, at 85% of your best or more, a short note can appear above the set card when the reps you filmed of that lift today show the bar drifting further forward through the pull. It never changes the weight or stops the set. Close it with the cross, or turn it off in **Settings > Training** under **Drift heads-up before heavy singles**.
+
+:::note[Android]
+Android shows the tempo, the hold reminder and the drift note the same way.
+:::
+
+<!-- /since -->
+
 To log a set:
 
 1. Check the weight. Tap the number to type a new one, or use the minus and plus buttons to step to the next weight your plates can build.
@@ -135,6 +152,12 @@ In a workout you built yourself, tap the circled dots beside the exercise name a
 ## Rest timer
 
 Once you log a set, the rest timer starts. By default it counts up so you can see how long you have rested. In **Settings > Training** you can turn on the countdown timer, which signals when rest is up even if your phone is locked. It keeps running if you leave the session and come back<!-- since 1.5 -->, and adding an exercise from the session list does not restart it<!-- /since -->.
+
+<!-- since 1.6 -->
+
+On a built-in program, the rest starts at what suits the program's phase, and a line under the timer gives the range and why. With the Meet Planner (Pro), it tightens to two to three minutes in the last three weeks before a planned A or B meet. A rest written on the set always wins, and once you change the default rest in **Settings > Training**, your number is always kept. A program you wrote yourself has no phase, so it keeps your default.
+
+<!-- /since -->
 
 <!-- since 1.5 -->
 

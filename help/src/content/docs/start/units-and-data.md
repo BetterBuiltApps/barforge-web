@@ -10,7 +10,11 @@ covers:
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/SettingsScreen.kt
   - lifting-lab-android/app/src/main/java/com/betterbuiltapps/liftinglab/features/locker/DataPrivacyScreen.kt
   - LiftingLab/App/AppData.swift
-verified_for: "1.5"
+  - LiftingLab/App/CloudSyncConfig.swift
+  - LiftingLab/App/DeviceBodyweightStore.swift
+  - lifting-lab-android/app/src/main/res/xml/data_extraction_rules.xml
+  - lifting-lab-android/app/src/main/res/xml/backup_rules.xml
+verified_for: "1.6"
 ---
 
 <video controls playsinline preload="none" poster="/help/videos/v2/K10-poster.webp" width="300" aria-describedby="K10-desc">
@@ -52,11 +56,27 @@ On a new iPhone signed in to the same iCloud account, the app waits a few second
 
 <!-- /since -->
 
+<!-- since 1.6 -->
+
+With iCloud sync on, a workout or PR you log on one of your devices shows up on the others while Lifting Lab is open or in the background, without reopening the app.
+
+A bodyweight taken from Apple Health (**Use Health value** in your profile) stays on that iPhone. It is not synced to iCloud and not included in your iPhone backup. A bodyweight you type in yourself syncs like the rest of your training.
+
+<!-- /since -->
+
 Bar Trace video clips are handled separately. They save to your photo library either way. You can choose in Data & Privacy whether they also sync to iCloud so your other devices can play them, and the screen shows how much space your clips use.
 
 :::note[Android]
 Android keeps everything on the phone. There is no iCloud sync and no sync setting. Your sessions, records, profile and Bar Trace clips are stored on this device only, clips are copied into the app's private storage, and the app makes no network calls of its own.<!-- since 1.5 --> Clips you record in the app are also copied to your gallery (Movies, then Lifting Lab) on Android 10 and newer, so you keep the video if you change phones. What your gallery backs up is up to you; Lifting Lab sends nothing.<!-- /since -->
 :::
+
+<!-- since 1.6 -->
+
+:::note[Android: a new phone]
+Google's cloud backup of your phone carries nothing from Lifting Lab: not your training log, not your clips and not your settings. Moving to a new phone with Android's phone-to-phone transfer, on Android 12 and newer, brings everything across: your history, PRs, programs, meets, clips and settings. On Android 11 and older, phone-to-phone transfer leaves Lifting Lab's data behind too, so export your data as CSV first and import it on the new phone.
+:::
+
+<!-- /since -->
 
 <!-- since 1.5 -->
 
@@ -79,7 +99,7 @@ Weights in the files appear in kilograms and in your chosen unit.
 
 The day columns in Lift Summary (PR Date, Training Max As Of, First Trained and Last Trained) are your own calendar days, in your phone's time zone. A session you did on a Tuesday morning is dated Tuesday, even if you are east of Greenwich and it was still Monday there.
 
-If the app cannot prepare a file for the share sheet, for example when the device is out of storage, nothing is sent and a banner tells you so. Your training log is not affected: free some space and export again.
+If the app cannot prepare a file for the share sheet, for example when the device is out of storage, nothing is sent and a banner tells you so. Your training log is not affected: free some space and export again.<!-- since 1.6 --> A cell that a spreadsheet would read as a formula, such as a note starting with an equals sign, is written so that it opens as plain text.<!-- /since -->
 
 A dumbbell set's weight is per hand, so its exercise is named with "(dumbbell, per hand)", for example Push Press (dumbbell, per hand). When you import such a file again, those rows are listed as not matched rather than read as a barbell weight.
 
@@ -88,7 +108,7 @@ On Android, open **Locker**, then **Settings**, and tap **Export PRs, stats & hi
 :::
 
 :::note
-Data & Privacy also holds Import Training History (CSV), which brings in sessions from a spreadsheet and is covered in [Import your training history from a CSV](/help/start/import-from-csv/), the Terms & Conditions and Privacy Policy, which you can read offline, a record of when you accepted the Terms, and an About the Data screen that names the sources behind the app's numbers.
+Data & Privacy also holds Import Training History (CSV), which brings in sessions from a spreadsheet and is covered in [Import your training history from a CSV](/help/start/import-from-csv/)<!-- since 1.6 --> and [Import your training history](/help/start/import-your-history/)<!-- /since -->, the Terms & Conditions and Privacy Policy, which you can read offline, a record of when you accepted the Terms, and an About the Data screen that names the sources behind the app's numbers.
 :::
 
 <!-- /since -->

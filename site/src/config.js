@@ -26,6 +26,9 @@ export const SITE = {
     // The how-to guides: a separate Astro build that deploy.yml copies into
     // dist/help (see help/README.md).
     help: '/help/',
+    // The device-detecting smart link (get.js): one store for a phone, both
+    // badges for anyone else.
+    get: '/get/',
     privacy: '/privacy/',
     terms: '/terms/',
     instagram: 'https://www.instagram.com/liftinglabapp/',
@@ -65,6 +68,9 @@ export const SITE = {
   // that the listing is live, so AppStoreButton (Chrome.jsx) renders this
   // artwork, linked to `links.appStore` above.
   appStoreBadgeSrc: 'assets/app-store-badge-white.svg',
+  // The black lockup, for when the Google Play badge sits beside it (desktop
+  // visitors see both stores, see AppStoreButton in Chrome.jsx, and /get).
+  appStoreBadgeBlackSrc: 'assets/app-store-badge-black.svg',
   // Official "Get it on Google Play" badge (English, generic), downloaded from
   // play.google.com/intl/en_us/badges/. Scale only: Google's brand guidelines
   // forbid recoloring or redrawing it. The PNG ships with its required clear
