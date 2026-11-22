@@ -10,18 +10,15 @@ One switch controls what liftinglab.app and liftinglab.app/help say: the reposit
 
 The deploy fails (`tools/release-guard.mjs`) if anything for a release that has not been reached is still in the output.
 
-## Release day
+## Release day (1.6)
 
-1. **Look first (optional, any time):** `tools/preview-release.sh 1.5`, then open http://localhost:4173/. This builds both sites for 1.5 and serves them locally. Nothing is deployed.
-2. **Flip it, at the moment the app goes live.** Either:
-   - **On GitHub:** repo **Settings > Secrets and variables > Actions > Variables**, add (or edit) `APP_RELEASE` = `1.5`. Then **Actions > Deploy site to GitHub Pages > Run workflow** (branch `main`).
-   - **Or with one command:**
-     ```bash
-     gh variable set APP_RELEASE --body 1.5 -R BetterBuiltApps/lifting-lab-website && gh workflow run deploy.yml -R BetterBuiltApps/lifting-lab-website
-     ```
-   The deploy takes about one to two minutes. Tip: set the App Store release to manual, so you press it and the workflow within the same minute.
-3. **Check:** the workflow summary says `Built for APP_RELEASE=1.5`; open liftinglab.app and liftinglab.app/help.
-4. **To undo:** set `APP_RELEASE` back to `1.2` and run the workflow again.
+1. **Look first (optional, any time):** `tools/preview-release.sh 1.6`, then open http://localhost:4173/. This builds both sites for 1.6 and serves them locally. Nothing is deployed.
+2. **Flip it, at the moment the apps go live.** Either:
+   - **Merge the release commit** (branch `site/1.6`, last commit "Release: the site and guides describe Lifting Lab 1.6"). It sets `DEFAULT_RELEASE` to `'1.6'`, so the push to `main` deploys 1.6 by itself (`tools/**` is in the deploy's paths). Leave the `APP_RELEASE` variable unset, or it overrides the default.
+   - **Or without merging:** `gh variable set APP_RELEASE --body 1.6 -R BetterBuiltApps/lifting-lab-website && gh workflow run deploy.yml -R BetterBuiltApps/lifting-lab-website`. This leaves `llms.txt` describing 1.2, so merge the release commit afterwards and delete the variable.
+   The deploy takes about one to two minutes. Tip: set the App Store release to manual, so you press it and the deploy within the same minute.
+3. **Check:** the workflow summary says `Built for APP_RELEASE=1.6` (or `default (live)` after a merge, which is now 1.6); open liftinglab.app and liftinglab.app/help, and the What's new guide.
+4. **To undo:** set the `APP_RELEASE` variable to `1.2` and run the workflow again (the variable wins over the default).
 
 ## After the release is out
 - In `tools/release.mjs` set `DEFAULT_RELEASE` to `'1.5'` and delete the `APP_RELEASE` variable, so a plain push keeps showing 1.5.
