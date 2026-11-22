@@ -84,6 +84,11 @@ jobs:
         run: |
           mkdir -p site/dist/help
           cp -R help/dist/. site/dist/help/
+      # Holding mode (tools/holding.mjs): set the repository variable HOLDING to 1 and run this workflow to publish only
+      # /privacy/, /terms/ and a plain notice, with no marketing, guides, media or analytics. Unset it to restore the site.
+      - name: Holding mode
+        if: ${{ vars.HOLDING == '1' }}
+        run: node tools/holding.mjs
       # Fails the deploy if content for a release that has not been reached is anywhere in the output.
       - name: Release guard
         run: node tools/release-guard.mjs
