@@ -75,7 +75,7 @@
       {
         "src": "assets/stills/B1-2-600.webp",
         "large": "assets/stills/B1-2-900.webp",
-        "alt": "Step 2 · Plates. Plates worked out for you. 98 kg exact, shown per side. Screen from the app."
+        "alt": "Step 2 · Plates. Plates worked out for you. 82 kg exact, shown per side. Screen from the app."
       },
       {
         "src": "assets/stills/B1-3-600.webp",
@@ -225,22 +225,17 @@
       {
         "src": "assets/stills/F3-1-600.webp",
         "large": "assets/stills/F3-1-900.webp",
-        "alt": "Step 1 · The grade. One grade out of 100 for the lift. Pull under, bar path and rhythm. Screen from the app."
+        "alt": "Technique grade. A grade out of 100 for every lift. A letter and a ring, at a glance. Screen from the app."
       },
       {
         "src": "assets/stills/F3-2-600.webp",
         "large": "assets/stills/F3-2-900.webp",
-        "alt": "Step 2 · The rules. Checked against competition rules. Every rule listed with its number. Screen from the app."
+        "alt": "What it scores. Pull under, bar path and rhythm. Each part gets its own bar. Screen from the app."
       },
       {
         "src": "assets/stills/F3-3-600.webp",
         "large": "assets/stills/F3-3-900.webp",
-        "alt": "Step 3 · Not sure?. Can't see a rule? It says so. Graded on the bar alone. Screen from the app."
-      },
-      {
-        "src": "assets/stills/F3-4-600.webp",
-        "large": "assets/stills/F3-4-900.webp",
-        "alt": "Step 4 · The lights. No clear view? No guess. It says Can't judge, not a guess. Screen from the app."
+        "alt": "Honest grade. Can't see your body? It says so. Then it grades the bar alone. Screen from the app."
       }
     ]
   },
@@ -275,7 +270,7 @@
       {
         "src": "assets/stills/F1-3-600.webp",
         "large": "assets/stills/F1-3-900.webp",
-        "alt": "Step 3 · The plate. Circle one plate. It sets the scale and what to track. Screen from the app."
+        "alt": "Step 3 · The plate. Circle a full-size plate. It sets the scale and what to track. Screen from the app."
       },
       {
         "src": "assets/stills/F1-4-600.webp",
@@ -530,7 +525,7 @@
       {
         "src": "assets/stills/M1-2-600.webp",
         "large": "assets/stills/M1-2-900.webp",
-        "alt": "Search. Type a word. Find the section. Try export. Three guides come up. Screen from the app."
+        "alt": "Search. Type a word. Find the section. Try export. Two guides come up. Screen from the app."
       },
       {
         "src": "assets/stills/M1-3-600.webp",
@@ -590,7 +585,7 @@
       {
         "src": "assets/stills/C3-2-600.webp",
         "large": "assets/stills/C3-2-900.webp",
-        "alt": "Lab Notes. Every pick says why it is there. Seen in 4 recent lifts. Miss tags agree. Screen from the app."
+        "alt": "Lab Notes. Every pick says why it is there. Seen in 3 of your recent filmed lifts. Screen from the app."
       },
       {
         "src": "assets/stills/C3-3-600.webp",
@@ -610,7 +605,7 @@
       {
         "src": "assets/stills/F4-2-600.webp",
         "large": "assets/stills/F4-2-900.webp",
-        "alt": "Fix with. Drills to fix it, handed to you. Muscle, tall and scarecrow snatch. Screen from the app."
+        "alt": "Fix with. Drills to fix it, handed to you. Hang snatch, high pull, muscle snatch. Screen from the app."
       }
     ]
   },
