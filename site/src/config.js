@@ -31,8 +31,12 @@ export const SITE = {
     get: '/get/',
     privacy: '/privacy/',
     terms: '/terms/',
-    instagram: 'https://www.instagram.com/barforge/',
-    tiktok: 'https://www.tiktok.com/@barforge',
+    // Left empty on purpose. instagram.com/barforge belongs to an unrelated company
+    // ("Barforge LTD"), not to us, and the TikTok handle is not claimed yet. Set both
+    // to our real profiles once they exist: the footer icons, the Organization
+    // sameAs in StructuredData.jsx and public/llms.txt all depend on them.
+    instagram: '',
+    tiktok: '',
     // No `support` mailto any more. It sent people out to a mail client, which
     // most never came back from, and the contact form is now the one route in.
     // The footer drops any link whose href is missing, so nothing else changed.

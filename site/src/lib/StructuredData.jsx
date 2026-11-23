@@ -94,7 +94,10 @@ export function StructuredData() {
     alternateName: 'Barforge Weightlifting',
     url: 'https://barforgeweightlifting.com/',
     logo: 'https://barforgeweightlifting.com/assets/mark.svg',
-    sameAs: [SITE.links.instagram, SITE.links.tiktok].filter(Boolean),
+    // Only our own, claimed profiles. Omitted while none are set in config.js.
+    ...([SITE.links.instagram, SITE.links.tiktok].filter(Boolean).length
+      ? { sameAs: [SITE.links.instagram, SITE.links.tiktok].filter(Boolean) }
+      : {}),
     address: {
       '@type': 'PostalAddress',
       streetAddress: '7901 4th St N STE 300',
