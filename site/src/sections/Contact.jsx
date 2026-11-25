@@ -16,11 +16,54 @@ const FIELDS = [
   { name: 'email', label: 'Email', type: 'email', autoComplete: 'email' },
 ];
 
+const HCAPTCHA_SRC = 'https://js.hcaptcha.com/1/api.js?render=explicit';
+
+// Loads hCaptcha's script once, however many times the form mounts.
+let hcaptchaLoading;
+function loadHCaptcha() {
+  if (window.hcaptcha) return Promise.resolve(window.hcaptcha);
+  if (!hcaptchaLoading) {
+    hcaptchaLoading = new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = HCAPTCHA_SRC;
+      s.async = true;
+      s.defer = true;
+      s.onload = () => resolve(window.hcaptcha);
+      s.onerror = () => { hcaptchaLoading = undefined; reject(new Error('hcaptcha')); };
+      document.head.appendChild(s);
+    });
+  }
+  return hcaptchaLoading;
+}
+
 export function Contact() {
   // idle -> sending -> sent | error. One string beats three booleans that can
   // contradict each other, and the button label reads straight off it.
   const [status, setStatus] = React.useState('idle');
   const [note, setNote] = React.useState('');
+  // The hCaptcha widget renders its token into a hidden h-captcha-response
+  // field inside this node, so `new FormData(form)` still carries the whole
+  // payload in one step.
+  const captchaRef = React.useRef(null);
+  const widgetId = React.useRef(null);
+
+  React.useEffect(() => {
+    let cancelled = false;
+    loadHCaptcha()
+      .then((hc) => {
+        if (cancelled || !captchaRef.current || widgetId.current !== null) return;
+        widgetId.current = hc.render(captchaRef.current, {
+          sitekey: SITE.contact.hcaptchaSitekey,
+          theme: 'dark',
+        });
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setStatus('error');
+        setNote('The spam check could not load. Check your connection and reload the page.');
+      });
+    return () => { cancelled = true; };
+  }, []);
 
   async function onSubmit(e) {
     e.preventDefault();
@@ -30,6 +73,13 @@ export function Contact() {
     // handler yields, so form.reset() below would throw on the resolved path.
     const form = e.currentTarget;
     const body = new FormData(form);
+    // Web3Forms rejects a submission with no token, so say so here instead of
+    // sending a request that can only fail.
+    if (!body.get('h-captcha-response')) {
+      setStatus('error');
+      setNote('Please tick the box to confirm you are not a bot, then send again.');
+      return;
+    }
     setStatus('sending');
     setNote('');
     try {
@@ -53,6 +103,9 @@ export function Contact() {
     } catch {
       setStatus('error');
       setNote('Could not reach the server. Check your connection and try again.');
+    } finally {
+      // A token is single use, so a retry needs a fresh one.
+      if (window.hcaptcha && widgetId.current !== null) window.hcaptcha.reset(widgetId.current);
     }
   }
 
@@ -94,6 +147,10 @@ export function Contact() {
               <textarea className="contact-input contact-textarea" id="contact-message" name="message" required />
             </div>
 
+            <div className="contact-field contact-field--wide">
+              <div ref={captchaRef} />
+            </div>
+
             <div className="contact-actions">
               <Button type="submit" size="large" disabled={status === 'sending'}>
                 {status === 'sending' ? 'Sending' : 'Send'}
@@ -113,7 +170,8 @@ export function Contact() {
               <p className="contact-privacy">
                 Sending this form passes your name, email address and message to Web3Forms, a
                 form-relay service that emails it to the developer. It is used only to reply to
-                you. <a href={`${SITE.links.privacy || '/privacy/'}#if-you-contact-us`}>How we handle it</a>
+                you. The spam check is hCaptcha, which loads from hcaptcha.com and sees your IP
+                address and browser details. <a href={`${SITE.links.privacy || '/privacy/'}#if-you-contact-us`}>How we handle it</a>
               </p>
             </div>
           </form>
