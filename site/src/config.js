@@ -64,10 +64,6 @@ export const SITE = {
     // add. Rotate it in the Web3Forms dashboard if it ever attracts spam.
     accessKey: 'cd2da567-17a7-4cfb-834a-88534b13fa37',
     subject: 'Barforge Weightlifting site: new message',
-    // The dashboard has hCaptcha switched on for this form, so every submission
-    // must carry an h-captcha-response token or Web3Forms rejects it. This is
-    // the shared sitekey Web3Forms documents for free plans. Public by design.
-    hcaptchaSitekey: '50b2fe65-b00b-4b9e-ad62-3ba471098be2',
   },
   // Official badge, US/UK English, white lockup (product owner's call, over
   // the black lockup Apple states as its preferred default). The App Store
