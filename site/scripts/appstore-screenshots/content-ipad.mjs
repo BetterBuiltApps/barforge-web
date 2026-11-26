@@ -11,9 +11,11 @@
 
 import { resolve } from 'node:path';
 
-const ROOT = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development/Barforge Weightlifting';
-const SCREENCAPS_IPAD = resolve(ROOT, 'Screencaps', 'ipad');
-const IMAGES = resolve(ROOT, 'Images');
+// NAS asset library: app assets under Weightlifting/, shared brand imagery under brand/.
+const NAS = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development/Barforge';
+const STORE = resolve(NAS, 'Weightlifting', 'store', 'ios');
+const SCREENCAPS_IPAD = resolve(STORE, 'screencaps', 'ipad');
+const IMAGES = resolve(NAS, 'brand', 'images');
 
 const BG = {
   cleanJerkMale: { file: resolve(IMAGES, 'ChatGPT Image Aug 17, 2026, 07_36_59 PM (1).png'), x: 66 },
@@ -108,4 +110,4 @@ export const SHOTS = [
   },
 ].map((shot, i) => ({ ...shot, background: BG_ROTATION[i % BG_ROTATION.length] }));
 
-export const OUTPUT_ROOT = resolve(ROOT, 'AppStoreScreenshots', 'ipad-13');
+export const OUTPUT_ROOT = resolve(STORE, 'screenshots', 'ipad-13');

@@ -15,7 +15,7 @@ The deploy fails (`tools/release-guard.mjs`) if anything for a release that has 
 1. **Look first (optional, any time):** `tools/preview-release.sh 1.6`, then open http://localhost:4173/. This builds both sites for 1.6 and serves them locally. Nothing is deployed.
 2. **Flip it, at the moment the apps go live.** Either:
    - **Merge the release commit** (branch `site/1.6`, last commit "Release: the site and guides describe Barforge Weightlifting 1.6"). It sets `DEFAULT_RELEASE` to `'1.6'`, so the push to `main` deploys 1.6 by itself (`tools/**` is in the deploy's paths). Leave the `APP_RELEASE` variable unset, or it overrides the default.
-   - **Or without merging:** `gh variable set APP_RELEASE --body 1.6 -R BetterBuiltApps/lifting-lab-website && gh workflow run deploy.yml -R BetterBuiltApps/lifting-lab-website`. This leaves `llms.txt` describing 1.2, so merge the release commit afterwards and delete the variable.
+   - **Or without merging:** `gh variable set APP_RELEASE --body 1.6 -R BetterBuiltApps/barforge-web && gh workflow run deploy.yml -R BetterBuiltApps/barforge-web`. This leaves `llms.txt` describing 1.2, so merge the release commit afterwards and delete the variable.
    The deploy takes about one to two minutes. Tip: set the App Store release to manual, so you press it and the deploy within the same minute.
 3. **Check:** the workflow summary says `Built for APP_RELEASE=1.6` (or `default (live)` after a merge, which is now 1.6); open barforgeweightlifting.com and barforgeweightlifting.com/help, and the What's new guide.
 4. **To undo:** set the `APP_RELEASE` variable to `1.2` and run the workflow again (the variable wins over the default).

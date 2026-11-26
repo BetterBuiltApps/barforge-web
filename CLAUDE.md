@@ -1,7 +1,8 @@
 # Barforge Weightlifting, marketing site
 
 A single-page React 18 site on Vite 6, deployed to GitHub Pages at **barforgeweightlifting.com**.
-It markets the Barforge Weightlifting iOS app, which lives in a sibling repo (`../LiftingLab`).
+It markets the Barforge Weightlifting app, whose iOS and Android source live in the sibling monorepo
+(`../barforge`, under `apps/weightlifting-ios` and `apps/weightlifting-android`).
 
 ## What actually ships
 
@@ -30,14 +31,14 @@ the most likely wasted hour in this repo.
 byte-identical duplicate at `site/src/tokens/` that nothing kept in sync; it was
 deleted.
 
-The real source of truth is the **iOS app**: `../LiftingLab/LiftingLab/Theme/Theme.swift`.
+The real source of truth is the **iOS app**: `../barforge/apps/weightlifting-ios/BarforgeWeightlifting/Theme/Theme.swift`.
 `tokens/colors.css` mirrors it, and each value carries a `/* BPColor.x */`
 comment naming its Swift origin. Names deliberately differ in places
 (`BPColor.background` is `--bg`, `phasePurple` is `--phase-transition`), so that
 comment, not the variable name, is the mapping.
 
 **Change order is fixed:** `Theme.swift` → `tokens/*.css`. Never the reverse.
-`../LiftingLab/Scripts/check-design-tokens.sh --report` verifies the two agree;
+`../barforge/apps/weightlifting-ios/Scripts/check-design-tokens.sh --report` verifies the two agree;
 it runs as a `Stop` hook in the app repo and exits 0 here (this repo can't see
 the Swift).
 
@@ -138,7 +139,7 @@ only what a Release build ships, Pro marked). Its dark theme in
 ## Regenerating the page images
 
 The home page no longer uses app screenshots. Every image of the app is a **still from a walkthrough video** (a headline above a
-phone), made by the video project (`Barforge Weightlifting - Videos`, `scripts/v2/web-export.mjs`) and read through `site/src/lib/stills.js`
+phone), made by the video project (`../barforge/videos`, `scripts/v2/web-export.mjs`) and read through `site/src/lib/stills.js`
 and `StillShot` in `Chrome.jsx`. To change one: re-render the video in the video project, run `node scripts/v2/web-export.mjs`
 there, review the new `site/src/data/stills.<release>.json` and `site/public/assets/stills/`, and commit. The old PNGs in
 `site/public/assets/screens/` are unreferenced; delete them when you are sure nothing needs them. Alt text lives in the data

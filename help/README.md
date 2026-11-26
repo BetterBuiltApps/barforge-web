@@ -28,8 +28,12 @@ verified_for: "1.4"
 ```
 
 - `covers` is what makes drift detectable. List every screen the article
-  describes, on both apps: iOS paths from the app repo root, Android paths from the
-  Android repo root with `lifting-lab-android/` in front. The app repo's
+  describes, on both apps: iOS paths from the iOS app root (`apps/weightlifting-ios`
+  in the barforge monorepo), Android paths from the Android app root
+  (`apps/weightlifting-android`) with `lifting-lab-android/` in front. That prefix
+  and the `LiftingLab/` iOS paths are what the drift check matches on (the iOS
+  folder rename to `BarforgeWeightlifting/` maps the old paths), so keep writing
+  them that way until the check changes. The app repo's
   `Scripts/help-drift-check.sh --report` lists articles whose covered code changed
   since they were verified, uncommitted edits included, and it runs as a Claude Code
   `Stop` hook there, so drift is raised at the end of the session that caused it.
@@ -49,7 +53,7 @@ Dark only, amber accent, mirrored from `tokens/colors.css` in `src/styles/custom
 
 One set of guides covers both apps. Where behavior differs, add a Starlight
 `:::note[Android]` aside (or name both in the sentence), and only state what you
-checked in the Android source (`lifting-lab-android`). The drift check reads the
+checked in the Android source (`apps/weightlifting-android` in the monorepo). The drift check reads the
 Android paths an article lists, so an Android-only change to a covered screen is
 flagged too. It cannot flag a screen nobody listed: when an article starts
 describing another screen, add both apps' files to its `covers`.

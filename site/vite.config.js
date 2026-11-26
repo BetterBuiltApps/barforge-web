@@ -19,7 +19,7 @@ const dataFile = (name) => {
 };
 
 // Served at the custom domain barforgeweightlifting.com (see public/CNAME), so assets
-// resolve from the root. Switch back to '/lifting-lab-website/' if the
+// resolve from the root. Switch back to '/barforge-web/' if the
 // custom domain is ever removed and this falls back to the github.io URL.
 export default defineConfig({
   base: '/',

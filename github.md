@@ -1,4 +1,4 @@
-repo: BetterBuiltApps/lifting-lab
+repo: BetterBuiltApps/barforge (iOS app at apps/weightlifting-ios)
 branch: main
 
 ## Last sync
@@ -20,9 +20,13 @@ and intentionally left as-is).
 
 ## Screen map
 
+Source paths are under `apps/weightlifting-ios/` in the barforge monorepo; short ones (`Theme/...`,
+`Features/...`) are inside its `BarforgeWeightlifting/` source folder, which was `LiftingLab/` before the
+2026-11 rename (the dated sync notes above keep the old name).
+
 | Screen / file | Source files |
 | --- | --- |
-| `tokens/*.css` | `LiftingLab/LiftingLab/Theme/Theme.swift`, `LiftingLab/LiftingLab/Theme/Components/PlateVisuals.swift` |
+| `tokens/*.css` | `BarforgeWeightlifting/Theme/Theme.swift`, `BarforgeWeightlifting/Theme/Components/PlateVisuals.swift` |
 | `components/core/*` | `Theme/Components/CommonComponents.swift`, `SessionComponents.swift`, `JuicyProgressBar.swift` |
 | `components/data/*` | `Features/OWL/ScoreRingCard.swift`, `PhaseBreakdownCard.swift`, `VelocityChartCard.swift`, `Theme/Components/SparklineView.swift`, `PlateVisuals.swift` |
 | `components/session/*` | `Theme/Components/SessionComponents.swift`, `Features/Train/Session/ActiveSessionView.swift` |
@@ -34,4 +38,4 @@ and intentionally left as-is).
 | `ui_kits/ios_app/BarTraceHome.jsx` | `Features/OWL/OWLHomeView.swift` |
 | `ui_kits/ios_app/BarTracePlayer.jsx` | `Features/OWL/OWLPlayerView.swift` + its cards |
 | `ui_kits/marketing_site/*` | none, no web source in the repo |
-| `assets/*` | `LiftingLab/LiftingLab/Assets.xcassets/`, `uploads/` |
+| `assets/*` | `BarforgeWeightlifting/Assets.xcassets/`, `uploads/` |

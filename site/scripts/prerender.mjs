@@ -33,7 +33,7 @@ const sitemapFile = resolve(root, 'dist/sitemap.xml');
   const today = new Date().toISOString().slice(0, 10);
   const sitemap = readFileSync(sitemapFile, 'utf8');
   const stamped = sitemap.replace(
-    /(<loc>https:\/\/liftinglab\.app\/<\/loc>\s*)(?:<lastmod>[^<]*<\/lastmod>\s*)?/,
+    /(<loc>https:\/\/barforgeweightlifting\.com\/<\/loc>\s*)(?:<lastmod>[^<]*<\/lastmod>\s*)?/,
     `$1<lastmod>${today}</lastmod>\n    `
     );
   // The legal pages carry their own "Last updated" date (stamped by
@@ -45,7 +45,7 @@ const sitemapFile = resolve(root, 'dist/sitemap.xml');
     const date = html.match(/Last updated (\d{4}-\d{2}-\d{2})/)?.[1];
     if (!date) continue;
     withLegal = withLegal.replace(
-      new RegExp(`(<loc>https://liftinglab\\.app/${slug}/</loc>\\s*<lastmod>)[^<]*(</lastmod>)`),
+      new RegExp(`(<loc>https://barforgeweightlifting\\.com/${slug}/</loc>\\s*<lastmod>)[^<]*(</lastmod>)`),
       `$1${date}$2`
     );
   }

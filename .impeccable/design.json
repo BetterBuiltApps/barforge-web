@@ -1,14 +1,14 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-08-08T00:00:00Z",
-  "title": "Design System: Lifting Lab",
+  "title": "Design System: Barforge Weightlifting",
   "extensions": {
     "colorMeta": {
       "bg": {
         "role": "neutral",
         "displayName": "Instrument Ground",
         "canonical": "#1a1a1a",
-        "source": "BPColor.background (LiftingLab/Theme/Theme.swift)",
+        "source": "BPColor.background (BarforgeWeightlifting/Theme/Theme.swift)",
         "tonalRamp": ["#0d0d0d", "#1a1a1a", "#262626", "#3d3d3d", "#5c5c5c", "#8a8a8a", "#b8b8b8", "#e8e8e8"]
       },
       "surface": {
@@ -159,10 +159,10 @@
       { "name": "sm", "value": "640px" }
     ],
     "sourceOfTruth": {
-      "tokens": "../LiftingLab/LiftingLab/Theme/Theme.swift",
+      "tokens": "../barforge/apps/weightlifting-ios/BarforgeWeightlifting/Theme/Theme.swift",
       "mirror": "tokens/{colors,fonts,typography,spacing,elevation,motion,base}.css",
       "changeOrder": "Theme.swift first, then tokens/*.css. Never the reverse.",
-      "verify": "../LiftingLab/Scripts/check-design-tokens.sh --report",
+      "verify": "../barforge/apps/weightlifting-ios/Scripts/check-design-tokens.sh --report",
       "note": "Token names deliberately differ between Swift and CSS (BPColor.background is --bg; phasePurple is --phase-transition). That is intentional, not drift."
     }
   },
@@ -172,7 +172,7 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "The one filled amber element on a view. Amber fill, black label, always.",
-      "html": "<button class=\"ds-btn-primary\">Get Lifting Lab</button>",
+      "html": "<button class=\"ds-btn-primary\">Get Barforge Weightlifting</button>",
       "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 20px; font-family: var(--font-display, ui-rounded, 'SF Pro Rounded', 'Nunito', system-ui, sans-serif); font-size: 17px; font-weight: 600; background: var(--amber, #f5a623); color: var(--accent-fg, #000); border: none; border-radius: var(--radius-button, 14px); cursor: pointer; transition: transform 350ms cubic-bezier(0.22,1,0.36,1), filter 350ms cubic-bezier(0.22,1,0.36,1); -webkit-tap-highlight-color: transparent; } .ds-btn-primary:hover { transform: scale(1.02); filter: brightness(1.08); } .ds-btn-primary:active { transform: scale(0.93); transition: transform 250ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary:focus-visible { outline: 2px solid var(--amber, #f5a623); outline-offset: 3px; border-radius: 4px; } .ds-btn-primary:disabled { opacity: 0.35; cursor: default; }"
     },
     {
@@ -180,7 +180,7 @@
       "kind": "button",
       "refersTo": "button-outline",
       "description": "Small transparent CTA with a 1.5px amber border. Used in the sticky nav.",
-      "html": "<button class=\"ds-btn-outline\">Get Lifting Lab</button>",
+      "html": "<button class=\"ds-btn-outline\">Get Barforge Weightlifting</button>",
       "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 0 14px; font-family: var(--font-display, ui-rounded, 'SF Pro Rounded', 'Nunito', system-ui, sans-serif); font-size: 15px; font-weight: 600; background: transparent; color: var(--amber, #f5a623); border: 1.5px solid var(--amber, #f5a623); border-radius: var(--radius-button, 14px); cursor: pointer; transition: transform 350ms cubic-bezier(0.22,1,0.36,1), filter 350ms cubic-bezier(0.22,1,0.36,1); } .ds-btn-outline:hover { transform: scale(1.02); filter: brightness(1.08); } .ds-btn-outline:active { transform: scale(0.93); transition: transform 250ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-outline:focus-visible { outline: 2px solid var(--amber, #f5a623); outline-offset: 3px; }"
     },
     {
@@ -228,7 +228,7 @@
       "kind": "nav",
       "refersTo": "nav-link",
       "description": "Translucent ground with a 20px backdrop blur and a hairline bottom edge, 68px tall. Links go amber on hover. Below 980px the link row is replaced by a toggle.",
-      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-mark\">Lifting Lab</span><span class=\"ds-nav-spacer\"></span><div class=\"ds-nav-links\"><a href=\"#pillars\">Pillars</a><a href=\"#explore\">Explore</a><a href=\"#pricing\">Pricing</a><a href=\"#faq\">FAQ</a></div><button class=\"ds-nav-toggle\" aria-label=\"Menu\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5h16\"/><path d=\"M4 12h16\"/><path d=\"M4 19h16\"/></svg></button></nav>",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-mark\">Barforge Weightlifting</span><span class=\"ds-nav-spacer\"></span><div class=\"ds-nav-links\"><a href=\"#pillars\">Pillars</a><a href=\"#explore\">Explore</a><a href=\"#pricing\">Pricing</a><a href=\"#faq\">FAQ</a></div><button class=\"ds-nav-toggle\" aria-label=\"Menu\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5h16\"/><path d=\"M4 12h16\"/><path d=\"M4 19h16\"/></svg></button></nav>",
       "css": ".ds-nav { display: flex; align-items: center; gap: 28px; height: 68px; padding: 0 24px; background: rgba(26,26,26,0.82); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.08); } .ds-nav-mark { font-family: var(--font-display, ui-rounded, 'Nunito', system-ui, sans-serif); font-weight: 900; font-size: 17px; color: var(--text-primary, #fff); } .ds-nav-spacer { flex: 1; } .ds-nav-links { display: flex; gap: 26px; } .ds-nav-links a { font-size: 15px; line-height: 1.35; color: var(--text-secondary, rgba(255,255,255,0.6)); text-decoration: none; transition: color 400ms cubic-bezier(0.2,0,0,1); } .ds-nav-links a:hover { color: var(--amber, #f5a623); } .ds-nav-links a:focus-visible { outline: 2px solid var(--amber, #f5a623); outline-offset: 3px; border-radius: 4px; } .ds-nav-toggle { display: none; background: none; border: none; padding: 8px; color: var(--text-primary, #fff); cursor: pointer; } @media (max-width: 980px) { .ds-nav-links { display: none; } .ds-nav-toggle { display: inline-flex; } }"
     },
     {

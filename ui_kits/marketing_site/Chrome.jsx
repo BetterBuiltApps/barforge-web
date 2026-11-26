@@ -22,7 +22,7 @@ function SiteNav() {
           const el = document.getElementById('pricing');
           if (el) window.scrollTo({ top: el.offsetTop - 88, behavior: 'smooth' });
         }}>
-          Get Lifting Lab
+          Get Barforge Weightlifting
         </Button>
       </div>
     </nav>

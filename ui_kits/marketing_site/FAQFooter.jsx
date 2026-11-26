@@ -18,13 +18,13 @@ function FAQItem({ q, a }) {
 function FAQ() {
   const items = [
     ['Is it really free?', 'Yes. Training log, the adaptive daily builder, all five programs, the PR tracker, the illustrated exercise library, every calculator, and three bar-path analyses a month never expire and never lock.'],
-    ['Do I have to follow a fixed program?', 'No. Tell Lifting Lab how you feel, what\u2019s sore, and how much time you have, and it builds the session \u2014 or run one of the five periodized programs if you want a full cycle. Either way, nothing is locked: reorder, swap, or adjust anything before or during the workout.'],
+    ['Do I have to follow a fixed program?', 'No. Tell Barforge Weightlifting how you feel, what\u2019s sore, and how much time you have, and it builds the session \u2014 or run one of the five periodized programs if you want a full cycle. Either way, nothing is locked: reorder, swap, or adjust anything before or during the workout.'],
     ['Do I need any hardware?', 'No. Bar Trace reads speed, path and phase timing from a phone video \u2014 no sensor, no clip-on unit, no pairing.'],
-    ['How accurate is the video analysis?', 'It depends on the clip: side-on, whole bar in frame, steady phone. When tracking is weak, Lifting Lab says so and shows the evidence, rather than giving you a number it can\u2019t back up.'],
+    ['How accurate is the video analysis?', 'It depends on the clip: side-on, whole bar in frame, steady phone. When tracking is weak, Barforge Weightlifting says so and shows the evidence, rather than giving you a number it can\u2019t back up.'],
     ['Does my data leave my phone?', 'No. Analysis runs on-device. Nothing is uploaded, and there\u2019s no account required to use it.'],
     ['Kilos only?', 'Yes \u2014 kg is the only unit, matching IWF competition and the way the sport is actually coached.'],
-    ['Android?', 'Yes. Lifting Lab is on the App Store for iPhone and on Google Play for Android.'],
-    ['Do I have to fill any of this in?', 'No. Every field is optional, nothing is scored, and skipping it costs you nothing. Lifting Lab suggests a reflection every few weeks and that suggestion is dismissible.'],
+    ['Android?', 'Yes. Barforge Weightlifting is on the App Store for iPhone and on Google Play for Android.'],
+    ['Do I have to fill any of this in?', 'No. Every field is optional, nothing is scored, and skipping it costs you nothing. Barforge Weightlifting suggests a reflection every few weeks and that suggestion is dismissible.'],
   ];
   return (
     <section id="faq" style={{ padding: 'clamp(60px,7vw,110px) 0' }}>
@@ -51,7 +51,7 @@ function SiteFooter() {
         </div>
         <p style={{ margin: 0, maxWidth: '68ch', font: 'var(--type-caption)', color: 'var(--text-tertiary)' }}>
           Built for competitive weightlifting. Sinclair coefficients are the official 2021-2024 IWF values.
-          World-record data should be verified against iwf.sport. Lifting Lab is not affiliated with, endorsed by,
+          World-record data should be verified against iwf.sport. Barforge Weightlifting is not affiliated with, endorsed by,
           or connected to the IWF, USA Weightlifting, or any equipment manufacturer.
         </p>
       </div>

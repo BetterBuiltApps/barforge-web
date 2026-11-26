@@ -22,13 +22,13 @@ function Comparison() {
   return (
     <section id="compare" style={{ padding: 'clamp(60px,7vw,110px) 0' }}>
       <div style={owlSiteWrap}>
-        <SiteHead center title="How Lifting Lab stacks up." max={640} />
+        <SiteHead center title="How Barforge Weightlifting stacks up." max={640} />
         <div style={{ marginTop: 36, borderRadius: 16, overflow: 'hidden', border: 'var(--border-hairline-1)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1.6fr 1fr 1fr 1fr', background: 'var(--surface)' }} className="compare-head">
             <div />
             <div style={{ padding: 16, textAlign: 'center', font: 'var(--type-caption)', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Metric</div>
             <div style={{ padding: 16, textAlign: 'center', font: 'var(--type-caption)', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>OVR Connect</div>
-            <div style={{ padding: 16, textAlign: 'center', background: 'var(--surface-elevated)', font: 'var(--type-headline)', fontWeight: 700, color: 'var(--amber)' }}>Lifting Lab</div>
+            <div style={{ padding: 16, textAlign: 'center', background: 'var(--surface-elevated)', font: 'var(--type-headline)', fontWeight: 700, color: 'var(--amber)' }}>Barforge Weightlifting</div>
           </div>
           {COMPARISON_ROWS.map((r, i) => (
             <div key={r[0]} style={{ display: 'grid', gridTemplateColumns: '1.6fr 1fr 1fr 1fr', background: i % 2 ? '#1e1e1e' : 'var(--bg)', borderTop: 'var(--border-hairline-1)' }} className="compare-row">

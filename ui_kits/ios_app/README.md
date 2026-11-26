@@ -1,9 +1,9 @@
-# Lifting Lab for iPhone, UI kit
+# Barforge Weightlifting for iPhone, UI kit
 
 High-fidelity recreations of the real app's core screens, composed entirely from
 this design system's components.
 
-**Source of truth:** the SwiftUI codebase at `LiftingLab/LiftingLab/Features/…`, read directly.
+**Source of truth:** the SwiftUI codebase at `apps/weightlifting-ios/BarforgeWeightlifting/Features/…` in the barforge monorepo, read directly.
 No screenshots were used.
 
 | Screen | Recreated from |
