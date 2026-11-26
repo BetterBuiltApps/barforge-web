@@ -18,11 +18,13 @@
 
 import { resolve } from 'node:path';
 
-const ROOT = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development/Barforge Weightlifting';
-const SCREENCAPS = resolve(ROOT, 'Screencaps');
-const IMAGES = resolve(ROOT, 'Images');
+// NAS asset library: app assets under Weightlifting/, shared brand imagery under brand/.
+const NAS = '/Users/davidhicka/Library/CloudStorage/SynologyDrive-MacBackup/Application Development/Barforge';
+const STORE = resolve(NAS, 'Weightlifting', 'store', 'ios');
+const SCREENCAPS = resolve(STORE, 'screencaps');
+const IMAGES = resolve(NAS, 'brand', 'images');
 
-// The 4 AI-generated (ChatGPT) lifter photos in Images/, used as full-bleed
+// The 4 AI-generated (ChatGPT) lifter photos in brand/images/, used as full-bleed
 // backgrounds per the "photographic exception" DESIGN.md reserves for
 // Hero/Pricing/footer, extended here to the App Store set. Each is 1672x941
 // landscape; `cover` on the 1320x2868 portrait canvas scales by height and
@@ -118,4 +120,4 @@ export const SHOTS = [
   },
 ].map((shot, i) => ({ ...shot, background: BG_ROTATION[i % BG_ROTATION.length] }));
 
-export const OUTPUT_ROOT = ROOT;
+export const OUTPUT_ROOT = resolve(STORE, 'screenshots');

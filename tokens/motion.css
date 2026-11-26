@@ -1,4 +1,4 @@
-/* Lifting Lab motion. One house curve does most of the work, press feedback is
+/* Barforge Weightlifting motion. One house curve does most of the work, press feedback is
    a scale to 0.93, and everything else is linear/easeInOut on live readouts.
 
    No overshoot. These curves used to approximate the app's

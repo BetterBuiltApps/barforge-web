@@ -187,12 +187,12 @@ accent, and a small set of literal signal colors borrowed from the app's own dat
 visuals.
 
 **The token source of truth is the iOS app, not this repo.** Every value here
-mirrors `../LiftingLab/LiftingLab/Theme/Theme.swift`; each declaration in
+mirrors `../barforge/apps/weightlifting-ios/BarforgeWeightlifting/Theme/Theme.swift`; each declaration in
 `tokens/colors.css` carries a `/* BPColor.x */` comment naming its Swift origin.
 Names deliberately differ between the two (`BPColor.background` is `--bg`;
 `phasePurple` is `--phase-transition`), that is intentional, not drift. The
 change order is fixed: Theme.swift first, then `tokens/*.css`, never the reverse.
-`../LiftingLab/Scripts/check-design-tokens.sh --report` verifies the mirror.
+`../barforge/apps/weightlifting-ios/Scripts/check-design-tokens.sh --report` verifies the mirror.
 
 ### Primary
 - **Signal Amber** (`{colors.amber}`): The one accent. It marks the lit station on

@@ -22,7 +22,7 @@ function Hero() {
             margin: 0, maxWidth: '52ch', fontSize: 19, lineHeight: 1.55,
             color: 'var(--text-secondary)',
           }}>
-            Lifting Lab programs your cycle, analyzes your lifts frame by frame, tells you why the last one
+            Barforge Weightlifting programs your cycle, analyzes your lifts frame by frame, tells you why the last one
             missed, and gets you through meet day. Built for one sport.
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 6, flexWrap: 'wrap' }}>

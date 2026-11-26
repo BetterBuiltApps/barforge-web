@@ -84,7 +84,7 @@ warm at the wrong time is a real failure.
 - Name: **Barforge Weightlifting**. The name is fixed; the rest of the identity is not
   treated as untouchable.
 - Dark interface, single amber accent (`#F5A623` on `#1A1A1A`), mirroring the
-  app's `LiftingLab/Theme/Theme.swift`, which is the token source of truth.
+  app's `BarforgeWeightlifting/Theme/Theme.swift`, which is the token source of truth.
 - **Honest UI** is a product rule, not a slogan: don't claim a capability the
   app doesn't ship, and label any number whose vintage is uncertain.
 - No Olympic marks or imagery, and no IWF branding beyond descriptive body
@@ -125,6 +125,6 @@ warm at the wrong time is a real failure.
 
 No product-specific standard was established by the owner. The site targets
 WCAG 2.2 AA as a floor. The app already enforces 4.5:1 contrast on all text
-tiers via an automated test (`LiftingLabTests/ThemeContrastTests.swift`), and
+tiers via an automated test (`BarforgeWeightliftingTests/ThemeContrastTests.swift`), and
 the site's tokens are derived from the same palette, so the contrast floor is
 inherited rather than assumed. Reduced motion is honored in both.
