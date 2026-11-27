@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Barforge — Instagram OAuth callback</title>
+  <style>
+    body {
+      background: #1A1A1A;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 640px;
+      margin: 10vh auto;
+      padding: 0 24px;
+      line-height: 1.5;
+    }
+    h1 { font-size: 20px; }
+    code {
+      display: block;
+      background: #000;
+      color: #F5A623;
+      padding: 16px;
+      border-radius: 8px;
+      word-break: break-all;
+      font-size: 15px;
+      user-select: all;
+    }
+    .error { color: #ff6b6b; }
+  </style>
+</head>
+<body>
+  <h1>Barforge — Instagram OAuth callback</h1>
+  <p>This page only exists to receive Meta's redirect during the Instagram API login flow
+     (<code style="display:inline;background:none;color:inherit;padding:0;">scripts/monitoring/instagram_report.py</code>'s
+     one-time setup, run by hand). It never sends this value anywhere; it just displays it for
+     the person completing the flow to copy.</p>
+  <div id="result"></div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const error = params.get("error") || params.get("error_description");
+    const target = document.getElementById("result");
+    if (code) {
+      target.innerHTML = "<p>Authorization code (valid ~1 hour, single use):</p><code>" + code + "</code>";
+    } else if (error) {
+      target.innerHTML = '<p class="error">Meta returned an error:</p><code>' + error + "</code>";
+    } else {
+      target.innerHTML = "<p>No code or error in the URL. Nothing to show.</p>";
+    }
+  </script>
+</body>
+</html>
